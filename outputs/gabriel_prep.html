@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriel — Préparation Oraux Écoles de Commerce</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --bg-base:       #080F1E;
+  --bg-elevated:   #0D1626;
+  --bg-panel:      #111F35;
+  --border:        #1E3A5F;
+  --border-subtle: #162844;
+  --blue:          #2563EB;
+  --blue-dim:      #1D4ED8;
+  --cyan:          #06B6D4;
+  --blue-light:    #60A5FA;
+  --green:         #10B981;
+  --amber:         #F59E0B;
+  --text-primary:  #E8F0FE;
+  --text-secondary:#7B9EC8;
+  --text-tertiary: #4A6A8A;
+  --font-display:  'Space Grotesk', system-ui, sans-serif;
+  --font-mono:     'JetBrains Mono', monospace;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+/* ── NAV MOBILE ──────────────────────────────── */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(8,15,30,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0 16px;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-inner {
+  display: inline-flex;
+  gap: 0;
+  height: 52px;
+  align-items: stretch;
+}
+
+.nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 16px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.nav a:hover {
+  color: var(--text-primary);
+  border-bottom-color: var(--blue-light);
+}
+
+/* ── HERO ──────────────────────────────────── */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 56px 24px 48px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border-subtle) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-subtle) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.hero-topbar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--blue), var(--cyan));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(37,99,235,0.12);
+  border: 1px solid rgba(37,99,235,0.3);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--blue-light);
+  margin-bottom: 20px;
+}
+
+.hero-badge::before {
+  content: '';
+  width: 6px; height: 6px;
+  background: var(--green);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.hero h1 {
+  font-size: clamp(28px, 7vw, 40px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.hero h1 span {
+  background: linear-gradient(135deg, var(--blue-light), var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  color: var(--text-secondary);
+  font-size: 15px;
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.meta-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+/* ── SECTIONS ──────────────────────────────── */
+.section {
+  padding: 48px 24px;
+  border-bottom: 1px solid var(--border-subtle);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.section-num {
+  flex-shrink: 0;
+  width: 36px; height: 36px;
+  background: linear-gradient(135deg, var(--blue), var(--cyan));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.section-header h2 {
+  font-size: clamp(18px, 5vw, 24px);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.section-header p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* Cards */
+.card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--blue), var(--cyan));
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.card:hover::before { opacity: 1; }
+
+.card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--blue-light);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card p, .card li {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  padding: 4px 0 4px 20px;
+  position: relative;
+}
+
+.card ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--cyan);
+}
+
+/* Table */
+.kaufman-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.kaufman-table th {
+  background: rgba(37,99,235,0.15);
+  color: var(--blue-light);
+  font-weight: 600;
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.kaufman-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  vertical-align: top;
+}
+
+.kaufman-table tr:hover td {
+  background: rgba(37,99,235,0.05);
+}
+
+.kaufman-table td:first-child {
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+/* Quote block */
+.quote {
+  background: rgba(37,99,235,0.08);
+  border-left: 3px solid var(--blue);
+  border-radius: 0 8px 8px 0;
+  padding: 16px 20px;
+  margin: 20px 0;
+  font-size: 15px;
+  color: var(--text-primary);
+  font-style: italic;
+  line-height: 1.7;
+}
+
+/* Stat chips — WEF data */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.stat-chip {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.stat-chip .stat-value {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--cyan);
+  line-height: 1.2;
+}
+
+.stat-chip .stat-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+.stat-chip .stat-source {
+  font-size: 10px;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  margin-top: 6px;
+}
+
+/* Mégatendance pills */
+.trend-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.trend-item {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.trend-icon {
+  flex-shrink: 0;
+  font-size: 22px;
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.trend-content h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.trend-content p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Leadership competencies */
+.competency-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.competency-list li {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.competency-list li:last-child {
+  border-bottom: none;
+}
+
+.comp-num {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  background: rgba(37,99,235,0.2);
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--blue-light);
+}
+
+.comp-title {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* School tabs */
+.school-tabs {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.school-tab {
+  flex: 1;
+  padding: 12px 16px;
+  text-align: center;
+  background: var(--bg-elevated);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border: none;
+  transition: all 0.2s;
+}
+
+.school-tab.active {
+  background: var(--blue);
+  color: #fff;
+}
+
+.school-content { display: none; }
+.school-content.active { display: block; }
+
+.school-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(16,185,129,0.1);
+  border: 1px solid rgba(16,185,129,0.3);
+  border-radius: 6px;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--green);
+  margin-bottom: 16px;
+}
+
+/* Narrative box */
+.narrative-box {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.narrative-box p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.narrative-box p:last-child { margin-bottom: 0; }
+
+.narrative-box strong {
+  color: var(--text-primary);
+}
+
+/* Subsection title */
+.subsection-title {
+  font-size: 13px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--amber);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 28px 0 12px;
+}
+
+/* Footer */
+.footer {
+  padding: 32px 24px;
+  text-align: center;
+  color: var(--text-tertiary);
+  font-size: 12px;
+  font-family: var(--font-mono);
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#s1">01 · Pourquoi l'école de commerce ?</a>
+    <a href="#s2">02 · Mégatendances WEF</a>
+    <a href="#s3">03 · ESSCA &amp; IÉSEG</a>
+    <a href="#s4">04 · Narrative orale</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-topbar"></div>
+  <div class="hero-content">
+    <div class="hero-badge">préparation · v2.0 · avril 2026</div>
+    <h1>Oraux <span>Écoles de Commerce</span></h1>
+    <p class="hero-sub">Dossier de préparation narrative — ESSCA &amp; IÉSEG. Sources : Personal MBA (Kaufman) + WEF Strategic Library 2024-2025. Chaque section peut être lue seule en mobilité.</p>
+    <div class="hero-meta">
+      <span class="meta-chip">4 sections</span>
+      <span class="meta-chip">ESSCA · IÉSEG</span>
+      <span class="meta-chip">Terminale 2026</span>
+      <span class="meta-chip">Sources WEF réelles</span>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<!-- SECTION 1 — POURQUOI L'ÉCOLE DE COMMERCE ?           -->
+<!-- ══════════════════════════════════════════════════════ -->
+<section class="section" id="s1">
+  <div class="section-header">
+    <div class="section-num">01</div>
+    <div>
+      <h2>Pourquoi une école de commerce ?</h2>
+      <p>TGM INSEAD · Personal MBA (Kaufman) · Finance comme système nerveux</p>
+    </div>
+  </div>
+
+  <!-- TGM INSEAD — Histoire de l'énergie -->
+  <div class="card">
+    <h3>⚡ L'histoire de l'humanité est une histoire d'énergie — TGM INSEAD</h3>
+    <p style="margin-bottom:12px;">Le cours TGM de l'INSEAD part d'une prémisse physique : <strong>la vie a besoin d'énergie, et l'ADN en est "conscient"</strong>. Toute l'histoire humaine peut se lire comme une quête de maximisation de l'énergie disponible.</p>
+    <div class="kaufman-table">
+      <table>
+        <thead><tr><th>Révolution</th><th>Énergie libérée</th><th>Ce qu'elle a rendu possible</th></tr></thead>
+        <tbody>
+          <tr><td><strong>🔥 Feu</strong></td><td>Cuisson → cerveaux + puissants</td><td>Outils, chasse, alimentation</td></tr>
+          <tr><td><strong>🧠 Cognitive</strong></td><td>Intelligence collective</td><td>Groupes, coopération</td></tr>
+          <tr><td><strong>🌾 Agriculture</strong></td><td>Stabilité alimentaire</td><td>Civilisations, villes, États</td></tr>
+          <tr><td><strong>⚙️ Industrielle</strong></td><td>Machines → production de masse</td><td>Satisfaction de masse</td></tr>
+          <tr><td><strong>💻 Numérique</strong></td><td>Information → coordination globale</td><td>Économie mondiale, IA</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- TGM — Me/Now → Us/Future -->
+  <div class="card">
+    <h3>🎯 Du "Me, Now" au "Us, Future" — La matrice TGM</h3>
+    <p style="margin-bottom:12px;">Le TGM pose une matrice entre <strong>court/long terme</strong> et <strong>individuel/collectif</strong>. Un seul quadrant est réellement durable :</p>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px;">
+      <div style="background:rgba(248,113,113,0.08); border:1px solid rgba(248,113,113,0.25); border-radius:8px; padding:12px;">
+        <div style="font-size:11px; font-family:var(--font-mono); color:#F87171; margin-bottom:4px;">ME · COURT TERME</div>
+        <div style="font-size:13px; color:var(--text-secondary);">Bon pour moi maintenant. Non durable.</div>
+      </div>
+      <div style="background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.25); border-radius:8px; padding:12px;">
+        <div style="font-size:11px; font-family:var(--font-mono); color:var(--amber); margin-bottom:4px;">ME · LONG TERME</div>
+        <div style="font-size:13px; color:var(--text-secondary);">Bon pour moi à terme. Peu durable.</div>
+      </div>
+      <div style="background:rgba(96,165,250,0.08); border:1px solid rgba(96,165,250,0.25); border-radius:8px; padding:12px;">
+        <div style="font-size:11px; font-family:var(--font-mono); color:var(--blue-light); margin-bottom:4px;">US · COURT TERME</div>
+        <div style="font-size:13px; color:var(--text-secondary);">Semble bon pour tous. Pas soutenable.</div>
+      </div>
+      <div style="background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.35); border-radius:8px; padding:12px;">
+        <div style="font-size:11px; font-family:var(--font-mono); color:var(--green); margin-bottom:4px;">✓ US · LONG TERME</div>
+        <div style="font-size:13px; color:var(--text-primary); font-weight:500;">Bon pour tous. Durable par conception.</div>
+      </div>
+    </div>
+    <p style="font-size:14px; color:var(--text-secondary);">L'école de commerce forme des gens capables de penser <strong>"Us, Future"</strong> — créer de la valeur collective et durable. C'est le seul quadrant soutenable, et le seul qui intéresse les entreprises qui durent.</p>
+  </div>
+
+  <div class="card">
+    <h3>📖 Ce qu'est vraiment une entreprise — La définition de Kaufman</h3>
+    <div class="quote">
+      "Every successful business (1) creates or provides something of value that (2) other people want or need (3) at a price they're willing to pay, in a way that (4) satisfies the purchaser's needs and expectations and (5) provides the business sufficient revenue to make it worthwhile for the owners to continue operation."
+      <div style="margin-top:10px; font-size:13px; color:var(--text-tertiary); font-style:normal;">— Josh Kaufman, <em>The Personal MBA</em>, 2010</div>
+    </div>
+    <p>Une entreprise qui ne crée pas de valeur est un hobby. Qui n'attire pas l'attention est un flop. Qui ne vend pas est une association. Qui ne livre pas est une arnaque. Qui ne dégage pas de profit finit par fermer. <strong>Ces cinq fonctions sont universelles</strong> — startup tech, boulangerie ou Fortune 500, aucune exception.</p>
+  </div>
+
+  <p class="subsection-title">Les 5 composants de toute entreprise — Tableau Kaufman</p>
+  <div class="card">
+    <h3>⚙️ Cadre opérationnel universel</h3>
+    <table class="kaufman-table">
+      <thead>
+        <tr>
+          <th>Fonction</th>
+          <th>Ce qu'elle fait</th>
+          <th>Ce qu'elle génère</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Création de valeur</td>
+          <td>Identifier ce que les gens veulent, puis le créer</td>
+          <td>Produit, service, offre</td>
+        </tr>
+        <tr>
+          <td>Marketing</td>
+          <td>Attirer l'attention et créer de la demande</td>
+          <td>Notoriété, prospects</td>
+        </tr>
+        <tr>
+          <td>Vente</td>
+          <td>Transformer les prospects en clients payants</td>
+          <td>Transactions, revenu</td>
+        </tr>
+        <tr>
+          <td>Livraison de valeur</td>
+          <td>Donner au client ce qu'il a payé, le satisfaire</td>
+          <td>Fidélité, réputation</td>
+        </tr>
+        <tr>
+          <td>Finance</td>
+          <td>Gérer les flux pour que l'entreprise reste viable</td>
+          <td>Profit, pérennité</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:12px; font-size:14px;">Toute compétence qui aide à faire l'une de ces cinq choses est <strong>économiquement précieuse</strong>. Stratégie, marketing, finance, opérations, management — ce ne sont pas des savoirs abstraits : ce sont les outils directement liés à ces cinq fonctions.</p>
+  </div>
+
+  <div class="card">
+    <h3>⚖️ La loi de fer du marché</h3>
+    <div class="quote">
+      "Market matters most; neither a stellar team nor fantastic product will redeem a bad market."
+      <div style="margin-top:8px; font-size:13px; color:var(--text-tertiary); font-style:normal;">— Josh Kaufman, <em>The Personal MBA</em></div>
+    </div>
+    <p>Le Segway : technologie brillante, équipe excellente, marketing ambitieux. Résultat : 23 000 unités vendues en cinq ans pour un objectif de 50 000 par an. Le problème n'était pas le produit — c'est que <strong>le marché n'existait pas</strong>. Les gens ne voulaient pas dépenser 5 000 $ pour remplacer la marche à pied. Comprendre les marchés — leur taille, leur urgence, leur potentiel de prix — est la première compétence d'un manager.</p>
+  </div>
+
+  <div class="card">
+    <h3>💹 La finance TGM : RONIC, OCC et création de valeur</h3>
+    <p>Le TGM INSEAD distingue deux questions que l'on confond souvent :</p>
+    <ul>
+      <li>❌ <strong>Ce que la finance ne répond PAS :</strong> "Que veulent les investisseurs comme retour ?" → réponse infinie.</li>
+      <li>✅ <strong>Ce qu'elle répond vraiment :</strong> "Quel est le <em>minimum</em> que les investisseurs doivent recevoir pour continuer à participer ?"</li>
+    </ul>
+    <div class="quote" style="margin-top:12px;">
+      <strong>RONIC &gt; OCC → NPV positive → Création de valeur</strong><br>
+      RONIC = Return On New Invested Capital · OCC = Opportunity Cost of Capital<br>
+      La valeur d'une entreprise = ses FCF futurs escomptés au coût d'opportunité du capital. Elle vaut ce qu'elle crée demain — pas ce qu'elle possède aujourd'hui.
+    </div>
+    <p style="margin-top:12px;">Et un principe contre-intuitif du TGM sur l'incertitude :</p>
+    <div class="quote">
+      "The more uncertain &amp; volatile the environment, the MORE we should invest. Thinking like a VC rather than a Banker." — TGM INSEAD
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🏫 Ce que l'école apporte — TGM + Kaufman + réseau</h3>
+    <ul>
+      <li><strong>① Outils analytiques</strong> — Strategy / Finance / Marketing / Leadership / Operations. Les 5 disciplines TGM = les 5 fonctions universelles de Kaufman. Modèles mentaux &gt; méthodes.</li>
+      <li><strong>② Réseau organisé</strong> — TGM : <em>"Networking is 1% inspiration and 99% hard work."</em> Capital humain (compétences) + Capital social (connexions). 70 % du développement pro se fait sur le terrain, 20 % via des relations critiques.</li>
+      <li><strong>③ Du Red World au Blue World</strong> — TGM décrit la mutation du leadership : <span style="color:#F87171;">Red/Old World</span> (top-down, ego, command &amp; control) → <span style="color:var(--cyan);">Blue/Digital World</span> (collaboratif, distribué, orienté problèmes, amélioration continue). L'école forme au Blue World.</li>
+      <li><strong>④ Signal de crédibilité</strong> — Le diplôme ouvre la porte. C'est au diplômé de mériter ce qu'il y a derrière.</li>
+    </ul>
+    <div class="quote" style="margin-top:16px;">
+      Mon objectif : maîtriser les 5 fonctions universelles, penser "Us, Future", et construire le réseau qui me permettra de le faire dès la sortie.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<!-- SECTION 2 — MÉGATENDANCES WEF                        -->
+<!-- ══════════════════════════════════════════════════════ -->
+<section class="section" id="s2">
+  <div class="section-header">
+    <div class="section-num">02</div>
+    <div>
+      <h2>L'état du monde &amp; les mégatendances</h2>
+      <p>Données WEF Strategic Library 2024-2025 — le langage des jurys et des DRH</p>
+    </div>
+  </div>
+
+  <p class="subsection-title">Chiffres clés WEF — À retenir pour l'oral</p>
+  <div class="stat-grid">
+    <div class="stat-chip">
+      <div class="stat-value">92M</div>
+      <div class="stat-label">postes déplacés d'ici 2030 par l'automatisation</div>
+      <div class="stat-source">WEF Future of Jobs 2025</div>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-value">170M</div>
+      <div class="stat-label">nouveaux rôles créés d'ici 2030 (solde net +78M)</div>
+      <div class="stat-source">WEF Future of Jobs 2025</div>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-value">44%</div>
+      <div class="stat-label">des compétences actuelles seront perturbées dans 5 ans</div>
+      <div class="stat-source">WEF Future of Jobs 2025</div>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-value">39%</div>
+      <div class="stat-label">seulement des citoyens font confiance à leurs gouvernements</div>
+      <div class="stat-source">OCDE / WEF Global Risks 2025</div>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-value">$2T</div>
+      <div class="stat-label">investissements mondiaux en énergie propre en 2024</div>
+      <div class="stat-source">WEF Green Transition 2025</div>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-value">+36%</div>
+      <div class="stat-label">population mondiale +65 ans entre 2025 et 2035</div>
+      <div class="stat-source">WEF Global Risks 2025</div>
+    </div>
+  </div>
+
+  <p class="subsection-title">Future of Jobs 2025 — Détail du paradoxe</p>
+  <div class="card">
+    <h3>🤖 La disruption de l'entrée dans la vie professionnelle</h3>
+    <p>Le WEF confirme que 60 % des employeurs anticipent que le changement technologique transformera fondamentalement leurs besoins en compétences. Les emplois d'entrée de gamme en col blanc — traitement de données, analyse standard, saisie — sont les plus exposés à l'IA agentique.</p>
+    <div class="quote">
+      Le paradoxe : l'IA détruit des emplois de débutants, ceux qui permettaient traditionnellement à un jeune de construire son expertise. Les jeunes diplômés devront trouver de nouveaux chemins pour acquérir de l'expérience.
+    </div>
+    <p><strong>Compétences qui résistent et seront encore plus valorisées en 2030 :</strong></p>
+    <ul>
+      <li>Problem-solving, pensée critique, jugement éthique</li>
+      <li>Littératie numérique (90 % des emplois en Europe requièrent déjà des compétences digitales de base)</li>
+      <li>Intelligence émotionnelle et empathie — ce que l'IA ne peut pas reproduire</li>
+      <li>Créativité contextuelle — <em>"AI cannot fully replicate the unique big ideas generated by exceptional thinkers"</em></li>
+    </ul>
+  </div>
+
+  <p class="subsection-title">5 mégatendances — Synthèse pour l'oral</p>
+  <div class="trend-grid">
+    <div class="trend-item">
+      <div class="trend-icon">🤖</div>
+      <div class="trend-content">
+        <h4>① IA &amp; automatisation cognitive</h4>
+        <p>Les tâches routinières intellectuelles s'automatisent. Ce qui résiste : jugement complexe, créativité, relation humaine de confiance. L'objectif n'est pas d'être remplacé par un algorithme — c'est d'être celui qui décide ce que l'algorithme fait, et qui en interprète les résultats.</p>
+      </div>
+    </div>
+    <div class="trend-item">
+      <div class="trend-icon">🌿</div>
+      <div class="trend-content">
+        <h4>② Transition climatique &amp; économie du carbone</h4>
+        <p>CSRD, taxonomie verte européenne, taxe carbone aux frontières — l'ESG n'est plus une option. Les entreprises non-conformes perdront l'accès aux capitaux. $2T investis en énergie propre en 2024, 16 millions d'emplois soutenus. Le manager de 2030 intègre les enjeux environnementaux dans chaque décision d'investissement.</p>
+      </div>
+    </div>
+    <div class="trend-item">
+      <div class="trend-icon">🌐</div>
+      <div class="trend-content">
+        <h4>③ Recomposition géopolitique</h4>
+        <p>Fin de la mondialisation linéaire. Blocs technologiques (USA, Chine, Europe) développant des écosystèmes distincts. "Friendshoring" et politiques protectionnistes. La Chine + Inde représentaient 27 % du PIB du G7 en 2001 ; 83 % en 2021. Les managers navigueront dans un environnement fragmenté avec des risques-pays multiples.</p>
+      </div>
+    </div>
+    <div class="trend-item">
+      <div class="trend-icon">📊</div>
+      <div class="trend-content">
+        <h4>④ Révolution des données &amp; IA</h4>
+        <p>La data pénètre tous les métiers. La souveraineté technologique (IA, quantum, semi-conducteurs) est la nouvelle frontière de la compétitivité nationale. Le manager qui maîtrise le langage de la data — sans être data scientist — dispose d'un avantage structurel. Profil hybride visé : manager généraliste + appétence données.</p>
+      </div>
+    </div>
+    <div class="trend-item">
+      <div class="trend-icon">⏳</div>
+      <div class="trend-content">
+        <h4>⑤ Recomposition des carrières &amp; quête de sens</h4>
+        <p>Les parcours linéaires disparaissent. La génération Z est la seule cohorte qui priorise le "sens" dans ses choix professionnels. Crise démographique (+36 % de plus de 65 ans d'ici 2035) stressant les systèmes de retraite. Ce n'est pas de l'idéalisme : c'est un levier de négociation pour attirer les talents.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="subsection-title">5 compétences de leadership pour 2030 — WEF</p>
+  <div class="card">
+    <h3>🎯 Ce que les marchés valoriseront quand les algorithmes feront le reste</h3>
+    <ul class="competency-list">
+      <li>
+        <span class="comp-num">1</span>
+        <div><span class="comp-title">Intelligence émotionnelle &amp; empathie</span> — naviguer la complexité humaine là où les algorithmes s'arrêtent</div>
+      </li>
+      <li>
+        <span class="comp-num">2</span>
+        <div><span class="comp-title">Foresight &amp; anticipation</span> — <em>"True foresight means embedding continuous horizon scanning and scenario planning as organizational habits"</em></div>
+      </li>
+      <li>
+        <span class="comp-num">3</span>
+        <div><span class="comp-title">Leadership authentique</span> — transparence, éthique, auto-conscience (à une époque où seulement 39 % des citoyens font confiance aux institutions)</div>
+      </li>
+      <li>
+        <span class="comp-num">4</span>
+        <div><span class="comp-title">Diplomatie corporative</span> — gérer les tensions géopolitiques, protectionnisme, fragmentation des supply chains</div>
+      </li>
+      <li>
+        <span class="comp-num">5</span>
+        <div><span class="comp-title">Agilité</span> — <em>"Trading linear planning cycles for agile, experimental models of decision-making"</em></div>
+      </li>
+    </ul>
+    <div class="quote" style="margin-top:16px;">
+      Ces 5 compétences ne s'apprennent pas en ligne. Elles se construisent dans des environnements où on est confronté à l'incertitude, à la diversité des points de vue, et à la nécessité de convaincre. C'est l'environnement que l'école de commerce crée.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<!-- SECTION 3 — ESSCA & IÉSEG                            -->
+<!-- ══════════════════════════════════════════════════════ -->
+<section class="section" id="s3">
+  <div class="section-header">
+    <div class="section-num">03</div>
+    <div>
+      <h2>Pourquoi ESSCA &amp; IÉSEG ?</h2>
+      <p>Un choix stratégique fondé sur l'adéquation — pas un réflexe de classement</p>
+    </div>
+  </div>
+
+  <div class="school-tabs">
+    <button class="school-tab active" onclick="showSchool('essca', this)">ESSCA</button>
+    <button class="school-tab" onclick="showSchool('ieseg', this)">IÉSEG</button>
+  </div>
+
+  <!-- ESSCA -->
+  <div class="school-content active" id="essca">
+    <div class="school-badge">✓ AACSB · AMBA · EQUIS — Triple Accréditation · Top 1 % mondial</div>
+
+    <div class="card">
+      <h3>📚 Contenu académique</h3>
+      <p>L'ESSCA est triple accréditée AACSB, AMBA, EQUIS — ce qui la place dans le top 1 % mondial des business schools. Cette reconnaissance internationale garantit la qualité du corps enseignant (plus de 55 % international), la pertinence des programmes, et la valeur du diplôme à l'étranger.</p>
+      <p style="margin-top:10px;">Ce qui attire particulièrement : la possibilité de construire un double profil — management généraliste avec une spécialisation data/analytics via les Masters of Science disponibles. Face à la mégatendance #4 (révolution des données), ce profil hybride est précisément ce que le marché valorisera en 2030. L'ESSCA applique les 5 fonctions universelles de Kaufman : les disciplines enseignées sont directement liées à la création de valeur, au marketing, à la vente, à la livraison et à la finance.</p>
+    </div>
+
+    <div class="card">
+      <h3>🏅 Vie étudiante &amp; associations</h3>
+      <p>L'ESSCA intègre explicitement la vie associative et sportive aux objectifs pédagogiques : <em>"insuffler de nouvelles idées, offrir des solutions concrètes aux enjeux du monde, libérer les potentiels, s'ouvrir aux cultures."</em></p>
+      <p style="margin-top:10px;">Ce ne sont pas des activités parascolaires — ce sont des <strong>laboratoires de leadership</strong>. C'est là qu'on apprend à diriger des équipes, à gérer des budgets, à convaincre des partenaires — en conditions réelles. Précisément le terrain où se construisent les 5 compétences WEF pour 2030.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌍 Réseau &amp; dimension internationale</h3>
+      <ul>
+        <li>10 campus : Angers, Paris, Lyon, Bordeaux, Aix-en-Provence, Strasbourg, Budapest, Luxembourg, Malaga, Shanghai</li>
+        <li>Plus de 55 % du corps enseignant international — 40 nationalités représentées</li>
+        <li>Des milliers de diplômés dans le monde — industrie, conseil, tech, finance, secteur public</li>
+        <li>L'international n'est pas une option ajoutée : c'est une composante structurelle du parcours</li>
+        <li>Réseau géographique distribué rare pour une école post-bac en France</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- IÉSEG -->
+  <div class="school-content" id="ieseg">
+    <div class="school-badge">✓ AACSB · EQUIS — Mission : Former des Changemakers</div>
+
+    <div class="card">
+      <h3>📚 Contenu académique</h3>
+      <p>Mission déclarée : <em>"former des changemakers pour une meilleure société."</em> Le Bachelor Cycle est structuré autour du <em>"learning by doing"</em> : projets interdisciplinaires chaque semestre — entrepreneuriat, impact social, <strong>IA, big data, géopolitique</strong>.</p>
+      <p style="margin-top:10px;">L'IA et la data sont des sujets d'étude structurants dès la L1, pas des options de fin de cursus. Le MSc in Strategy and Digital Transformation est la passerelle naturelle vers les métiers à l'intersection management-tech. L'IÉSEG applique concrètement ce que le WEF recommande : pédagogie industry-aligned, projets capstone interdisciplinaires, apprentissage par l'expérience en conditions réelles.</p>
+    </div>
+
+    <div class="card">
+      <h3>🏅 Vie étudiante &amp; associations</h3>
+      <ul>
+        <li><strong>IÉSEG Conseil</strong> — Junior-Entreprise active : travailler comme consultant junior pour de vraies PME dès la licence. Un track record professionnel avant l'obtention du diplôme.</li>
+        <li>Challenge Innovation annuel avec des entreprises partenaires</li>
+        <li>Engagement solidaire dès la première semaine : Banque Alimentaire, Secours Populaire</li>
+        <li>La responsabilité sociale est inscrite dans l'ADN, pas dans la brochure</li>
+        <li>Lien direct avec la mégatendance #5 : quête de sens comme levier, pas comme idéalisme</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🌍 Réseau &amp; débouchés</h3>
+      <ul>
+        <li>Campus Lille &amp; Paris-La Défense — deux des principaux pôles économiques français</li>
+        <li>Des centaines d'universités partenaires internationales</li>
+        <li>Alumni dirigeant des opérations dans des entreprises Fortune Global 500</li>
+        <li>Entreprises partenaires qui co-construisent les cursus — garantie que les compétences enseignées sont alignées avec ce que le marché demande réellement</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<!-- SECTION 4 — NARRATIVE ORALE                          -->
+<!-- ══════════════════════════════════════════════════════ -->
+<section class="section" id="s4">
+  <div class="section-header">
+    <div class="section-num">04</div>
+    <div>
+      <h2>Narrative globale — Synthèse orale</h2>
+      <p>460 mots · Structure : accroche chiffre → contexte monde → pourquoi école → pourquoi cette école → vision 10 ans</p>
+    </div>
+  </div>
+
+  <div class="narrative-box">
+    <p>Le Forum Économique Mondial l'a formalisé en 2025 avec des données précises : d'ici 2030, l'automatisation déplacera <strong>92 millions de postes</strong> et en créera <strong>170 millions de nouveaux</strong>. Le solde net est positif. Mais la disruption entre les deux est massive — et elle concerne en premier lieu les emplois d'entrée de gamme, ceux qui permettaient historiquement à un jeune de construire son expertise progressivement.</p>
+
+    <p>Autrement dit : le chemin traditionnel <em>"étudier, décrocher un premier poste standard, progresser par l'expérience"</em> est en train de se transformer. Ce n'est pas une raison de ne pas se former — c'est une raison de <strong>se former différemment, et mieux</strong>.</p>
+
+    <p>Je rentre en école de commerce avec une compréhension précise de ce que les entreprises sont réellement. Josh Kaufman, dans <em>The Personal MBA</em>, le formule avec une clarté que peu de cursus académiques égalent : une entreprise réussie crée de la valeur, attire l'attention, vend, livre ce qu'elle promet, et génère assez de revenus pour continuer. <strong>Ces cinq fonctions sont universelles</strong> — elles ne changent pas selon la taille, le secteur, ou la géographie. Ce que l'IA va automatiser, c'est l'exécution routinière de certaines de ces fonctions. Ce qu'elle ne remplacera pas : le jugement sur <em>laquelle</em> de ces fonctions est prioritaire, la capacité à créer de la confiance avec un client, la décision d'aller vers tel marché plutôt que tel autre.</p>
+
+    <p>Les compétences de leadership que le WEF identifie pour 2030 — intelligence émotionnelle, foresight, agilité, diplomatie corporative, leadership authentique — sont précisément ce que les marchés valoriseront quand les tâches d'analyse seront déléguées aux algorithmes. Elles ne s'apprennent pas en ligne. Elles se construisent dans des environnements où on est confronté à l'incertitude, à la diversité des points de vue, et à la nécessité réelle de convaincre.</p>
+
+    <p>Mon choix pour cette école est le résultat d'une analyse, pas d'un classement. Ce que je veux construire : une base solide dans les cinq fonctions universelles d'une entreprise, couplée à une vraie culture des données et à une expérience internationale structurée. Cette école offre précisément ce triptyque — avec la rigueur d'une accréditation internationale reconnue, une pédagogie par projets réels dès la première année, et un réseau construit sur plusieurs décennies.</p>
+
+    <p>Ce que je veux <strong>apporter</strong> : une capacité de travail sérieuse, un intérêt authentique pour les questions économiques et technologiques, et l'envie de m'engager dans des projets collectifs. J'ai compris que <strong>70 % du développement professionnel se construit dans l'action et dans la relation aux autres</strong> — pas dans les amphithéâtres.</p>
+
+    <p>Dans dix ans, je me vois à l'intersection du management et de la transformation numérique — contribuant à une organisation qui crée de la valeur réelle, pour des clients précis, dans un monde complexe. <strong>L'école de commerce est la première étape sérieuse de ce chemin. Je suis prêt à la prendre au sérieux.</strong></p>
+  </div>
+</section>
+
+<footer class="footer">
+  préparation-gabriel · v3.0 · avril 2026 · sources : TGM INSEAD · Personal MBA (Kaufman) · WEF Strategic Library 2024-2025
+</footer>
+
+<script>
+function showSchool(id, btn) {
+  document.querySelectorAll('.school-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.school-tab').forEach(el => el.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+
+</body>
+</html>
