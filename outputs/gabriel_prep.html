@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gabriel — Préparation Oraux Écoles de Commerce</title>
+<title>Gabriel — Préparation Accès PGE IÉSEG</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
@@ -19,6 +19,7 @@
   --blue-light:    #60A5FA;
   --green:         #10B981;
   --amber:         #F59E0B;
+  --red:           #EF4444;
   --text-primary:  #E8F0FE;
   --text-secondary:#7B9EC8;
   --text-tertiary: #4A6A8A;
@@ -517,6 +518,214 @@ body {
   margin: 28px 0 12px;
 }
 
+/* Pitch code block */
+.pitch-block {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 24px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  white-space: pre-wrap;
+  margin-bottom: 20px;
+}
+
+.pitch-block .pitch-label {
+  color: var(--amber);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Accordion — Q&A */
+.accordion-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--bg-elevated);
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.accordion-header:hover {
+  background: rgba(37,99,235,0.08);
+}
+
+.accordion-header.open {
+  background: rgba(37,99,235,0.1);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.accordion-qnum {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue-light);
+  background: rgba(37,99,235,0.15);
+  border-radius: 6px;
+  padding: 3px 8px;
+}
+
+.accordion-title {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.accordion-badge {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.badge-pdf {
+  background: rgba(37,99,235,0.15);
+  color: var(--blue-light);
+  border: 1px solid rgba(37,99,235,0.3);
+}
+
+.badge-mock {
+  background: rgba(245,158,11,0.12);
+  color: var(--amber);
+  border: 1px solid rgba(245,158,11,0.3);
+}
+
+.accordion-chevron {
+  flex-shrink: 0;
+  font-size: 14px;
+  color: var(--text-tertiary);
+  transition: transform 0.25s;
+}
+
+.accordion-header.open .accordion-chevron {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  display: none;
+  padding: 20px;
+  background: var(--bg-panel);
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.accordion-body.open {
+  display: block;
+}
+
+.accordion-meta {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--text-tertiary);
+  margin-bottom: 12px;
+}
+
+.accordion-answer {
+  color: var(--text-secondary);
+}
+
+.accordion-answer .quote {
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+/* Floating chiffres button */
+.float-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 200;
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(37,99,235,0.4);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.float-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(37,99,235,0.5);
+}
+
+/* Modal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(4,8,15,0.85);
+  z-index: 300;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.modal-overlay.open {
+  display: flex;
+}
+
+.modal-box {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  max-width: 640px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.modal-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--text-tertiary);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: color 0.2s;
+}
+
+.modal-close:hover { color: var(--text-primary); }
+
 /* Footer */
 .footer {
   padding: 32px 24px;
@@ -532,10 +741,12 @@ body {
 <!-- NAV -->
 <nav class="nav">
   <div class="nav-inner">
-    <a href="#s1">01 · Pourquoi l'école de commerce ?</a>
+    <a href="#s1">01 · Pourquoi l'école ?</a>
     <a href="#s2">02 · Mégatendances WEF</a>
-    <a href="#s3">03 · ESSCA &amp; IÉSEG</a>
+    <a href="#s3">03 · Pourquoi l'IÉSEG ?</a>
     <a href="#s4">04 · Narrative orale</a>
+    <a href="#s5">05 · Questions jury</a>
+    <a href="#s6">06 · Oral anglais</a>
   </div>
 </nav>
 
@@ -543,20 +754,21 @@ body {
 <header class="hero">
   <div class="hero-topbar"></div>
   <div class="hero-content">
-    <div class="hero-badge">préparation · v2.0 · avril 2026</div>
-    <h1>Oraux <span>Écoles de Commerce</span></h1>
-    <p class="hero-sub">Dossier de préparation narrative — ESSCA &amp; IÉSEG. Sources : Personal MBA (Kaufman) + WEF Strategic Library 2024-2025. Chaque section peut être lue seule en mobilité.</p>
+    <div class="hero-badge">préparation · v4.0 · avril 2026</div>
+    <h1>Accès PGE <span>IÉSEG</span></h1>
+    <p class="hero-sub">Dossier de préparation narrative — Programme Grande École IÉSEG. Sources : TGM INSEAD · Personal MBA (Kaufman) · WEF 2024-2025 · Mock interview officiel. 6 sections · lecture mobile.</p>
     <div class="hero-meta">
-      <span class="meta-chip">4 sections</span>
-      <span class="meta-chip">ESSCA · IÉSEG</span>
+      <span class="meta-chip">6 sections</span>
+      <span class="meta-chip">15 questions jury</span>
       <span class="meta-chip">Terminale 2026</span>
       <span class="meta-chip">Sources WEF réelles</span>
+      <span class="meta-chip">Mock interview analysé</span>
     </div>
   </div>
 </header>
 
 <!-- ══════════════════════════════════════════════════════ -->
-<!-- SECTION 1 — POURQUOI L'ÉCOLE DE COMMERCE ?           -->
+<!-- SECTION 1 — POURQUOI UNE ÉCOLE DE COMMERCE ?         -->
 <!-- ══════════════════════════════════════════════════════ -->
 <section class="section" id="s1">
   <div class="section-header">
@@ -567,138 +779,75 @@ body {
     </div>
   </div>
 
-  <!-- TGM INSEAD — Histoire de l'énergie -->
+  <!-- CARD 1 — TGM Histoire énergie + Us/Future -->
   <div class="card">
     <h3>⚡ L'histoire de l'humanité est une histoire d'énergie — TGM INSEAD</h3>
-    <p style="margin-bottom:12px;">Le cours TGM de l'INSEAD part d'une prémisse physique : <strong>la vie a besoin d'énergie, et l'ADN en est "conscient"</strong>. Toute l'histoire humaine peut se lire comme une quête de maximisation de l'énergie disponible.</p>
-    <div class="kaufman-table">
-      <table>
-        <thead><tr><th>Révolution</th><th>Énergie libérée</th><th>Ce qu'elle a rendu possible</th></tr></thead>
-        <tbody>
-          <tr><td><strong>🔥 Feu</strong></td><td>Cuisson → cerveaux + puissants</td><td>Outils, chasse, alimentation</td></tr>
-          <tr><td><strong>🧠 Cognitive</strong></td><td>Intelligence collective</td><td>Groupes, coopération</td></tr>
-          <tr><td><strong>🌾 Agriculture</strong></td><td>Stabilité alimentaire</td><td>Civilisations, villes, États</td></tr>
-          <tr><td><strong>⚙️ Industrielle</strong></td><td>Machines → production de masse</td><td>Satisfaction de masse</td></tr>
-          <tr><td><strong>💻 Numérique</strong></td><td>Information → coordination globale</td><td>Économie mondiale, IA</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <!-- TGM — Me/Now → Us/Future -->
-  <div class="card">
-    <h3>🎯 Du "Me, Now" au "Us, Future" — La matrice TGM</h3>
-    <p style="margin-bottom:12px;">Le TGM pose une matrice entre <strong>court/long terme</strong> et <strong>individuel/collectif</strong>. Un seul quadrant est réellement durable :</p>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px;">
-      <div style="background:rgba(248,113,113,0.08); border:1px solid rgba(248,113,113,0.25); border-radius:8px; padding:12px;">
-        <div style="font-size:11px; font-family:var(--font-mono); color:#F87171; margin-bottom:4px;">ME · COURT TERME</div>
+    <p style="margin-bottom:12px;">Le TGM de l'INSEAD part d'une prémisse physique : <strong>la vie a besoin d'énergie</strong>. Toute l'histoire humaine est une quête de maximisation de l'énergie disponible. Le capitalisme de marché organise cette énergie collective via le prix — et la finance en est le système nerveux.</p>
+    <table class="kaufman-table">
+      <thead><tr><th>Révolution</th><th>Ce qu'elle a libéré</th><th>Ce qu'elle a rendu possible</th></tr></thead>
+      <tbody>
+        <tr><td>🔥 Feu</td><td>Cerveaux plus puissants</td><td>Outils, chasse, alimentation</td></tr>
+        <tr><td>🧠 Cognitive</td><td>Intelligence collective</td><td>Groupes, coopération</td></tr>
+        <tr><td>🌾 Agriculture</td><td>Stabilité alimentaire</td><td>Civilisations, villes, États</td></tr>
+        <tr><td>⚙️ Industrielle</td><td>Production de masse</td><td>Satisfaction de masse</td></tr>
+        <tr><td>💻 Numérique</td><td>Coordination globale</td><td>Économie mondiale, IA</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:20px; margin-bottom:8px; font-size:13px; font-weight:600; color:var(--text-tertiary); font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.05em;">Matrice Us/Future — Le seul quadrant durable</div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+      <div style="background:rgba(239,68,68,0.08); border:1px solid rgba(239,68,68,0.25); border-radius:8px; padding:12px;">
+        <div style="font-size:11px; font-family:var(--font-mono); color:#F87171; margin-bottom:4px;">ME · NOW</div>
         <div style="font-size:13px; color:var(--text-secondary);">Bon pour moi maintenant. Non durable.</div>
       </div>
       <div style="background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.25); border-radius:8px; padding:12px;">
-        <div style="font-size:11px; font-family:var(--font-mono); color:var(--amber); margin-bottom:4px;">ME · LONG TERME</div>
+        <div style="font-size:11px; font-family:var(--font-mono); color:var(--amber); margin-bottom:4px;">ME · FUTURE</div>
         <div style="font-size:13px; color:var(--text-secondary);">Bon pour moi à terme. Peu durable.</div>
       </div>
       <div style="background:rgba(96,165,250,0.08); border:1px solid rgba(96,165,250,0.25); border-radius:8px; padding:12px;">
-        <div style="font-size:11px; font-family:var(--font-mono); color:var(--blue-light); margin-bottom:4px;">US · COURT TERME</div>
+        <div style="font-size:11px; font-family:var(--font-mono); color:var(--blue-light); margin-bottom:4px;">US · NOW</div>
         <div style="font-size:13px; color:var(--text-secondary);">Semble bon pour tous. Pas soutenable.</div>
       </div>
       <div style="background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.35); border-radius:8px; padding:12px;">
-        <div style="font-size:11px; font-family:var(--font-mono); color:var(--green); margin-bottom:4px;">✓ US · LONG TERME</div>
+        <div style="font-size:11px; font-family:var(--font-mono); color:var(--green); margin-bottom:4px;">✓ US · FUTURE</div>
         <div style="font-size:13px; color:var(--text-primary); font-weight:500;">Bon pour tous. Durable par conception.</div>
       </div>
     </div>
-    <p style="font-size:14px; color:var(--text-secondary);">L'école de commerce forme des gens capables de penser <strong>"Us, Future"</strong> — créer de la valeur collective et durable. C'est le seul quadrant soutenable, et le seul qui intéresse les entreprises qui durent.</p>
+    <p style="margin-top:12px; font-size:14px;">La mission IÉSEG — "forming changemakers" — c'est former des gens capables de penser <strong>Us, Future</strong> : créer de la valeur collective et durable.</p>
   </div>
 
+  <!-- CARD 2 — Kaufman 5 fonctions + Iron Law -->
   <div class="card">
-    <h3>📖 Ce qu'est vraiment une entreprise — La définition de Kaufman</h3>
-    <div class="quote">
-      "Every successful business (1) creates or provides something of value that (2) other people want or need (3) at a price they're willing to pay, in a way that (4) satisfies the purchaser's needs and expectations and (5) provides the business sufficient revenue to make it worthwhile for the owners to continue operation."
-      <div style="margin-top:10px; font-size:13px; color:var(--text-tertiary); font-style:normal;">— Josh Kaufman, <em>The Personal MBA</em>, 2010</div>
-    </div>
-    <p>Une entreprise qui ne crée pas de valeur est un hobby. Qui n'attire pas l'attention est un flop. Qui ne vend pas est une association. Qui ne livre pas est une arnaque. Qui ne dégage pas de profit finit par fermer. <strong>Ces cinq fonctions sont universelles</strong> — startup tech, boulangerie ou Fortune 500, aucune exception.</p>
-  </div>
-
-  <p class="subsection-title">Les 5 composants de toute entreprise — Tableau Kaufman</p>
-  <div class="card">
-    <h3>⚙️ Cadre opérationnel universel</h3>
+    <h3>📖 Ce qu'est une entreprise — Personal MBA (Kaufman)</h3>
+    <p style="margin-bottom:12px;"><strong>Les 5 fonctions universelles</strong> — présentes dans chaque entreprise sans exception :</p>
     <table class="kaufman-table">
-      <thead>
-        <tr>
-          <th>Fonction</th>
-          <th>Ce qu'elle fait</th>
-          <th>Ce qu'elle génère</th>
-        </tr>
-      </thead>
+      <thead><tr><th>Fonction</th><th>Ce qu'elle fait</th></tr></thead>
       <tbody>
-        <tr>
-          <td>Création de valeur</td>
-          <td>Identifier ce que les gens veulent, puis le créer</td>
-          <td>Produit, service, offre</td>
-        </tr>
-        <tr>
-          <td>Marketing</td>
-          <td>Attirer l'attention et créer de la demande</td>
-          <td>Notoriété, prospects</td>
-        </tr>
-        <tr>
-          <td>Vente</td>
-          <td>Transformer les prospects en clients payants</td>
-          <td>Transactions, revenu</td>
-        </tr>
-        <tr>
-          <td>Livraison de valeur</td>
-          <td>Donner au client ce qu'il a payé, le satisfaire</td>
-          <td>Fidélité, réputation</td>
-        </tr>
-        <tr>
-          <td>Finance</td>
-          <td>Gérer les flux pour que l'entreprise reste viable</td>
-          <td>Profit, pérennité</td>
-        </tr>
+        <tr><td>Création de valeur</td><td>Identifier et créer ce que les gens veulent</td></tr>
+        <tr><td>Marketing</td><td>Attirer l'attention, créer la demande</td></tr>
+        <tr><td>Vente</td><td>Transformer les prospects en clients</td></tr>
+        <tr><td>Livraison de valeur</td><td>Donner ce qui a été promis</td></tr>
+        <tr><td>Finance</td><td>Gérer les flux pour rester viable</td></tr>
       </tbody>
     </table>
-    <p style="margin-top:12px; font-size:14px;">Toute compétence qui aide à faire l'une de ces cinq choses est <strong>économiquement précieuse</strong>. Stratégie, marketing, finance, opérations, management — ce ne sont pas des savoirs abstraits : ce sont les outils directement liés à ces cinq fonctions.</p>
-  </div>
-
-  <div class="card">
-    <h3>⚖️ La loi de fer du marché</h3>
-    <div class="quote">
-      "Market matters most; neither a stellar team nor fantastic product will redeem a bad market."
+    <div class="quote" style="margin-top:16px;">
+      <strong>Loi de Fer du Marché :</strong> "Market matters most — neither a stellar team nor fantastic product will redeem a bad market."
       <div style="margin-top:8px; font-size:13px; color:var(--text-tertiary); font-style:normal;">— Josh Kaufman, <em>The Personal MBA</em></div>
     </div>
-    <p>Le Segway : technologie brillante, équipe excellente, marketing ambitieux. Résultat : 23 000 unités vendues en cinq ans pour un objectif de 50 000 par an. Le problème n'était pas le produit — c'est que <strong>le marché n'existait pas</strong>. Les gens ne voulaient pas dépenser 5 000 $ pour remplacer la marche à pied. Comprendre les marchés — leur taille, leur urgence, leur potentiel de prix — est la première compétence d'un manager.</p>
+    <p style="font-size:14px;">Le Segway : technologie brillante, 23 000 unités vendues en 5 ans pour 50 000/an visés. <strong>Le marché n'existait pas.</strong> Les gens ne voulaient pas dépenser 5 000 $ pour remplacer la marche à pied.</p>
   </div>
 
+  <!-- CARD 3 — Finance TGM -->
   <div class="card">
-    <h3>💹 La finance TGM : RONIC, OCC et création de valeur</h3>
-    <p>Le TGM INSEAD distingue deux questions que l'on confond souvent :</p>
-    <ul>
-      <li>❌ <strong>Ce que la finance ne répond PAS :</strong> "Que veulent les investisseurs comme retour ?" → réponse infinie.</li>
-      <li>✅ <strong>Ce qu'elle répond vraiment :</strong> "Quel est le <em>minimum</em> que les investisseurs doivent recevoir pour continuer à participer ?"</li>
-    </ul>
-    <div class="quote" style="margin-top:12px;">
+    <h3>💹 Finance TGM — RONIC, OCC, création de valeur</h3>
+    <div class="quote">
       <strong>RONIC &gt; OCC → NPV positive → Création de valeur</strong><br>
       RONIC = Return On New Invested Capital · OCC = Opportunity Cost of Capital<br>
-      La valeur d'une entreprise = ses FCF futurs escomptés au coût d'opportunité du capital. Elle vaut ce qu'elle crée demain — pas ce qu'elle possède aujourd'hui.
+      La valeur d'entreprise = ses FCF futurs escomptés au coût du capital. Elle vaut ce qu'elle créera demain — pas ce qu'elle possède aujourd'hui.
     </div>
-    <p style="margin-top:12px;">Et un principe contre-intuitif du TGM sur l'incertitude :</p>
     <div class="quote">
-      "The more uncertain &amp; volatile the environment, the MORE we should invest. Thinking like a VC rather than a Banker." — TGM INSEAD
+      "The more uncertain &amp; volatile the environment, the MORE we should invest. Think like a VC, not a banker." — TGM INSEAD
     </div>
-  </div>
-
-  <div class="card">
-    <h3>🏫 Ce que l'école apporte — TGM + Kaufman + réseau</h3>
-    <ul>
-      <li><strong>① Outils analytiques</strong> — Strategy / Finance / Marketing / Leadership / Operations. Les 5 disciplines TGM = les 5 fonctions universelles de Kaufman. Modèles mentaux &gt; méthodes.</li>
-      <li><strong>② Réseau organisé</strong> — TGM : <em>"Networking is 1% inspiration and 99% hard work."</em> Capital humain (compétences) + Capital social (connexions). 70 % du développement pro se fait sur le terrain, 20 % via des relations critiques.</li>
-      <li><strong>③ Du Red World au Blue World</strong> — TGM décrit la mutation du leadership : <span style="color:#F87171;">Red/Old World</span> (top-down, ego, command &amp; control) → <span style="color:var(--cyan);">Blue/Digital World</span> (collaboratif, distribué, orienté problèmes, amélioration continue). L'école forme au Blue World.</li>
-      <li><strong>④ Signal de crédibilité</strong> — Le diplôme ouvre la porte. C'est au diplômé de mériter ce qu'il y a derrière.</li>
-    </ul>
-    <div class="quote" style="margin-top:16px;">
-      Mon objectif : maîtriser les 5 fonctions universelles, penser "Us, Future", et construire le réseau qui me permettra de le faire dès la sortie.
-    </div>
+    <p style="margin-top:12px; font-size:14px;"><strong>Red → Blue World :</strong> Leadership Red (top-down, ego, command &amp; control) devient Blue (collaboratif, distribué, orienté problèmes). L'IÉSEG forme au Blue World.</p>
   </div>
 </section>
 
@@ -709,205 +858,160 @@ body {
   <div class="section-header">
     <div class="section-num">02</div>
     <div>
-      <h2>L'état du monde &amp; les mégatendances</h2>
-      <p>Données WEF Strategic Library 2024-2025 — le langage des jurys et des DRH</p>
+      <h2>Mégatendances WEF</h2>
+      <p>Données WEF Strategic Library 2024-2025 — le langage des jurys</p>
     </div>
   </div>
 
-  <p class="subsection-title">Chiffres clés WEF — À retenir pour l'oral</p>
+  <p class="subsection-title">6 chiffres clés à citer précisément</p>
   <div class="stat-grid">
     <div class="stat-chip">
-      <div class="stat-value">92M</div>
-      <div class="stat-label">postes déplacés d'ici 2030 par l'automatisation</div>
-      <div class="stat-source">WEF Future of Jobs 2025</div>
-    </div>
-    <div class="stat-chip">
-      <div class="stat-value">170M</div>
-      <div class="stat-label">nouveaux rôles créés d'ici 2030 (solde net +78M)</div>
+      <div class="stat-value">92M / 170M</div>
+      <div class="stat-label">postes déplacés / créés d'ici 2030 — "Le solde est positif mais la disruption est massive"</div>
       <div class="stat-source">WEF Future of Jobs 2025</div>
     </div>
     <div class="stat-chip">
       <div class="stat-value">44%</div>
-      <div class="stat-label">des compétences actuelles seront perturbées dans 5 ans</div>
+      <div class="stat-label">des compétences perturbées dans 5 ans — "La formation doit être agile"</div>
       <div class="stat-source">WEF Future of Jobs 2025</div>
     </div>
     <div class="stat-chip">
       <div class="stat-value">39%</div>
-      <div class="stat-label">seulement des citoyens font confiance à leurs gouvernements</div>
-      <div class="stat-source">OCDE / WEF Global Risks 2025</div>
+      <div class="stat-label">de confiance dans les institutions — "Leadership authentique = premium"</div>
+      <div class="stat-source">OCDE / WEF Risks 2025</div>
     </div>
     <div class="stat-chip">
-      <div class="stat-value">$2T</div>
-      <div class="stat-label">investissements mondiaux en énergie propre en 2024</div>
-      <div class="stat-source">WEF Green Transition 2025</div>
+      <div class="stat-value">2 000 Mds$</div>
+      <div class="stat-label">investis en énergie propre en 2024 — "La transition verte est rentable"</div>
+      <div class="stat-source">WEF Energy 2025</div>
     </div>
     <div class="stat-chip">
-      <div class="stat-value">+36%</div>
-      <div class="stat-label">population mondiale +65 ans entre 2025 et 2035</div>
+      <div class="stat-value">6/9</div>
+      <div class="stat-label">limites planétaires franchies — "L'urgence climatique est documentée"</div>
       <div class="stat-source">WEF Global Risks 2025</div>
     </div>
-  </div>
-
-  <p class="subsection-title">Future of Jobs 2025 — Détail du paradoxe</p>
-  <div class="card">
-    <h3>🤖 La disruption de l'entrée dans la vie professionnelle</h3>
-    <p>Le WEF confirme que 60 % des employeurs anticipent que le changement technologique transformera fondamentalement leurs besoins en compétences. Les emplois d'entrée de gamme en col blanc — traitement de données, analyse standard, saisie — sont les plus exposés à l'IA agentique.</p>
-    <div class="quote">
-      Le paradoxe : l'IA détruit des emplois de débutants, ceux qui permettaient traditionnellement à un jeune de construire son expertise. Les jeunes diplômés devront trouver de nouveaux chemins pour acquérir de l'expérience.
+    <div class="stat-chip">
+      <div class="stat-value">83%</div>
+      <div class="stat-label">du G7 = Chine + Inde en 2021 — "Le centre de gravité a basculé"</div>
+      <div class="stat-source">WEF Futures 2030</div>
     </div>
-    <p><strong>Compétences qui résistent et seront encore plus valorisées en 2030 :</strong></p>
-    <ul>
-      <li>Problem-solving, pensée critique, jugement éthique</li>
-      <li>Littératie numérique (90 % des emplois en Europe requièrent déjà des compétences digitales de base)</li>
-      <li>Intelligence émotionnelle et empathie — ce que l'IA ne peut pas reproduire</li>
-      <li>Créativité contextuelle — <em>"AI cannot fully replicate the unique big ideas generated by exceptional thinkers"</em></li>
-    </ul>
   </div>
 
-  <p class="subsection-title">5 mégatendances — Synthèse pour l'oral</p>
+  <p class="subsection-title">5 mégatendances — Synthèse orale</p>
   <div class="trend-grid">
     <div class="trend-item">
       <div class="trend-icon">🤖</div>
       <div class="trend-content">
         <h4>① IA &amp; automatisation cognitive</h4>
-        <p>Les tâches routinières intellectuelles s'automatisent. Ce qui résiste : jugement complexe, créativité, relation humaine de confiance. L'objectif n'est pas d'être remplacé par un algorithme — c'est d'être celui qui décide ce que l'algorithme fait, et qui en interprète les résultats.</p>
+        <p>Les emplois d'entrée de gamme les plus exposés. Ce qui résiste : jugement complexe, créativité, relation humaine de confiance. L'objectif : décider ce que l'algorithme fait, interpréter ses résultats.</p>
       </div>
     </div>
     <div class="trend-item">
       <div class="trend-icon">🌿</div>
       <div class="trend-content">
         <h4>② Transition climatique &amp; économie du carbone</h4>
-        <p>CSRD, taxonomie verte européenne, taxe carbone aux frontières — l'ESG n'est plus une option. Les entreprises non-conformes perdront l'accès aux capitaux. $2T investis en énergie propre en 2024, 16 millions d'emplois soutenus. Le manager de 2030 intègre les enjeux environnementaux dans chaque décision d'investissement.</p>
+        <p>CSRD, taxonomie verte, taxe carbone aux frontières. L'ESG n'est plus une contrainte — c'est un avantage compétitif. 2 000 Mds$ investis en énergie propre en 2024 : la transition verte est rentable.</p>
       </div>
     </div>
     <div class="trend-item">
       <div class="trend-icon">🌐</div>
       <div class="trend-content">
         <h4>③ Recomposition géopolitique</h4>
-        <p>Fin de la mondialisation linéaire. Blocs technologiques (USA, Chine, Europe) développant des écosystèmes distincts. "Friendshoring" et politiques protectionnistes. La Chine + Inde représentaient 27 % du PIB du G7 en 2001 ; 83 % en 2021. Les managers navigueront dans un environnement fragmenté avec des risques-pays multiples.</p>
+        <p>Fin de la mondialisation linéaire. Blocs technologiques distincts. Friendshoring et politiques protectionnistes. Chine + Inde = 83 % du G7 en 2021. Les managers navigueront un environnement multi-marchés fragmenté.</p>
       </div>
     </div>
     <div class="trend-item">
       <div class="trend-icon">📊</div>
       <div class="trend-content">
-        <h4>④ Révolution des données &amp; IA</h4>
-        <p>La data pénètre tous les métiers. La souveraineté technologique (IA, quantum, semi-conducteurs) est la nouvelle frontière de la compétitivité nationale. Le manager qui maîtrise le langage de la data — sans être data scientist — dispose d'un avantage structurel. Profil hybride visé : manager généraliste + appétence données.</p>
+        <h4>④ Révolution des données</h4>
+        <p>La data pénètre tous les métiers. Le manager qui maîtrise le langage de la data — sans être data scientist — dispose d'un avantage structurel. Profil hybride : manager généraliste + appétence données.</p>
       </div>
     </div>
     <div class="trend-item">
       <div class="trend-icon">⏳</div>
       <div class="trend-content">
-        <h4>⑤ Recomposition des carrières &amp; quête de sens</h4>
-        <p>Les parcours linéaires disparaissent. La génération Z est la seule cohorte qui priorise le "sens" dans ses choix professionnels. Crise démographique (+36 % de plus de 65 ans d'ici 2035) stressant les systèmes de retraite. Ce n'est pas de l'idéalisme : c'est un levier de négociation pour attirer les talents.</p>
+        <h4>⑤ Quête de sens — Gen Z</h4>
+        <p>Gen Z = seule cohorte qui priorise le sens sur le salaire. Ce n'est pas de l'idéalisme — c'est un signal de marché. Les organisations qui n'intègrent pas le sens perdront leur accès aux talents.</p>
       </div>
     </div>
   </div>
 
-  <p class="subsection-title">5 compétences de leadership pour 2030 — WEF</p>
+  <p class="subsection-title">Compétences leadership 2030 — WEF</p>
   <div class="card">
-    <h3>🎯 Ce que les marchés valoriseront quand les algorithmes feront le reste</h3>
+    <h3>🎯 Ce que le jury attend du candidat 2030</h3>
     <ul class="competency-list">
       <li>
         <span class="comp-num">1</span>
-        <div><span class="comp-title">Intelligence émotionnelle &amp; empathie</span> — naviguer la complexité humaine là où les algorithmes s'arrêtent</div>
+        <div><span class="comp-title">Intelligence émotionnelle &amp; empathie</span> — Ce que l'IA ne peut pas reproduire. Compétence #1 selon le WEF.</div>
       </li>
       <li>
         <span class="comp-num">2</span>
-        <div><span class="comp-title">Foresight &amp; anticipation</span> — <em>"True foresight means embedding continuous horizon scanning and scenario planning as organizational habits"</em></div>
+        <div><span class="comp-title">Foresight &amp; anticipation</span> — Lire les mégatendances avant qu'elles deviennent crises. Pensée systémique.</div>
       </li>
       <li>
         <span class="comp-num">3</span>
-        <div><span class="comp-title">Leadership authentique</span> — transparence, éthique, auto-conscience (à une époque où seulement 39 % des citoyens font confiance aux institutions)</div>
+        <div><span class="comp-title">Leadership authentique</span> — 39 % de confiance dans les institutions. Le leadership Red ne fonctionne plus.</div>
       </li>
       <li>
         <span class="comp-num">4</span>
-        <div><span class="comp-title">Diplomatie corporative</span> — gérer les tensions géopolitiques, protectionnisme, fragmentation des supply chains</div>
+        <div><span class="comp-title">Diplomatie corporative</span> — Naviguer les blocs géopolitiques, les différences culturelles, les écosystèmes fragmentés.</div>
       </li>
       <li>
         <span class="comp-num">5</span>
-        <div><span class="comp-title">Agilité</span> — <em>"Trading linear planning cycles for agile, experimental models of decision-making"</em></div>
+        <div><span class="comp-title">Agilité — sense-prototype-scale loop</span> — Tester vite, apprendre vite, scaler ce qui fonctionne. Cycle court.</div>
       </li>
     </ul>
-    <div class="quote" style="margin-top:16px;">
-      Ces 5 compétences ne s'apprennent pas en ligne. Elles se construisent dans des environnements où on est confronté à l'incertitude, à la diversité des points de vue, et à la nécessité de convaincre. C'est l'environnement que l'école de commerce crée.
-    </div>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════════════════════ -->
-<!-- SECTION 3 — ESSCA & IÉSEG                            -->
+<!-- SECTION 3 — POURQUOI L'IÉSEG PGE ?                   -->
 <!-- ══════════════════════════════════════════════════════ -->
 <section class="section" id="s3">
   <div class="section-header">
     <div class="section-num">03</div>
     <div>
-      <h2>Pourquoi ESSCA &amp; IÉSEG ?</h2>
-      <p>Un choix stratégique fondé sur l'adéquation — pas un réflexe de classement</p>
+      <h2>Pourquoi l'IÉSEG PGE ?</h2>
+      <p>Mission changemaker · Valeurs · IÉSEG Conseil · MSc Strategy &amp; Digital</p>
     </div>
   </div>
 
-  <div class="school-tabs">
-    <button class="school-tab active" onclick="showSchool('essca', this)">ESSCA</button>
-    <button class="school-tab" onclick="showSchool('ieseg', this)">IÉSEG</button>
-  </div>
-
-  <!-- ESSCA -->
-  <div class="school-content active" id="essca">
-    <div class="school-badge">✓ AACSB · AMBA · EQUIS — Triple Accréditation · Top 1 % mondial</div>
-
-    <div class="card">
-      <h3>📚 Contenu académique</h3>
-      <p>L'ESSCA est triple accréditée AACSB, AMBA, EQUIS — ce qui la place dans le top 1 % mondial des business schools. Cette reconnaissance internationale garantit la qualité du corps enseignant (plus de 55 % international), la pertinence des programmes, et la valeur du diplôme à l'étranger.</p>
-      <p style="margin-top:10px;">Ce qui attire particulièrement : la possibilité de construire un double profil — management généraliste avec une spécialisation data/analytics via les Masters of Science disponibles. Face à la mégatendance #4 (révolution des données), ce profil hybride est précisément ce que le marché valorisera en 2030. L'ESSCA applique les 5 fonctions universelles de Kaufman : les disciplines enseignées sont directement liées à la création de valeur, au marketing, à la vente, à la livraison et à la finance.</p>
+  <div class="card">
+    <h3>🎓 Mission IÉSEG &amp; définition changemaker</h3>
+    <div class="school-badge">AACSB · EQUIS · Double accréditation</div>
+    <div class="quote">
+      <strong>Mission :</strong> "Forming changemakers for a better society."
     </div>
-
-    <div class="card">
-      <h3>🏅 Vie étudiante &amp; associations</h3>
-      <p>L'ESSCA intègre explicitement la vie associative et sportive aux objectifs pédagogiques : <em>"insuffler de nouvelles idées, offrir des solutions concrètes aux enjeux du monde, libérer les potentiels, s'ouvrir aux cultures."</em></p>
-      <p style="margin-top:10px;">Ce ne sont pas des activités parascolaires — ce sont des <strong>laboratoires de leadership</strong>. C'est là qu'on apprend à diriger des équipes, à gérer des budgets, à convaincre des partenaires — en conditions réelles. Précisément le terrain où se construisent les 5 compétences WEF pour 2030.</p>
-    </div>
-
-    <div class="card">
-      <h3>🌍 Réseau &amp; dimension internationale</h3>
-      <ul>
-        <li>10 campus : Angers, Paris, Lyon, Bordeaux, Aix-en-Provence, Strasbourg, Budapest, Luxembourg, Malaga, Shanghai</li>
-        <li>Plus de 55 % du corps enseignant international — 40 nationalités représentées</li>
-        <li>Des milliers de diplômés dans le monde — industrie, conseil, tech, finance, secteur public</li>
-        <li>L'international n'est pas une option ajoutée : c'est une composante structurelle du parcours</li>
-        <li>Réseau géographique distribué rare pour une école post-bac en France</li>
-      </ul>
+    <div style="background:rgba(16,185,129,0.06); border:1px solid rgba(16,185,129,0.2); border-radius:10px; padding:16px 20px; margin-top:4px;">
+      <div style="font-size:12px; font-family:var(--font-mono); color:var(--green); margin-bottom:8px; font-weight:600;">DÉFINITION PERSONNELLE — GABRIEL</div>
+      <p style="font-size:15px; color:var(--text-primary); font-style:italic; line-height:1.7;">"Un changemaker, c'est quelqu'un qui comprend le monde tel qu'il est — ses mécanismes, ses tensions, ses ruptures — et qui agit pour le transformer dans le bon quadrant : Us, Future. Pas un idéaliste, un opérateur."</p>
     </div>
   </div>
 
-  <!-- IÉSEG -->
-  <div class="school-content" id="ieseg">
-    <div class="school-badge">✓ AACSB · EQUIS — Mission : Former des Changemakers</div>
+  <div class="card">
+    <h3>⚙️ Les 4 valeurs IÉSEG incarnées</h3>
+    <table class="kaufman-table">
+      <thead><tr><th>Valeur</th><th>Comment Gabriel la démontre</th></tr></thead>
+      <tbody>
+        <tr><td>Innovation</td><td>Intérêt pour la data, IA, mégatendances, MSc Digital — profil hybride management + data</td></tr>
+        <tr><td>Responsabilité</td><td>Cadre Us/Future TGM, mégatendance climatique, RSE cohérente et honnête</td></tr>
+        <tr><td>Engagement</td><td>IÉSEG Conseil, projets collectifs dès la L1, missions réelles pour de vraies entreprises</td></tr>
+        <tr><td>International</td><td>Blocs géopolitiques WEF, curiosité interculturelle, langues, dimension internationale structurée</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-    <div class="card">
-      <h3>📚 Contenu académique</h3>
-      <p>Mission déclarée : <em>"former des changemakers pour une meilleure société."</em> Le Bachelor Cycle est structuré autour du <em>"learning by doing"</em> : projets interdisciplinaires chaque semestre — entrepreneuriat, impact social, <strong>IA, big data, géopolitique</strong>.</p>
-      <p style="margin-top:10px;">L'IA et la data sont des sujets d'étude structurants dès la L1, pas des options de fin de cursus. Le MSc in Strategy and Digital Transformation est la passerelle naturelle vers les métiers à l'intersection management-tech. L'IÉSEG applique concrètement ce que le WEF recommande : pédagogie industry-aligned, projets capstone interdisciplinaires, apprentissage par l'expérience en conditions réelles.</p>
-    </div>
+  <div class="card">
+    <h3>🏛️ IÉSEG Conseil &amp; associations</h3>
+    <p style="margin-bottom:12px;"><strong>IÉSEG Conseil</strong> — la Junior-Entreprise : consultant junior pour de vraies entreprises dès la L1. Track record professionnel avant le diplôme. Missions ciblées : stratégie digitale, études de marché, transformation.</p>
+    <p style="font-size:14px; color:var(--text-secondary);">Connaître au moins 3 associations IÉSEG par nom. Avoir une réponse précise sur la contribution souhaitée.</p>
+  </div>
 
-    <div class="card">
-      <h3>🏅 Vie étudiante &amp; associations</h3>
-      <ul>
-        <li><strong>IÉSEG Conseil</strong> — Junior-Entreprise active : travailler comme consultant junior pour de vraies PME dès la licence. Un track record professionnel avant l'obtention du diplôme.</li>
-        <li>Challenge Innovation annuel avec des entreprises partenaires</li>
-        <li>Engagement solidaire dès la première semaine : Banque Alimentaire, Secours Populaire</li>
-        <li>La responsabilité sociale est inscrite dans l'ADN, pas dans la brochure</li>
-        <li>Lien direct avec la mégatendance #5 : quête de sens comme levier, pas comme idéalisme</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>🌍 Réseau &amp; débouchés</h3>
-      <ul>
-        <li>Campus Lille &amp; Paris-La Défense — deux des principaux pôles économiques français</li>
-        <li>Des centaines d'universités partenaires internationales</li>
-        <li>Alumni dirigeant des opérations dans des entreprises Fortune Global 500</li>
-        <li>Entreprises partenaires qui co-construisent les cursus — garantie que les compétences enseignées sont alignées avec ce que le marché demande réellement</li>
-      </ul>
+  <div class="card">
+    <h3>📈 MSc Strategy &amp; Digital Transformation — Pathway</h3>
+    <p>La trajectoire PGE → MSc Strategy &amp; Digital est le profil hybride que le marché valorisera en 2030. WEF identifie l'agilité et la diplomatie corporative comme compétences critiques — ce sont exactement ce que construit ce parcours.</p>
+    <div class="quote" style="margin-top:12px;">
+      "Dans 10 ans, à l'intersection du management et de la transformation numérique. L'IÉSEG est la première étape sérieuse de ce chemin."
     </div>
   </div>
 </section>
@@ -919,40 +1023,417 @@ body {
   <div class="section-header">
     <div class="section-num">04</div>
     <div>
-      <h2>Narrative globale — Synthèse orale</h2>
-      <p>460 mots · Structure : accroche chiffre → contexte monde → pourquoi école → pourquoi cette école → vision 10 ans</p>
+      <h2>Narrative orale — Pitch de présentation</h2>
+      <p>1 à 2 minutes max · Structure mémorisée, mots improvisés · Ne pas réciter</p>
     </div>
   </div>
 
+  <div class="pitch-block"><span class="pitch-label">OUVERTURE — Le chiffre fort (15 sec)</span>"Le WEF documente précisément : 92 millions de postes déplacés
+et 170 millions créés d'ici 2030. Le solde est positif —
+mais la disruption est massive, et elle touche en premier
+les emplois d'entrée de gamme."
+
+<span class="pitch-label">POURQUOI L'ÉCOLE DE COMMERCE (30 sec)</span>"Dans ce contexte, je comprends ce que sont les entreprises.
+Cinq fonctions universelles : créer de la valeur, attirer
+l'attention, vendre, livrer, financer. Ce que l'IA automatise,
+c'est l'exécution routinière. Ce qu'elle ne remplace pas :
+le jugement, la confiance, la décision."
+
+<span class="pitch-label">POURQUOI L'IÉSEG (30 sec)</span>"Mon choix pour l'IÉSEG repose sur trois éléments précis :
+la pédagogie par projets réels dès la L1, IÉSEG Conseil
+pour un track record immédiat, et la trajectoire vers
+le MSc Strategy & Digital."
+
+<span class="pitch-label">CE QUE JE VEUX CONSTRUIRE (15 sec)</span>"Dans dix ans, à l'intersection du management
+et de la transformation numérique. L'IÉSEG est la
+première étape sérieuse de ce chemin."</div>
+
   <div class="narrative-box">
-    <p>Le Forum Économique Mondial l'a formalisé en 2025 avec des données précises : d'ici 2030, l'automatisation déplacera <strong>92 millions de postes</strong> et en créera <strong>170 millions de nouveaux</strong>. Le solde net est positif. Mais la disruption entre les deux est massive — et elle concerne en premier lieu les emplois d'entrée de gamme, ceux qui permettaient historiquement à un jeune de construire son expertise progressivement.</p>
-
-    <p>Autrement dit : le chemin traditionnel <em>"étudier, décrocher un premier poste standard, progresser par l'expérience"</em> est en train de se transformer. Ce n'est pas une raison de ne pas se former — c'est une raison de <strong>se former différemment, et mieux</strong>.</p>
-
-    <p>Je rentre en école de commerce avec une compréhension précise de ce que les entreprises sont réellement. Josh Kaufman, dans <em>The Personal MBA</em>, le formule avec une clarté que peu de cursus académiques égalent : une entreprise réussie crée de la valeur, attire l'attention, vend, livre ce qu'elle promet, et génère assez de revenus pour continuer. <strong>Ces cinq fonctions sont universelles</strong> — elles ne changent pas selon la taille, le secteur, ou la géographie. Ce que l'IA va automatiser, c'est l'exécution routinière de certaines de ces fonctions. Ce qu'elle ne remplacera pas : le jugement sur <em>laquelle</em> de ces fonctions est prioritaire, la capacité à créer de la confiance avec un client, la décision d'aller vers tel marché plutôt que tel autre.</p>
-
-    <p>Les compétences de leadership que le WEF identifie pour 2030 — intelligence émotionnelle, foresight, agilité, diplomatie corporative, leadership authentique — sont précisément ce que les marchés valoriseront quand les tâches d'analyse seront déléguées aux algorithmes. Elles ne s'apprennent pas en ligne. Elles se construisent dans des environnements où on est confronté à l'incertitude, à la diversité des points de vue, et à la nécessité réelle de convaincre.</p>
-
-    <p>Mon choix pour cette école est le résultat d'une analyse, pas d'un classement. Ce que je veux construire : une base solide dans les cinq fonctions universelles d'une entreprise, couplée à une vraie culture des données et à une expérience internationale structurée. Cette école offre précisément ce triptyque — avec la rigueur d'une accréditation internationale reconnue, une pédagogie par projets réels dès la première année, et un réseau construit sur plusieurs décennies.</p>
-
-    <p>Ce que je veux <strong>apporter</strong> : une capacité de travail sérieuse, un intérêt authentique pour les questions économiques et technologiques, et l'envie de m'engager dans des projets collectifs. J'ai compris que <strong>70 % du développement professionnel se construit dans l'action et dans la relation aux autres</strong> — pas dans les amphithéâtres.</p>
-
-    <p>Dans dix ans, je me vois à l'intersection du management et de la transformation numérique — contribuant à une organisation qui crée de la valeur réelle, pour des clients précis, dans un monde complexe. <strong>L'école de commerce est la première étape sérieuse de ce chemin. Je suis prêt à la prendre au sérieux.</strong></p>
+    <p><strong>Règles d'or :</strong></p>
+    <p>Structure mémorisée, mots improvisés. Ne jamais réciter mot pour mot — le jury entend des dizaines de candidats. Ce qui marque : un chiffre précis cité naturellement, une connexion logique entre les idées, une conviction audible.</p>
+    <p>Ne jamais dire : "Je ne sais pas exactement" · "PDG d'une multinationale" · "Je suis curieux et travailleur" (95 % des candidats).</p>
   </div>
 </section>
 
+<!-- ══════════════════════════════════════════════════════ -->
+<!-- SECTION 5 — QUESTIONS JURY                           -->
+<!-- ══════════════════════════════════════════════════════ -->
+<section class="section" id="s5">
+  <div class="section-header">
+    <div class="section-num">05</div>
+    <div>
+      <h2>Questions jury — 15 réponses calibrées</h2>
+      <p>PDF officiel IÉSEG 2021 · Questions révélées dans le mock interview vidéo</p>
+    </div>
+  </div>
+
+  <!-- Q1 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q1</span>
+      <span class="accordion-title">"Pourquoi l'IÉSEG ?"</span>
+      <span class="accordion-badge badge-pdf">PDF officiel</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Durée recommandée : 2 min · Framework : 3 raisons précises</div>
+      <div class="accordion-answer">
+        <p>Trois raisons précises — jamais de généralités :</p>
+        <div class="quote">"L'IÉSEG m'attire pour trois raisons précises. La mission changemaker se traduit concrètement : projets réels dès la L1, IA et data comme sujets structurants. IÉSEG Conseil : track record professionnel avant le diplôme. Et la trajectoire MSc Strategy &amp; Digital — précisément le profil hybride management + data que le marché valorisera en 2030."</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q2 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q2</span>
+      <span class="accordion-title">"Quelles autres orientations ?"</span>
+      <span class="accordion-badge badge-pdf">PDF officiel</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Durée recommandée : 1 min · Ne pas dénigrer les autres écoles</div>
+      <div class="accordion-answer">
+        <div class="quote">"J'ai regardé Sciences Po pour l'analyse internationale, des licences d'économie pour la rigueur théorique, et d'autres grandes écoles. Ce qui m'a orienté vers l'IÉSEG : la combinaison unique — pédagogie par projets réels, Junior-Entreprise active, et une mission d'école explicitement orientée vers l'impact."</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q3 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q3</span>
+      <span class="accordion-title">"Avez-vous déjà travaillé ? Qu'en avez-vous retenu ?"</span>
+      <span class="accordion-badge badge-pdf">PDF officiel</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Durée recommandée : 2 min · Structure : ① Décrire (30 sec) ② Analyser avec framework (90 sec)</div>
+      <div class="accordion-answer">
+        <p><strong>Règle d'or : toujours relier à une leçon business ou leadership.</strong></p>
+        <div class="quote">"J'ai [activité]. Ce que j'en ai retenu : créer de la valeur pour quelqu'un demande de vraiment comprendre ce que cette personne veut — pas ce qu'on suppose. C'est la base de tout business : l'Iron Law of the Market. Et j'ai aussi compris la différence entre le Red World et le Blue World — entre imposer une direction et construire une adhésion."</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q4 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q4</span>
+      <span class="accordion-title">"Voyages à l'étranger ?"</span>
+      <span class="accordion-badge badge-pdf">PDF officiel</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Durée recommandée : 1-2 min · Adapter selon situation réelle</div>
+      <div class="accordion-answer">
+        <p><strong>Sans voyages :</strong></p>
+        <div class="quote">"Je n'ai pas encore beaucoup voyagé — c'est une des motivations concrètes de l'IÉSEG. Ce que j'ai construit autrement : suivi de médias internationaux, actualité WEF, langues. L'IÉSEG est le cadre structuré pour construire cette expérience sérieusement."</div>
+        <p style="margin-top:12px;"><strong>Avec voyages :</strong> relier à la mégatendance géopolitique, une observation concrète sur la différence de rapport au travail/business.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q5 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q5</span>
+      <span class="accordion-title">"Temps libre ? Passions ?"</span>
+      <span class="accordion-badge badge-pdf">PDF officiel</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Durée recommandée : 1 min · Règle d'or : ne mentionner que ce qu'on peut développer</div>
+      <div class="accordion-answer">
+        <p><strong>⚠️ Leçon du mock interview : le jury creuse TOUT ce que tu mentionnes.</strong> Ne mentionner que ce qu'on peut développer en profondeur.</p>
+        <ul style="margin-top:8px; list-style:none; padding:0;">
+          <li style="padding:4px 0 4px 20px; position:relative;"><span style="position:absolute;left:0;color:var(--cyan);">→</span> Sport collectif → Blue World, travail d'équipe, gestion de l'échec</li>
+          <li style="padding:4px 0 4px 20px; position:relative;"><span style="position:absolute;left:0;color:var(--cyan);">→</span> Engagement asso → valeur IÉSEG Engagement, leadership, responsabilité</li>
+          <li style="padding:4px 0 4px 20px; position:relative;"><span style="position:absolute;left:0;color:var(--cyan);">→</span> Lecture/actualité → curiosité économique, WEF, culture générale</li>
+          <li style="padding:4px 0 4px 20px; position:relative;"><span style="position:absolute;left:0;color:var(--cyan);">→</span> Créativité → compétence anti-IA (WEF : "AI cannot replicate exceptional creativity")</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q6 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q6</span>
+      <span class="accordion-title">"Vos 3 points forts ?"</span>
+      <span class="accordion-badge badge-pdf">PDF officiel</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Durée recommandée : 2 min · Zéro cliché — jamais "curieux, travailleur, motivé"</div>
+      <div class="accordion-answer">
+        <div class="quote"><strong>① Pensée systémique</strong><br>"Je connecte naturellement des informations de domaines différents. Quand je lis le WEF sur la fragmentation géopolitique, je vois immédiatement les implications pour les métiers du management. [Exemple concret]."</div>
+        <div class="quote"><strong>② Curiosité économique ancrée</strong><br>"Je suis l'actualité économique parce que je veux comprendre le monde dans lequel je vais travailler — pas pour citer des chiffres. [Fait récent que je connais en profondeur]."</div>
+        <div class="quote"><strong>③ Orientation action</strong><br>"Je retiens mieux par l'expérience que par la mémorisation — ce qui correspond parfaitement à la pédagogie IÉSEG. [Exemple où j'ai appris en faisant]."</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q7 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q7</span>
+      <span class="accordion-title">"Votre avenir professionnel ?"</span>
+      <span class="accordion-badge badge-pdf">PDF officiel</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Durée recommandée : 90 sec · Précis + connecté à l'IÉSEG</div>
+      <div class="accordion-answer">
+        <div class="quote">"Dans 10 ans, à l'intersection du management et de la transformation numérique — dans une organisation qui crée de la valeur réelle dans des environnements complexes. Le WEF identifie l'agilité et la diplomatie corporative comme compétences critiques pour 2030. Ce sont exactement les compétences que construit le parcours PGE → MSc Strategy &amp; Digital de l'IÉSEG."</div>
+        <p style="margin-top:8px; font-size:14px; color:var(--red);">À ne jamais dire : "Je ne sais pas exactement" · "PDG d'une multinationale"</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q8</span>
+      <span class="accordion-title">"Actualité qui vous a marqué ?"</span>
+      <span class="accordion-badge badge-pdf">PDF officiel</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Durée recommandée : 2 min · Analyser, ne pas décrire — 3 options préparées</div>
+      <div class="accordion-answer">
+        <div class="quote"><strong>Option A — Protectionnisme/déglobalisation</strong> ← recommandé<br>"La fin de la mondialisation linéaire. Friendshoring, blocs technologiques, relocalisations. Pour un futur manager, il ne suffit plus de comprendre 'le marché mondial' — il faut comprendre plusieurs marchés distincts. La formation en grande école avec dimension internationale devient plus pertinente que jamais."</div>
+        <div class="quote"><strong>Option B — IA agentique</strong><br>"Les agents IA remplacent les emplois d'entrée de gamme — brisant le chemin expert-novice. Les écoles qui misent sur le learning-by-doing ont structurellement une longueur d'avance."</div>
+        <div class="quote"><strong>Option C — Transition énergétique</strong><br>"2 000 milliards investis dans l'énergie propre en 2024. Pour la première fois, la transition verte est rentable. L'ESG n'est plus une contrainte — c'est un avantage compétitif."</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q9 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q9</span>
+      <span class="accordion-title">"De quelle association aimeriez-vous faire partie ?"</span>
+      <span class="accordion-badge badge-pdf">PDF officiel</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Durée recommandée : 1 min · Connaître au moins 3 associations IÉSEG par nom</div>
+      <div class="accordion-answer">
+        <div class="quote">"IÉSEG Conseil en premier — travailler comme consultant junior pour de vraies entreprises dès la L1, c'est un track record professionnel avant le diplôme. Je viserais des missions liées à la stratégie digitale. En parallèle, [association spécifique liée aux activités/valeurs de Gabriel]."</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q10 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q10</span>
+      <span class="accordion-title">"Quel est votre rôle dans un groupe ?"</span>
+      <span class="accordion-badge badge-mock">Mock interview</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Révélé dans le mock interview vidéo IÉSEG · Jurys creusent TOUT ce qu'on mentionne (ex: hockey → quel rôle ?)</div>
+      <div class="accordion-answer">
+        <div class="quote">"Je suis plutôt médiateur/facilitateur — je cherche à faire converger les points de vue plutôt qu'à imposer une direction. Dans le TGM INSEAD, c'est ce qu'on appelle le mode 'Engaging' : développer les gens, construire l'adhésion plutôt que commander. [Exemple concret avec résultat mesurable]."</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q11 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q11</span>
+      <span class="accordion-title">"La RSE, comment ça se traduit dans votre vie ?"</span>
+      <span class="accordion-badge badge-mock">Mock interview</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Révélé dans le mock interview · Réponse honnête + cohérente — pas de greenwashing</div>
+      <div class="accordion-answer">
+        <div class="quote">"C'est quelque chose qui m'importe — mais j'essaie d'être honnête sur mon impact réel, qui reste limité. Concrètement : [une action réelle, même modeste]. Ce qui me frappe dans le WEF : 6 des 9 limites planétaires sont déjà franchies. Ce n'est plus une question d'opinion — c'est une réalité documentée qui va transformer les règles du business."</div>
+        <p style="margin-top:8px; font-size:14px;">L'honnêteté sur une limite RSE = bien reçue si assumée. L'IÉSEG cherche l'authenticité, pas la perfection.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q12 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q12</span>
+      <span class="accordion-title">"Situation difficile que vous avez affrontée ?"</span>
+      <span class="accordion-badge badge-mock">Mock interview</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Révélé dans le mock interview · Structure : situation → réaction → leçon</div>
+      <div class="accordion-answer">
+        <p>Préparer UN exemple réel avec : une situation précise, une réaction honnête (même imparfaite au début), une leçon sur soi-même.</p>
+        <div class="quote">"[Situation précise]. Ma première réaction a été [honnête]. Ce que j'ai appris : [leçon sur moi-même, idéalement liée au leadership ou à la connaissance de soi]."</div>
+        <p style="font-size:14px; margin-top:8px;">Conscience de soi = valeur clé. L'IÉSEG cherche votre véritable personnalité, pas un profil standardisé.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q13 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q13</span>
+      <span class="accordion-title">"La vision changemakers — comment ça résonne en vous ?"</span>
+      <span class="accordion-badge badge-mock">Mock interview</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Révélé dans le mock interview · CRITIQUE : Laur n'avait pas de définition → mauvaise impression</div>
+      <div class="accordion-answer">
+        <p style="color:var(--red); font-size:14px; margin-bottom:12px;">⚠️ C'est la mission de l'école. Ne pas la connaître = signal négatif fort.</p>
+        <div class="quote">"Un changemaker, pour moi, c'est quelqu'un qui comprend le monde tel qu'il est — ses mécanismes économiques, ses ruptures technologiques, ses tensions géopolitiques — et qui agit pour le transformer dans la bonne direction. Le TGM INSEAD a un cadre que j'aime pour ça : Us/Future. Pas un idéaliste qui rêve d'un monde meilleur, un opérateur qui crée de la valeur durable pour le plus grand nombre. C'est ça que je veux devenir."</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q14 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q14</span>
+      <span class="accordion-title">"Si vous aviez une baguette magique ?"</span>
+      <span class="accordion-badge badge-mock">Mock interview</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Révélé dans le mock interview · Question de déstabilisation — évaluation personnalité</div>
+      <div class="accordion-answer">
+        <p><strong>Règle :</strong> spontanéité + touche d'humour + cohérence avec le profil. Laur : "téléportation sans carbone" — bien car connecté à la conversation.</p>
+        <div class="quote"><strong>Option économie :</strong> "Je supprimerais l'asymétrie d'information — les marchés fonctionneraient vraiment comme dans les manuels."</div>
+        <div class="quote"><strong>Option mégatendances :</strong> "Je rendrais les énergies renouvelables moins chères que les fossiles du jour au lendemain — on éviterait 10 ans de transition douloureuse."</div>
+        <p style="font-size:14px; margin-top:8px;">Ou : réponse personnelle authentique + sourire. L'humour bien calibré = mémorable.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q15 -->
+  <div class="accordion-item">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span class="accordion-qnum">Q15</span>
+      <span class="accordion-title">"Avez-vous des questions pour nous ?"</span>
+      <span class="accordion-badge badge-mock">Mock interview</span>
+      <span class="accordion-chevron">▼</span>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion-meta">Toujours préparer 2 questions · Laur : "Comment vivez-vous l'international ?" → jury a adoré</div>
+      <div class="accordion-answer">
+        <div class="quote"><strong>Question 1 :</strong> "Dans mon projet de viser le MSc Strategy &amp; Digital après le PGE — quels profils d'étudiants réussissent le mieux cette transition ?"</div>
+        <div class="quote"><strong>Question 2 :</strong> "Comment IÉSEG Conseil accueille-t-elle des étudiants de première année — et quels types de missions sont les plus demandés en ce moment ?"</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<!-- SECTION 6 — ORAL ANGLAIS                             -->
+<!-- ══════════════════════════════════════════════════════ -->
+<section class="section" id="s6">
+  <div class="section-header">
+    <div class="section-num">06</div>
+    <div>
+      <h2>Oral anglais</h2>
+      <p>20 min · Self-presentation (5 min) · Thème (10 min) · Vision 10 ans (5 min)</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🎤 Opening script — Self-presentation</h3>
+    <div class="quote" style="font-style:normal; font-size:15px; line-height:1.8;">
+      "The WEF's 2025 Future of Jobs report is striking: 92 million jobs displaced, 170 million new roles created by 2030. The net is positive — but the disruption hits entry-level positions first, breaking the traditional expert-novice path. I want to be part of the generation that navigates this shift. The IÉSEG Grande École program is the structure I need: learning-by-doing from day one, real consulting through IÉSEG Conseil, and a pathway to the MSc in Strategy and Digital Transformation."
+    </div>
+    <div style="margin-top:12px; font-size:13px; font-family:var(--font-mono); color:var(--text-tertiary);">
+      Structure : Who I am (30 sec) → Why business school: TGM + 5 functions (90 sec) → Why now: WEF megatrends (60 sec) → Why IÉSEG: changemakers + Conseil + MSc (60 sec) → 10-year vision (30 sec)
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>📚 Thèmes probables en anglais</h3>
+    <ul>
+      <li><strong>AI and the future of work</strong> → WEF stats + 5 functions + what resists automation</li>
+      <li><strong>Climate change and business</strong> → $2T clean energy + CSRD + ESG as competitive advantage</li>
+      <li><strong>Deglobalization</strong> → friendshoring + tech blocs + geopolitical recomposition</li>
+      <li><strong>Leadership today</strong> → Red→Blue World TGM + WEF 5 competencies for 2030</li>
+      <li><strong>Entrepreneurship</strong> → Kaufman's 5 parts + Iron Law of Market + Segway example</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🌍 Vision 10 ans en anglais</h3>
+    <div class="quote" style="font-style:normal; font-size:15px; line-height:1.8;">
+      "In ten years, I see myself at the intersection of management and digital transformation. The WEF identifies corporate diplomacy and cross-cultural emotional intelligence as the most critical leadership competencies for 2030. These are exactly what the IÉSEG PGE builds — through real projects, IÉSEG Conseil, and the MSc pathway. I don't see myself as a future executive who uses technology — I see myself as someone who understands how technology reshapes organizations and creates value within that shift."
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ──────────────────────────────────────────── -->
 <footer class="footer">
-  préparation-gabriel · v3.0 · avril 2026 · sources : TGM INSEAD · Personal MBA (Kaufman) · WEF Strategic Library 2024-2025
+  v4.0 · Accès PGE IÉSEG · Sources : TGM INSEAD · Personal MBA (Kaufman) · WEF 2025 · Mock interview officiel
 </footer>
 
-<script>
-function showSchool(id, btn) {
-  document.querySelectorAll('.school-content').forEach(el => el.classList.remove('active'));
-  document.querySelectorAll('.school-tab').forEach(el => el.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  btn.classList.add('active');
-}
-</script>
+<!-- ── FLOATING CHIFFRES BUTTON ─────────────────────────── -->
+<button class="float-btn" onclick="document.getElementById('modal-chiffres').classList.add('open')">
+  📊 Chiffres clés
+</button>
 
+<!-- ── MODAL CHIFFRES CLÉS ──────────────────────────────── -->
+<div class="modal-overlay" id="modal-chiffres" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3>10 chiffres clés à mémoriser</h3>
+      <button class="modal-close" onclick="document.getElementById('modal-chiffres').classList.remove('open')">✕</button>
+    </div>
+    <table class="kaufman-table">
+      <thead><tr><th>#</th><th>Chiffre</th><th>Source</th><th>Phrase orale</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td><strong>92M / 170M</strong> postes 2030</td><td>WEF FoJ 2025</td><td>"Le solde est positif mais la disruption est massive"</td></tr>
+        <tr><td>2</td><td><strong>44 %</strong> compétences perturbées</td><td>WEF FoJ 2025</td><td>"En 5 ans — la formation doit être agile"</td></tr>
+        <tr><td>3</td><td><strong>39 %</strong> confiance institutions</td><td>OCDE/WEF</td><td>"Leadership authentique = premium"</td></tr>
+        <tr><td>4</td><td><strong>2 000 Mds$</strong> énergie propre 2024</td><td>WEF Energy 2025</td><td>"La transition verte est maintenant rentable"</td></tr>
+        <tr><td>5</td><td><strong>6/9</strong> limites planétaires</td><td>WEF Risks 2025</td><td>"L'urgence est documentée"</td></tr>
+        <tr><td>6</td><td><strong>83 %</strong> G7 = Chine+Inde 2021</td><td>WEF Futures 2030</td><td>"Le centre de gravité a basculé"</td></tr>
+        <tr><td>7</td><td><strong>RONIC &gt; OCC</strong></td><td>TGM INSEAD</td><td>"Valeur = ce qu'elle créera demain"</td></tr>
+        <tr><td>8</td><td><strong>70/20/10</strong></td><td>TGM INSEAD</td><td>"70 % du dev pro se fait sur le terrain"</td></tr>
+        <tr><td>9</td><td><strong>5 fonctions</strong> universelles</td><td>Kaufman PMBA</td><td>"Présentes dans chaque entreprise"</td></tr>
+        <tr><td>10</td><td><strong>Us/Future</strong></td><td>TGM INSEAD</td><td>"Le seul quadrant durable"</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+function toggleAccordion(header) {
+  const body = header.nextElementSibling;
+  const isOpen = header.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.accordion-header.open').forEach(h => {
+    h.classList.remove('open');
+    h.nextElementSibling.classList.remove('open');
+  });
+  // Open this one if it was closed
+  if (!isOpen) {
+    header.classList.add('open');
+    body.classList.add('open');
+  }
+}
+
+// School tabs JS
+document.querySelectorAll('.school-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = tab.dataset.target;
+    tab.closest('.school-tabs').querySelectorAll('.school-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    document.querySelectorAll(`[data-content="${target}"]`).forEach(c => {
+      c.classList.toggle('active', true);
+    });
+  });
+});
+</script>
 </body>
 </html>
