@@ -54,8 +54,8 @@ BEGIN:VEVENT
 UID:gabriel-j2-matin-esce-20260427@prep
 DTSTART;TZID=Europe/Paris:20260427T080000
 DTEND;TZID=Europe/Paris:20260427T083000
-SUMMARY:J2 · Matin ESCE — Révision express 30 min
-DESCRIPTION:→ Réécoute ton enregistrement pitch ESCE de hier soir (1 fois)\n→ Relis tes 3 raisons ESCE sur papier (pas sur écran)\n→ Tu connais le nom d'1 association ESCE ?\n→ Tu as tes 2 questions pour le jury ?\n→ Tu pars 30 min avant l'heure d'oral ?\n\nObjectif ESCE : fluide\, chaleureux\, rassurant.\nLe jury veut que tu te projettes vraiment chez eux. Montre-le.
+SUMMARY:J2 · Matin ESCE — Révision + VÉRIFIER CONVOCATION
+DESCRIPTION:⚠️ PRIORITÉ 0 — Vérifie ta convocation ESCE\n→ La convocation (avec adresse exacte campus La Défense + horaire précis) est envoyée VEILLE ou AVANT-VEILLE\n→ VÉRIFIE TES SPAMS si tu ne l'as pas reçue\n→ Sans convocation = tu ne sais pas l'adresse exacte ni l'heure précise\n→ Contact urgence ESCE : aduigou@esce.fr · 06 72 19 73 48 · 01 80 80 06 32\n\n→ Réécoute ton enregistrement pitch ESCE de hier soir (1 fois)\n→ Relis tes 3 raisons ESCE sur papier (pas sur écran)\n→ Tu as choisi ton sujet d'actualité internationale ?\n→ Tu as ta structure en 3 parties : fait → mécanisme → impact → perspective ?\n→ Tu as tes 2 questions pour le jury ?\n\nObjectif ESCE : fluide\, chaleureux\, rassurant.\nLe jury veut que tu te projettes vraiment chez eux. Montre-le.
 CATEGORIES:RÉVISION,ESCE
 END:VEVENT
 
@@ -63,8 +63,8 @@ BEGIN:VEVENT
 UID:gabriel-oral-esce-20260427@prep
 DTSTART;TZID=Europe/Paris:20260427T090000
 DTEND;TZID=Europe/Paris:20260427T120000
-SUMMARY:🏫 ORAL ESCE Paris — Tier 3
-DESCRIPTION:ESCE International Business School · Paris · Tier 3\n\n→ Arrive 15 min en avance\n→ Ouvre avec ta stat WEF naturellement\n→ 3 raisons ESCE concrètes (pas génériques)\n→ Pose tes 2 questions au jury en fin d'entretien\n→ Phrase de clôture mémorisée\n\nC'est le premier des 8. Traite-le comme un échauffement — et donne quand même tout.
+SUMMARY:🏫 ORAL ESCE Paris-La Défense — Tier 3
+DESCRIPTION:ESCE International Business School · Campus Paris-La Défense · Tier 3\nDossier Parcoursup : 191040\n⚠️ ADRESSE EXACTE dans la convocation reçue veille/avant-veille — VÉRIFIER LES SPAMS\nAccueil : 8h30\n\nFORMAT RÉEL :\n① 20 min de PRÉPARATION ÉCRITE avant le jury :\n   → Choisir et structurer ton sujet d'actualité internationale\n   → Remplir le dossier personnel\n② Entretien 20 min devant le jury :\n   → Présentation du sujet d'actualité\n   → Questions sur ta personnalité et ta motivation\n   → Jury évalue : structure des réponses + capacité de synthèse\n\nCONSEIL CLÉS :\n→ Sujet actua à préparer EN AMONT (IA + emploi\, transition énergétique\, géopolitique...)\n→ Structure en 3 parties : fait documenté → mécanisme → impact entreprises → ta perspective\n→ 3 raisons ESCE concrètes (pas génériques)\n→ Pose tes 2 questions au jury en fin d'entretien\n→ Phrase de clôture mémorisée\n\nC'est le premier des 8. Donne tout.
 CATEGORIES:ORAL
 END:VEVENT
 
@@ -135,8 +135,8 @@ BEGIN:VEVENT
 UID:gabriel-j5-emlyon-day1-20260430@prep
 DTSTART;TZID=Europe/Paris:20260430T090000
 DTEND;TZID=Europe/Paris:20260430T110000
-SUMMARY:J5 · emlyon Day 1 — "Pourquoi moi ?" + Maker spirit
-DESCRIPTION:emlyon est dans 2 jours. Tier 1. C'est différent des 3 oraux Tier 3 que tu viens de passer.\n\nACTION 1 — Lire le feedback des 3 oraux Tier 3 (15 min)\n→ Qu'est-ce qui a bien fonctionné ? → Garde-le\n→ Qu'est-ce qui a coinçé ? → Qu'est-ce que tu fais différemment pour emlyon ?\n\nACTION 2 — La question centrale emlyon\n→ Sur papier : "Pourquoi moi et pas un autre très bon candidat ?"\n→ Règle : jamais "je suis curieux\, j'aime le challenge"\n→ Trouve 1 chose que TU fais / penses / vois différemment des autres\n→ Formule : ce qui me caractérise → exemple concret → lien avec emlyon maker spirit\n\nACTION 3 — Recherche emlyon (30 min)\n→ em-lyon.com : maker spirit · incubateur · projets entrepreneuriaux\n→ En quoi tu es un "maker" (même petite échelle — c'est ok)\n→ 3 raisons emlyon DIFFÉRENTES des raisons Tier 3\n→ 2 questions pour le jury\n\nACTION 4 — Générer l'Audio Overview (Studio)\n→ NotebookLM → Studio → Customize Audio Overview\n→ Copie-colle le PROMPT 2\n→ Écoute les 10 premières minutes
+SUMMARY:J5 · emlyon Day 1 — "Pourquoi moi ?" + Maker + FORMAT RÉEL
+DESCRIPTION:emlyon est dans 2 jours. Tier 1. C'est TRÈS DIFFÉRENT des 3 oraux Tier 3.\n\n⚠️ FORMAT RÉEL EMLYON (à intégrer dans ta préparation) :\n→ ÉPREUVE SIGNATURE = COLLECTIF 45 min + INDIVIDUEL 8 min\n→ Pas un entretien classique : tu vas faire de la CRÉATIVITÉ avec d'autres candidats\n→ Ton entretien individuel dure seulement 8 min → pitch ultra-dense\n→ ANGLAIS : 13 min prépa texte presse → tu commentes → discussion libre\n\nACTION 1 — Lire le feedback des 3 oraux Tier 3 (15 min)\n→ Qu'est-ce qui a bien fonctionné ? → Garde-le\n→ Qu'est-ce qui a coinçé ? → Qu'est-ce que tu fais différemment pour emlyon ?\n\nACTION 2 — La question centrale emlyon en 8 min\n→ Sur papier : "Pourquoi moi et pas un autre très bon candidat ?"\n→ Règle : jamais "je suis curieux\, j'aime le challenge"\n→ Trouve 1 chose que TU fais / penses / vois différemment des autres\n→ Formule : ce qui me caractérise → exemple concret → lien avec emlyon maker spirit\n→ Tu as 8 min en individuel : pitch ultra-condensé\, pas de redondance\n\nACTION 3 — Épreuve signature : penser au COLLECTIF\n→ En phase créativité avec les autres candidats : COOPÈRE + INITIE\n→ Un "maker" = quelqu'un qui agit. Montre-le dans le groupe.\n→ Pas besoin d'écraser les autres — prends des initiatives mesurées et bienveillantes\n\nACTION 4 — Recherche emlyon (30 min)\n→ em-lyon.com : maker spirit · MakersLab · incubateur · projets entrepreneuriaux\n→ 3 raisons emlyon DIFFÉRENTES des raisons Tier 3\n→ 2 questions pour le jury\n\nACTION 5 — Générer l'Audio Overview (Studio)\n→ NotebookLM → Studio → Customize Audio Overview\n→ Copie-colle le PROMPT 2\n→ Écoute les 10 premières minutes
 CATEGORIES:RÉVISION,EMLYON
 END:VEVENT
 
@@ -190,7 +190,7 @@ UID:gabriel-oral-emlyon-20260502@prep
 DTSTART;TZID=Europe/Paris:20260502T140000
 DTEND;TZID=Europe/Paris:20260502T183000
 SUMMARY:🏫 ORAL emlyon Paris — Tier 1 ⭐
-DESCRIPTION:emlyon Business School · Paris · Tier 1 · 14h-18h30\n\n→ Ouvre avec stat WEF naturellement\n→ "Pourquoi moi ?" : ta réponse unique et personnelle\n→ Si déstabilisé : "C'est une bonne question\, laissez-moi reformuler." — puis structure\n→ Pose tes 2 questions au jury\n→ Phrase de clôture mémorisée\n\nFeedback à chaud ce soir dans les 2h.
+DESCRIPTION:emlyon Business School · Campus Paris · Tier 1\nAdresse : 15 boulevard Diderot\, 75012 Paris (métro Gare de Lyon)\nDossier Parcoursup : 191040\nAccueil : 14h00 (fin au plus tard 18h30)\n⚠️ Apporter l'email de confirmation reçu la veille — demandé à l'arrivée\n\nFORMAT RÉEL (très différent d'un entretien classique) :\n① ÉPREUVE SIGNATURE — ~45 min COLLECTIVE + 8 min INDIVIDUEL\n   → Phase collective : épreuve de CRÉATIVITÉ avec d'autres candidats\n   → Jury évalue : cohérence personnalité / motivations / modes de fonctionnement vs projet Global BBA\n   → Phase individuelle : entretien 8 min\n② ANGLAIS — ~15 min\n   → 13 min de préparation d'un texte issu de la presse internationale\n   → Réaction et commentaire du texte\n   → Discussion libre avec l'évaluateur\n\nSTRATÉGIE ÉPREUVE SIGNATURE :\n→ En collectif : sois toi-même\, coopère\, prends des initiatives mesurées\n→ "Maker" = quelqu'un qui agit\, pas qui parle — montre-le pendant la phase créativité\n→ En individuel 8 min : pitch ultra-condensé\, "Pourquoi moi ?"\, vision\n→ Pas de discours récité — authenticité et cohérence\n\nFeedback à chaud ce soir dans les 2h.
 CATEGORIES:ORAL,TIER1
 END:VEVENT
 
@@ -201,6 +201,15 @@ DTEND;TZID=Europe/Paris:20260502T201500
 SUMMARY:J7 · Feedback emlyon — écrire à chaud DANS LES 2H
 DESCRIPTION:FAIS ÇA CE SOIR — avant de dormir\n\n→ Note sur téléphone :\n  1. Liste TOUTES les questions posées\n  2. Quelle question t'a surpris ou déstabilisé ?\n  3. As-tu mentionné un chiffre WEF naturellement ?\n  4. Le jury a-t-il souri / creusé quelque chose ?\n  5. Ce que tu ferais différemment pour ESSEC (dans 9 jours)
 CATEGORIES:RÉVISION
+END:VEVENT
+
+BEGIN:VEVENT
+UID:gabriel-alerte-neoma-questionnaire-20260503@prep
+DTSTART;TZID=Europe/Paris:20260503T100000
+DTEND;TZID=Europe/Paris:20260503T103000
+SUMMARY:⚠️ URGENT — Remplir questionnaire NEOMA en ligne (obligatoire avant J)
+DESCRIPTION:NEOMA NÉCESSITE UN QUESTIONNAIRE EN LIGNE AVANT L'ORAL DU 8 MAI\n\n→ Connexion : espace personnel site concours NEOMA\n  Identifiant : ton email renseigné dans Parcoursup\n  Mot de passe : ton numéro Parcoursup (191040)\n→ Remplis le questionnaire de motivation MAINTENANT\n→ Sans ce questionnaire rempli avant le jour J\, l'entretien ne peut pas avoir lieu\n\nFais-le aujourd'hui — tu as de la marge (oral dans 5 jours) mais ne repousse pas.
+CATEGORIES:ALERTE,NEOMA
 END:VEVENT
 
 BEGIN:VEVENT
@@ -280,7 +289,7 @@ UID:gabriel-j12-neoma-jm1-20260507@prep
 DTSTART;TZID=Europe/Paris:20260507T090000
 DTEND;TZID=Europe/Paris:20260507T100000
 SUMMARY:J12 · NEOMA J-1 — Briefing Doc + Simulation express
-DESCRIPTION:ACTION 1 — Générer Briefing Doc NEOMA (Studio)\n→ NotebookLM → Studio → Customize Briefing Doc\n→ Copie-colle le PROMPT 4 → indique NEOMA\n→ Lis en 10 min : pitch NEOMA · 3 raisons · stats WEF · 2 questions jury · clôture\n\nACTION 2 — Simulation express 30 min\n→ Pitch 90 sec → 3 questions Tier 2 → tes questions au jury\n→ Vérifie que tu connais 1 fait précis sur NEOMA\n\nACTION 3 — Logistique\n→ Adresse exacte NEOMA Paris\n→ Calcule trajet + 20 min de marge\n→ Prépare ta tenue ce soir\n→ Dors tôt
+DESCRIPTION:⚠️ VÉRIFICATION CRITIQUE — as-tu rempli le questionnaire en ligne NEOMA ?\n→ Connexion : site concours NEOMA · email Parcoursup / mdp = numéro Parcoursup (191040)\n→ CE QUESTIONNAIRE EST OBLIGATOIRE AVANT LE JOUR J — sans lui\, l'entretien ne peut pas se dérouler\n→ Si pas encore fait : FAIS-LE MAINTENANT avant toute autre chose\n\nACTION 1 — Générer Briefing Doc NEOMA (Studio)\n→ NotebookLM → Studio → Customize Briefing Doc\n→ Copie-colle le PROMPT 4 → indique NEOMA\n→ Lis en 10 min : pitch NEOMA · 3 raisons · stats WEF · 2 questions jury · clôture\n\nACTION 2 — Simulation express 30 min\n→ Pitch 90 sec → 3 questions Tier 2 → tes questions au jury\n→ Vérifie que tu connais 1 fait précis sur NEOMA\n\nACTION 3 — Logistique NEOMA\n→ Adresse : 6 rue Vandrezanne\, Paris 13e\n→ Accueil : 13h30 — calcule trajet + 20 min de marge\n→ Prépare ta tenue ce soir · Dors tôt
 CATEGORIES:RÉVISION,NEOMA
 END:VEVENT
 
@@ -297,8 +306,8 @@ BEGIN:VEVENT
 UID:gabriel-oral-neoma-20260508@prep
 DTSTART;TZID=Europe/Paris:20260508T140000
 DTEND;TZID=Europe/Paris:20260508T170000
-SUMMARY:🏫 ORAL NEOMA Paris — Tier 2
-DESCRIPTION:NEOMA Business School · Paris · Tier 2 · 14h\n\n→ Ouvre avec stat WEF\n→ 3 raisons NEOMA spécifiques\n→ Projet pro clair et cohérent\n→ Pose tes 2 questions au jury\n→ Phrase de clôture\n\nFeedback à chaud ce soir. J+1 = SKEMA → dors tôt.
+SUMMARY:🏫 ORAL NEOMA Paris 13e — Tier 2
+DESCRIPTION:NEOMA Business School · Campus de Paris · Tier 2\nAdresse : 6 rue Vandrezanne\, Paris 13ème\nDossier Parcoursup : 191040\nAccueil : 13h30 (session après-midi)\n\nFORMAT RÉEL :\n① Entretien de motivation — 20 min\n   ⚠️ NÉCESSITE D'AVOIR COMPLÉTÉ LE QUESTIONNAIRE EN LIGNE AVANT LE JOUR J\n   (connexion sur espace personnel NEOMA : email Parcoursup / mdp = numéro Parcoursup)\n② Épreuve d'anglais — 15 min\n   → Discussion libre avec un enseignant d'anglais\n\nSTRATÉGIE :\n→ Ouvre avec stat WEF\n→ 3 raisons NEOMA spécifiques (Reims/Paris/Rouen\, programme\, association)\n→ Projet pro clair et cohérent\n→ Pose tes 2 questions au jury\n→ Phrase de clôture\n\nFeedback à chaud ce soir. J+1 = SKEMA → dors tôt.
 CATEGORIES:ORAL
 END:VEVENT
 
@@ -306,8 +315,8 @@ BEGIN:VEVENT
 UID:gabriel-j13-skema-prep-soir-20260508@prep
 DTSTART;TZID=Europe/Paris:20260508T200000
 DTEND;TZID=Europe/Paris:20260508T202000
-SUMMARY:J13 · Feedback NEOMA + Briefing Doc SKEMA express
-DESCRIPTION:ACTION 1 — Feedback NEOMA à chaud (15 min)\n→ Notes téléphone : questions / surprises / ce qui a fonctionné\n\nACTION 2 — Briefing Doc SKEMA express\n→ NotebookLM Chat → tape :\n"Génère une fiche express pour l'oral SKEMA demain : pitch adapté international+digital\, 3 raisons spécifiques SKEMA\, 2 questions au jury\, 2 stats WEF pertinentes\, phrase de clôture. Format court — lecture 10 min max."\n→ Lis cette fiche → c'est tout ce que tu liras demain matin\n→ Dors avant 22h30
+SUMMARY:J13 · Feedback NEOMA + Briefing SKEMA + Autorisation IMAGE
+DESCRIPTION:ACTION 1 — Feedback NEOMA à chaud (15 min)\n→ Notes téléphone : questions / surprises / ce qui a fonctionné\n\n⚠️ ACTION OBLIGATOIRE — SKEMA AUTORISATION IMAGE :\n→ Télécharger le document sur mySESAME (-DOCUMENT A TELECHARGER-)\n→ L'IMPRIMER et le SIGNER ce soir\n→ L'apporter demain à l'accueil du campus SKEMA\n→ Sans ce document : problème à l'accueil\n\nACTION 2 — Briefing Doc SKEMA express\n→ NotebookLM Chat → tape :\n"Génère une fiche express pour l'oral SKEMA demain : pitch adapté international+digital\, 3 raisons spécifiques SKEMA\, 2 questions au jury\, 2 stats WEF pertinentes\, phrase de clôture. Format court — lecture 10 min max."\n→ Lis cette fiche → c'est tout ce que tu liras demain matin\n\nACTION 3 — Prépare le TIRAGE AU SORT SKEMA\n→ SKEMA tire un mot au sort → tu dois développer un sujet en 15 min\n→ Méthode pour n'importe quel mot : définition perso → exemple concret → lien business/école\n→ Fais 2-3 essais ce soir avec des mots au hasard (innovation\, responsabilité\, disruption\, frontière\, confiance...)\n→ Dors avant 22h30
 CATEGORIES:RÉVISION,SKEMA
 END:VEVENT
 
@@ -324,8 +333,8 @@ BEGIN:VEVENT
 UID:gabriel-oral-skema-20260509@prep
 DTSTART;TZID=Europe/Paris:20260509T140000
 DTEND;TZID=Europe/Paris:20260509T170000
-SUMMARY:🏫 ORAL SKEMA Paris — Tier 2
-DESCRIPTION:SKEMA Business School · Paris · Tier 2 · 14h\n\n2e oral en 2 jours — gère ton énergie\, sois calme\nSKEMA = international + digital → mets-le en avant\n→ Pose tes 2 questions au jury\n\nFeedback ce soir. Demain = préparation intensive ESSEC J-1.
+SUMMARY:🏫 ORAL SKEMA Suresnes — Tier 2
+DESCRIPTION:SKEMA Business School · Campus Grand Paris · Tier 2\nAdresse : 5 quai Marcel Dassault\, 92150 Suresnes\nDossier Parcoursup : 191040\nAccueil : 13h30 (session après-midi)\n⚠️ Apporter l'autorisation image IMPRIMÉE + SIGNÉE (à télécharger sur mySESAME)\n\nFORMAT RÉEL :\n① Épreuve de motivation — 15 min\n   → Questions parcours / hobbies / ambitions pro\n   → TIRAGE AU SORT D'UN MOT → développer un sujet (imprévu — pas de préparation possible)\n   → Objectif : vérifier que le programme Global BBA TE correspond\n② Épreuve d'anglais — 10 min\n   → Commenter une image présentée par le jury\n   → Échange avec le jury sur différents sujets\n\nSTRATÉGIE TIRAGE AU SORT :\n→ N'importe quel mot : prends 10-15 sec pour structurer\n→ Format : définition personnelle → exemple concret → lien avec le business / école de commerce\n→ Ne montre pas de panique — l'exercice teste ta réactivité\, pas tes connaissances\n→ SKEMA = international + digital → mets-le en avant si possible\n→ Pose tes 2 questions au jury\n\n2e oral en 2 jours — gère ton énergie\, sois calme\nFeedback ce soir. Demain = préparation intensive ESSEC J-1.
 CATEGORIES:ORAL
 END:VEVENT
 
@@ -376,10 +385,10 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:gabriel-oral-essec-20260511@prep
-DTSTART;TZID=Europe/Paris:20260511T140000
-DTEND;TZID=Europe/Paris:20260511T183000
+DTSTART;TZID=Europe/Paris:20260511T133000
+DTEND;TZID=Europe/Paris:20260511T180000
 SUMMARY:🏫 ORAL ESSEC Cergy — Tier 1 ⭐ PRIORITÉ ABSOLUE
-DESCRIPTION:ESSEC Business School · Cergy-Pontoise · Tier 1 · 14h-18h30\n\nC'est l'oral le plus important des 8. Donne tout.\n\n→ Ouvre avec la stat WEF naturellement\n→ Ton argument le plus fort → tiens-le sous pression\n→ Ton anecdote authentique → personnelle\, pas scolaire\n→ Pose tes 2 questions au jury\n→ Phrase de clôture + vision 10 ans\n\nFeedback immédiat ce soir — même épuisé.
+DESCRIPTION:ESSEC Business School · Global BBA · Campus de Paris-Cergy · Tier 1\nAdresse : Parvis de l'ESSEC\, 3 Avenue Bernard Hirsch\, 95000 Cergy\nDossier Parcoursup : 191040\nAccueil : 13h30 (session après-midi\, fin au plus tard 18h00)\n\nTRANSPORT : RER A direction Cergy le Haut → arrêt Cergy Préfecture\n→ Prendre ticket jusqu'à Cergy Préfecture (destination finale)\n→ Campus à 5 min à pied de la gare\n→ Des étudiants t'accueillent à Cergy Préfecture\n→ Voiture déconseillée (parkings payants limités)\n→ Durée Paris → Cergy : ~45 min · Pars 1h30 avant minimum\n\nFORMAT RÉEL :\n① Entretien de motivation — 25 min (en français)\n   → Présentation du candidat ~5 min\n   → Échange libre avec le jury (1 ou 2 personnes : profs\, intervenants\, étudiants fin de cursus...)\n② Épreuve d'anglais — 10 min\n   → Devant un professeur de langue anglaise\n\nSTRATÉGIE ESSEC :\n→ Ne sois pas consensuel — avoir une opinion et la défendre calmement\n→ Ton argument le plus fort → tiens-le sous pression du jury\n→ Ton anecdote authentique → personnelle\, pas scolaire\n→ Pose tes 2 questions au jury\n→ Phrase de clôture + vision 10 ans\n\nApporter : pièce d'identité + numéro Parcoursup (191040)\nC'est l'oral le plus important des 8. Donne tout.\nFeedback immédiat ce soir — même épuisé.
 CATEGORIES:ORAL,TIER1
 END:VEVENT
 
@@ -432,8 +441,8 @@ BEGIN:VEVENT
 UID:gabriel-oral-kedge-20260515@prep
 DTSTART;TZID=Europe/Paris:20260515T140000
 DTEND;TZID=Europe/Paris:20260515T170000
-SUMMARY:🏫 ORAL KEDGE Paris — Tier 2 ✓ DERNIER
-DESCRIPTION:KEDGE Business School · Paris · Tier 2 · 14h\n\nC'est le 8e et dernier oral.\n→ Ouvre avec stat WEF\n→ 3 raisons KEDGE : management responsable + développement durable\n→ Pose tes 2 questions au jury\n→ Phrase de clôture mémorisée\n\nBonne chance Gabriel. 8 oraux en 20 jours — c'est sérieux.
+SUMMARY:🏫 ORAL KEDGE Paris 12e — Tier 2 ✓ DERNIER
+DESCRIPTION:KEDGE Business School · Campus de Paris · Tier 2\nAdresse : 40 Av. des Terroirs de France\, 75012 Paris\nDossier Parcoursup : 191040\nAccueil : 14h00\n\nFORMAT RÉEL :\n① Entretien de motivation — 20 min\n② Épreuve d'anglais — 20 min\nPrévois une demi-journée sur place (échanges avec étudiants admisseurs)\n\nC'est le 8e et dernier oral. Tu en as passé 7. Tu es rodé.\n→ Ouvre avec stat WEF\n→ 3 raisons KEDGE : management responsable + développement durable\n→ Pose tes 2 questions au jury\n→ Phrase de clôture mémorisée\n\nBonne chance Gabriel. 8 oraux en 20 jours — c'est sérieux.
 CATEGORIES:ORAL
 END:VEVENT
 
