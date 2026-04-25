@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Gabriel Prépa Oraux 2026//FR
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Gabriel — Oraux 2026
-X-WR-CALDESC:Plan 20 jours · 6 oraux · Actions exactes par session
+X-WR-CALDESC:8 oraux · 20 jours · ESCE · IESEG · ESSCA · emlyon · NEOMA · SKEMA · ESSEC · KEDGE
 X-WR-TIMEZONE:Europe/Paris
 METHOD:PUBLISH
 
@@ -23,41 +23,39 @@ TZNAME:CEST
 END:DAYLIGHT
 END:VTIMEZONE
 
-
 BEGIN:VEVENT
 UID:gabriel-j1-setup-20260426@prep
 DTSTART;TZID=Europe/Paris:20260426T090000
-DTEND;TZID=Europe/Paris:20260426T110000
-SUMMARY:J1 · Setup NotebookLM + Slide Deck + Mindmap
-DESCRIPTION:ACTION 1 — Créer le notebook NotebookLM\n→ Ouvre NotebookLM → Nouveau notebook → Nomme-le "Prépa Oraux 2026"\n→ Importe ces 5 fichiers dans cet ordre :\n  1. GABRIEL.md\n  2. gabriel_prep.html\n  3. PLAN_21_JOURS.md\n  4. NOTEBOOKLM_PROMPTS.md\n  5. NOTEBOOKLM_STRUCTURE.md\n→ Vérifie que chaque source a un badge vert\n→ Test de contrôle : tape dans le chat "Cite les 5 stats WEF avec phrase orale" → doit répondre avec les chiffres et les phrases calibrées\n\nACTION 2 — Générer le Slide Deck (Studio)\n→ Clique sur Studio → Customize Slide Deck\n→ Copie-colle le PROMPT 1 (NOTEBOOKLM_PROMPTS.md) dans le champ\n→ Génère les 15 slides\n→ Lis les slides 1 à 4 uniquement maintenant (vue d'ensemble)\n\nACTION 3 — Générer le Mindmap (Chat)\n→ Dans le Chat NotebookLM\, copie-colle le PROMPT 8\n→ Lis la carte mentale complète → repère les 6 écoles + 3 frameworks\n→ Ce mindmap est ta boussole pour les 20 jours qui viennent
+DTEND;TZID=Europe/Paris:20260426T120000
+SUMMARY:J1 · URGENT — Setup NotebookLM + Pitch transversal
+DESCRIPTION:SEUL JOUR DE PRÉPA AVANT 3 ORAUX CONSÉCUTIFS — Sois efficace.\n\nACTION 1 — Setup NotebookLM (30 min)\n→ Nouveau notebook "Prépa Oraux 2026"\n→ Importe dans cet ordre : GABRIEL.md · gabriel_prep.html · PLAN_21_JOURS.md · NOTEBOOKLM_PROMPTS.md · NOTEBOOKLM_STRUCTURE.md\n→ Test : tape "Cite les 5 stats WEF avec phrase orale" → doit répondre correctement\n\nACTION 2 — Générer Mindmap (Chat)\n→ Copie-colle le PROMPT 8 dans le Chat\n→ Lis la carte : repère les 3 écoles de demain/après-demain/surlendemain\n\nACTION 3 — Pitch transversal 90 sec (valable pour les 3 Tier 3)\n→ Sur papier à la main :\n  PHRASE 1 (15 sec) : stat WEF — "92 millions de postes déplacés d'ici 2030\, 170 millions créés. La disruption touche en premier les emplois d'entrée."\n  PHRASE 2 (30 sec) : pourquoi école de commerce — 5 fonctions Kaufman + apprendre en faisant\n  PHRASE 3 (30 sec) : pourquoi CETTE école — à adapter pour chaque oral (ESCE / IÉSEG / ESSCA)\n  PHRASE 4 (15 sec) : vision — "Je veux [verbe d'action]. [École] est la première étape sérieuse."\n→ Chronomètre 90 sec → ajuste\n\nACTION 4 — Générer les Flashcards (Chat)\n→ Copie-colle le PROMPT 6 dans le Chat\n→ Génère les 25 flashcards\n→ Fais le Deck A (10 chiffres WEF) à voix haute maintenant
 CATEGORIES:SETUP,NOTEBOOKLM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j1-pitch-20260426@prep
+UID:gabriel-j1-recherche-3ecoles-20260426@prep
 DTSTART;TZID=Europe/Paris:20260426T140000
-DTEND;TZID=Europe/Paris:20260426T160000
-SUMMARY:J1 · Pitch 90 sec + Recherche ESCE + Flashcards
-DESCRIPTION:ACTION 1 — Construire ton pitch de 90 secondes\n→ Prends une feuille et écris à la main (pas à l'écran) :\n  PHRASE 1 (15 sec) : ouvre avec la stat WEF — "Le WEF documente : 92 millions de postes déplacés d'ici 2030\, 170 millions créés. La disruption touche en premier les emplois d'entrée."\n  PHRASE 2 (30 sec) : pourquoi une école de commerce — les 5 fonctions Kaufman + RONIC > OCC\n  PHRASE 3 (30 sec) : pourquoi ESCE spécifiquement — 1 programme concret + 1 association + 1 ambition\n  PHRASE 4 (15 sec) : vision — "Je veux [verbe d'action] à l'intersection de [2 domaines]. [École] est la première étape sérieuse."\n→ Chronomètre 90 sec → ajuste\n\nACTION 2 — Recherche ESCE (20 min)\n→ Cherche sur esce.com : programmes\, campus\, associations étudiantes\n→ Note sur papier : 3 raisons concrètes de choisir l'ESCE (spécifiques\, pas génériques)\n→ Note : 1 association que tu mentionneras + 2 questions à poser au jury\n\nACTION 3 — Flashcards Deck A (Chat NotebookLM)\n→ Copie-colle le PROMPT 6 dans le Chat\n→ Génère les 25 flashcards\n→ Fais le Deck A uniquement aujourd'hui (10 chiffres WEF) : lis chaque recto\, essaie de donner le verso à voix haute avant de regarder
-CATEGORIES:RÉVISION,ESCE
+DTEND;TZID=Europe/Paris:20260426T170000
+SUMMARY:J1 · Recherche ESCE + IÉSEG + ESSCA — 3 raisons par école
+DESCRIPTION:3h pour préparer 3 écoles. Sois efficace : 1h par école.\n\nHEURE 1 — ESCE (oral demain matin)\n→ Site esce.com : programmes\, campus Paris\, vie étudiante\n→ Note sur papier : 3 raisons concrètes ESCE (spécifiques\, pas génériques)\n→ 1 association à mentionner\n→ 2 questions à poser au jury\n→ Adapte la PHRASE 3 de ton pitch pour ESCE\n\nHEURE 2 — IÉSEG (oral après-demain 14h Lille)\n→ Bonne nouvelle : GABRIEL.md est ENTIÈREMENT dédié à l'IÉSEG\n→ Relis les sections 1 et 3 de la page HTML : https://gfourche14.github.io/preparation-gabriel/\n→ Mémorise : 3 raisons IÉSEG · IÉSEG Conseil · MSc Strategy & Digital · définition changemaker Us/Future\n→ 2 questions pour le jury IÉSEG\n→ LOGISTIQUE LILLE : train Paris Gare du Nord → Lille. Départ recommandé 11h30-12h00 pour être là à 13h30. Réserve le billet ce soir.\n\nHEURE 3 — ESSCA (oral dans 3 jours 8h Angers)\n→ Site essca.fr : programmes\, campus Angers\, vie associative\n→ 3 raisons ESSCA\n→ 2 questions pour le jury\n→ LOGISTIQUE ANGERS : oral à 8h = train Paris Montparnasse → Angers vers 6h00-6h15. Réveil 5h00. Réserve le billet CE SOIR.
+CATEGORIES:RÉVISION,ESCE,IESEG,ESSCA
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j1-enreg-20260426@prep
+UID:gabriel-j1-simulation-20260426@prep
 DTSTART;TZID=Europe/Paris:20260426T200000
-DTEND;TZID=Europe/Paris:20260426T203000
-SUMMARY:J1 · Enregistrement pitch — réécoute critique
-DESCRIPTION:ACTION — Enregistre ton pitch de 90 sec sur ton téléphone\n→ Mets-toi debout\, regarde un point fixe devant toi (pas tes notes)\n→ Lance l'enregistrement → pitch complet\n→ Réécoute immédiatement → note 3 choses :\n  1. Où tu as hésité ?\n  2. Est-ce que ça sonnait récité ou naturel ?\n  3. Est-ce que la stat WEF est venue naturellement ?\n→ Refais une deuxième prise en corrigeant les 3 points\n→ Garde la meilleure — tu la réécouteras demain matin avant l'oral ESCE\n\nDemain : ORAL ESCE. Dors avant 22h30.
-CATEGORIES:SIMULATION,ESCE
+DTEND;TZID=Europe/Paris:20260426T213000
+SUMMARY:J1 · Simulation ESCE + Logistique Lille/Angers
+DESCRIPTION:ACTION 1 — Simulation ESCE express (20 min)\n→ Debout\, chrono\n→ Pitch 90 sec adapté ESCE (une seule fois)\n→ 3 questions Tier 3 à voix haute :\n  "Pourquoi l'ESCE ?" · "Votre projet pro ?" · "Vos 3 points forts ?"\n→ Enregistre le pitch sur téléphone → réécoute\n\nACTION 2 — Logistique (réserve maintenant si pas encore fait)\n→ IÉSEG Lille : train Gare du Nord → Lille Flandres/Europe · départ 11h30 max · retour après 18h\n→ ESSCA Angers : train Montparnasse → Angers Saint-Laud · départ 6h00-6h15 · réveil 5h00 · prépare sac ce soir\n→ Prépare 2 tenues : une pour demain (ESCE) · une pour après-demain (IÉSEG)\n\nDors avant 22h30. ESCE demain matin.
+CATEGORIES:SIMULATION,LOGISTIQUE
 END:VEVENT
 
-
 BEGIN:VEVENT
-UID:gabriel-j2-prep-matin-20260427@prep
+UID:gabriel-j2-matin-esce-20260427@prep
 DTSTART;TZID=Europe/Paris:20260427T080000
 DTEND;TZID=Europe/Paris:20260427T083000
 SUMMARY:J2 · Matin ESCE — Révision express 30 min
-DESCRIPTION:ACTION — Révision légère avant l'oral (30 min MAX — ne sursature pas)\n→ Réécoute ton enregistrement pitch de hier soir (1 fois)\n→ Relis tes 3 raisons ESCE sur papier (pas sur écran)\n→ Vérifie dans ta tête : tu connais le nom d'1 association ESCE ?\n→ Tu as tes 2 questions pour le jury ?\n→ Tu connais ton trajet + tu pars 30 min avant ?\n\nObjectif ESCE : fluide\, chaleureux\, rassurant.\nRègle absolue : le jury veut que tu te projettes vraiment chez eux. Montre-le.
+DESCRIPTION:→ Réécoute ton enregistrement pitch ESCE de hier soir (1 fois)\n→ Relis tes 3 raisons ESCE sur papier (pas sur écran)\n→ Tu connais le nom d'1 association ESCE ?\n→ Tu as tes 2 questions pour le jury ?\n→ Tu pars 30 min avant l'heure d'oral ?\n\nObjectif ESCE : fluide\, chaleureux\, rassurant.\nLe jury veut que tu te projettes vraiment chez eux. Montre-le.
 CATEGORIES:RÉVISION,ESCE
 END:VEVENT
 
@@ -66,147 +64,124 @@ UID:gabriel-oral-esce-20260427@prep
 DTSTART;TZID=Europe/Paris:20260427T090000
 DTEND;TZID=Europe/Paris:20260427T120000
 SUMMARY:🏫 ORAL ESCE Paris — Tier 3
-DESCRIPTION:ESCE International Business School · Paris · Tier 3\n\nArrive 15 min en avance.\nRespire. Tu n'as rien à prouver ici — tu vises plus haut.\nMais ne sous-estime pas : chaque oral est un entraînement pour ESSEC.\n\nPENDANT L'ORAL :\n→ Ouvre avec ta stat WEF si possible\n→ 3 raisons ESCE précises (pas génériques)\n→ Pose tes 2 questions au jury en fin d'entretien\n→ Si le jury creuse : c'est normal — ne panique pas\, développe avec un exemple
+DESCRIPTION:ESCE International Business School · Paris · Tier 3\n\n→ Arrive 15 min en avance\n→ Ouvre avec ta stat WEF naturellement\n→ 3 raisons ESCE concrètes (pas génériques)\n→ Pose tes 2 questions au jury en fin d'entretien\n→ Phrase de clôture mémorisée\n\nC'est le premier des 8. Traite-le comme un échauffement — et donne quand même tout.
 CATEGORIES:ORAL
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j2-feedback-20260427@prep
+UID:gabriel-j2-feedback-esce-20260427@prep
 DTSTART;TZID=Europe/Paris:20260427T140000
-DTEND;TZID=Europe/Paris:20260427T143000
-SUMMARY:J2 · Feedback ESCE — écrire à chaud MAINTENANT
-DESCRIPTION:FAIS ÇA DANS LES 2H APRÈS L'ORAL — c'est le plus précieux des outils\n\n→ Ouvre une note sur ton téléphone et écris :\n  1. Quelles questions ont été posées ? (liste exhaustive)\n  2. Quelle question t'a surpris ou déstabilisé ?\n  3. Qu'est-ce qui a bien fonctionné dans tes réponses ?\n  4. Qu'est-ce que tu referais différemment ?\n  5. Le jury t'a-t-il creusé quelque chose ?\n\n→ Garde ce document — tu le reliras avant chaque oral suivant\n→ Ce feedback vaut plus que 2h de révision
-CATEGORIES:RÉVISION
+DTEND;TZID=Europe/Paris:20260427T142000
+SUMMARY:J2 · Feedback ESCE + Prep IÉSEG Lille (demain 14h)
+DESCRIPTION:ACTION 1 — Feedback ESCE à chaud (15 min)\n→ Note sur téléphone : questions posées / ce qui a coincé / ce qui a bien fonctionné\n\nACTION 2 — Dernière prep IÉSEG (45 min)\n→ Relis la section 3 de la page HTML : "Pourquoi l'IÉSEG ?"\n→ Les 3 raisons IÉSEG : pédagogie projet dès L1 · IÉSEG Conseil · MSc Strategy & Digital\n→ Changemaker : "Un changemaker\, c'est quelqu'un qui comprend le monde tel qu'il est et agit pour le transformer dans le bon quadrant : Us\, Future. Pas un idéaliste — un opérateur."\n→ 2 questions pour le jury IÉSEG\n\nACTION 3 — Logistique IÉSEG Lille\n→ Vérifie ton billet de train (départ ~11h30 demain)\n→ Adresse exacte IÉSEG Lille : 3 rue de la Digue\, 59000 Lille\n→ Prépare ta tenue pour demain\n→ Dors tôt
+CATEGORIES:RÉVISION,IESEG
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j2-emlyon-start-20260427@prep
-DTSTART;TZID=Europe/Paris:20260427T200000
-DTEND;TZID=Europe/Paris:20260427T210000
-SUMMARY:J2 · Soir — Lancer la prépa emlyon Tier 1
-DESCRIPTION:emlyon est dans 5 jours. C'est ton premier Tier 1. Commence ce soir.\n\nACTION 1 — Générer l'Audio Overview emlyon (Studio)\n→ NotebookLM → Studio → Customize Audio Overview\n→ Copie-colle le PROMPT 2 dans le champ\n→ Lance la génération (prend quelques minutes)\n→ Écoute les 10 premières minutes ce soir\n\nACTION 2 — Question centrale emlyon\n→ Sur papier : "Pourquoi moi et pas un autre très bon candidat ?"\n→ Écris ta réponse honnête\, sans essayer de faire bien\n→ C'est un brouillon — il sera affiné demain
-CATEGORIES:RÉVISION,EMLYON
-END:VEVENT
-
-
-BEGIN:VEVENT
-UID:gabriel-j3-matin-20260428@prep
-DTSTART;TZID=Europe/Paris:20260428T090000
-DTEND;TZID=Europe/Paris:20260428T110000
-SUMMARY:J3 · emlyon — "Pourquoi moi ?" + Recherche maker spirit
-DESCRIPTION:ACTION 1 — Finaliser la réponse "Pourquoi moi ?"\n→ Relis ce que tu as écrit hier soir\n→ La règle emlyon : ne jamais répondre "je suis curieux\, j'aime le challenge\, je suis travailleur"\n→ Trouve 1 chose que TU fais / penses / vois différemment des autres\n→ Formule en 3 phrases : ce qui me caractérise → exemple concret → lien avec emlyon maker spirit\n\nACTION 2 — Recherche emlyon (30 min)\n→ Cherche sur em-lyon.com : "maker spirit"\, incubateur\, projets entrepreneuriaux\n→ Comprends le concept : emlyon forme des gens qui AGISSENT\, pas qui réfléchissent\n→ Note sur papier :\n  - 1 programme ou initiative spécifique à citer\n  - 1 association ou club\n  - En quoi tu es un "maker" (même à petite échelle — c'est ok)\n\nACTION 3 — Écoute Audio Overview (trajet ou fond)\n→ Écoute les 10 minutes restantes de l'Audio Overview généré hier\n→ Pause si une idée émerge → note-la
-CATEGORIES:RÉVISION,EMLYON
+UID:gabriel-j3-train-lille-20260428@prep
+DTSTART;TZID=Europe/Paris:20260428T113000
+DTEND;TZID=Europe/Paris:20260428T130000
+SUMMARY:J3 · Train Paris → Lille — Révision dans le transport
+DESCRIPTION:Dans le train Paris Gare du Nord → Lille (1h environ)\n\n→ Écoute l'Audio Overview NotebookLM (PROMPT 2 — générer ce matin si pas encore fait)\n→ Relis sur téléphone tes 3 raisons IÉSEG + définition changemaker\n→ Répète mentalement ton pitch IÉSEG (adapté Tier 3 : motivation + projection + connaissance école)\n→ Vérifie que tu as tes 2 questions pour le jury\n→ LOGISTIQUE : arriver à Lille Flandres/Europe → métro ou taxi vers IÉSEG (3 rue de la Digue)\n→ Objectif : être devant l'école à 13h30 (30 min d'avance)
+CATEGORIES:RÉVISION,IESEG
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j3-pm-20260428@prep
+UID:gabriel-oral-ieseg-20260428@prep
 DTSTART;TZID=Europe/Paris:20260428T140000
-DTEND;TZID=Europe/Paris:20260428T160000
-SUMMARY:J3 · emlyon — Mémoriser les 5 stats WEF + Study Guide
-DESCRIPTION:ACTION 1 — Stats WEF : mémoriser la PHRASE\, pas juste le chiffre\n→ Ouvre les flashcards Deck A (générées en J1)\n→ Pour chaque stat : dis à voix haute le chiffre + la phrase calibrée complète\n→ Objectif : les 10 stats sans regarder\, en citant la phrase naturellement\n→ Pas "92 millions et 170 millions selon le WEF" → "Le solde est positif mais la disruption est massive — et elle touche en premier les emplois d'entrée"\n\nACTION 2 — Générer le Study Guide (Studio)\n→ NotebookLM → Studio → Customize Study Guide\n→ Copie-colle le PROMPT 3\n→ Génère les 20 Q&R\n→ Fais le Bloc 1 uniquement (5 questions sur les frameworks fondamentaux)
-CATEGORIES:RÉVISION,EMLYON
+DTEND;TZID=Europe/Paris:20260428T180000
+SUMMARY:🏫 ORAL IÉSEG Lille — Tier 3
+DESCRIPTION:IÉSEG School of Management · Lille · Tier 3 · 14h-18h (plage de passage)\n\n→ Atout Gabriel : il a une préparation IÉSEG complète (GABRIEL.md + page HTML)\n→ Ouvre avec stat WEF 92M/170M\n→ Changemaker : "Un opérateur Us/Future\, pas un idéaliste"\n→ IÉSEG Conseil dès L1 : citer comme raison concrète\n→ MSc Strategy & Digital Transformation comme trajectory\n→ Pose tes 2 questions au jury\n\nFeedback à chaud dans le train retour.
+CATEGORIES:ORAL
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j3-english-20260428@prep
-DTSTART;TZID=Europe/Paris:20260428T200000
-DTEND;TZID=Europe/Paris:20260428T204500
-SUMMARY:J3 · 🇬🇧 English — Self-presentation 5 min drill
-DESCRIPTION:emlyon peut tester l'anglais. ESSEC presque certainement. Commence maintenant.\n\nACTION — Self-presentation 5 min en anglais\n→ Structure :\n  (15 sec) Ouverture WEF : "The WEF documents 92 million jobs displaced by 2030\, but 170 million created. The disruption hits entry-level jobs first."\n  (30 sec) Pourquoi école de commerce : Kaufman's 5 functions + learning-by-doing\n  (30 sec) Pourquoi emlyon : maker spirit + action from year 1\n  (15 sec) Vision : "I see myself at the intersection of management and digital transformation"\n\n→ Enregistre sur téléphone → réécoute\n→ Note : accent OK\, hésitations OK — ce qui compte : structure et naturalité\n→ Refais une 2e prise
-CATEGORIES:ANGLAIS,EMLYON
-END:VEVENT
-
-
-BEGIN:VEVENT
-UID:gabriel-j4-matin-20260429@prep
-DTSTART;TZID=Europe/Paris:20260429T090000
-DTEND;TZID=Europe/Paris:20260429T110000
-SUMMARY:J4 · emlyon — Questions déstabilisantes + FAQ Attaques
-DESCRIPTION:ACTION 1 — Générer la FAQ Attaques (Studio)\n→ NotebookLM → Studio → Customize FAQ\n→ Copie-colle le PROMPT 5\n→ Génère les 10 Q&R offensifs\n→ Lis le Niveau 3 en priorité (questions exclusives Tier 1 emlyon)\n\nACTION 2 — Prépare des réponses aux 4 questions qui déstabilisent\nPour chacune\, écris ta réponse en 4-5 phrases MAX :\n  Q1 : "Quelle est votre plus grande faiblesse ?"\n  → Règle : honnêteté + ce que tu fais activement pour corriger\n  → Jamais : "je suis trop perfectionniste" (cliché détecté immédiatement)\n\n  Q2 : "Donnez-moi un exemple où vous avez échoué"\n  → Structure : Situation (30 sec) → Réaction honnête (30 sec) → Leçon sur toi-même (30 sec)\n\n  Q3 : "Qu'est-ce qui vous différencie vraiment ?"\n  → Pas tes notes. Pas "je suis curieux". Ta façon unique de penser.\n\n  Q4 : "Où vous voyez-vous dans 10 ans ?"\n  → Précis sur les compétences + ancré WEF 2030 + ouvert sur le secteur
-CATEGORIES:RÉVISION,EMLYON
+UID:gabriel-j3-retour-prep-essca-20260428@prep
+DTSTART;TZID=Europe/Paris:20260428T193000
+DTEND;TZID=Europe/Paris:20260428T210000
+SUMMARY:J3 · Train retour Lille → Paris + URGENT prep ESSCA demain 8h
+DESCRIPTION:SITUATION CRITIQUE : oral ESSCA Angers demain à 8h00.\nTrain Paris → Angers départ 6h00 = réveil 5h00 ce soir.\n\nDans le train retour Lille → Paris (1h) :\n→ Feedback IÉSEG rapide sur téléphone (5 min)\n→ Relis tes notes ESSCA : 3 raisons · 2 questions jury\n\nÀ la maison — dès l'arrivée :\nACTION 1 — Simulation ESSCA express 20 min\n→ Pitch 90 sec adapté ESSCA à voix haute\n→ 2 questions Tier 3 : "Pourquoi l'ESSCA ?" · "Votre projet pro ?"\n\nACTION 2 — Logistique ESSCA (MAINTENANT)\n→ Train Paris Montparnasse → Angers Saint-Laud : départ 6h00 ou 6h15 (vérifier horaires exacts)\n→ Temps de trajet : ~1h35\n→ Arrivée Angers ~7h45 → taxi ou transport vers ESSCA\n→ Adresse ESSCA Angers : 1 rue Lakanal\, 49000 Angers\n→ Prépare ton sac et ta tenue CE SOIR avant de dormir\n→ Règle 2 alarmes : 4h55 et 5h05\n→ DORS AVANT 21H30.
+CATEGORIES:RÉVISION,ESSCA,LOGISTIQUE
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j4-simu-20260429@prep
-DTSTART;TZID=Europe/Paris:20260429T140000
-DTEND;TZID=Europe/Paris:20260429T153000
-SUMMARY:J4 · Simulation 30 min emlyon — Quiz Jury
-DESCRIPTION:ACTION — Simulation Quiz Jury emlyon\n→ NotebookLM Chat → Copie-colle le PROMPT 7\n→ Dans le champ "Niveau de jury" → indique : TIER 1 EMLYON\n→ Lance la simulation\n→ Réponds à chaque question à voix haute (pas par écrit)\n→ Lis le feedback NotebookLM après chaque réponse\n→ Note les 3 points à améliorer identifiés par NotebookLM\n\nRègle de la simulation :\n→ Si tu bloques → ne dis pas "euh" → dis "C'est une bonne question. Laissez-moi reformuler."\n→ Le jury emlyon punit le silence mais récompense la reformulation structurée
-CATEGORIES:SIMULATION,EMLYON
+UID:gabriel-j4-reveil-essca-20260429@prep
+DTSTART;TZID=Europe/Paris:20260429T050000
+DTEND;TZID=Europe/Paris:20260429T060000
+SUMMARY:J4 · 5h00 — Réveil ESSCA · Départ train 6h
+DESCRIPTION:RÉVEIL 5H00\n\n→ Sac prêt hier soir ✓\n→ Tenue prête hier soir ✓\n→ Billet train sur téléphone ✓\n\nDans le taxi/transport vers Montparnasse :\n→ Relis mentalement tes 3 raisons ESSCA\n→ Rappel pitch : WEF stat → école de commerce → pourquoi ESSCA → vision\n\nDans le train (1h35) :\n→ Réécoute l'Audio Overview NotebookLM si tu peux\n→ Relis tes 2 questions pour le jury\n→ Arrive Angers ~7h45 → taxi vers ESSCA (1 rue Lakanal)\n→ Objectif : être devant l'école à 7h50
+CATEGORIES:LOGISTIQUE,ESSCA
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j4-english-20260429@prep
-DTSTART;TZID=Europe/Paris:20260429T200000
-DTEND;TZID=Europe/Paris:20260429T203000
-SUMMARY:J4 · 🇬🇧 English — Thème IA + emploi en anglais
-DESCRIPTION:ACTION — Prépare et pratique 1 thème économique en anglais\n\nThème : "AI\, automation and the future of work"\n→ Ta structure (3 min) :\n  FACT : "The WEF documents 92 million jobs displaced by automation by 2030\, but 170 million new roles created."\n  MECHANISM : "Entry-level white-collar jobs are the most exposed — AI replaces routine processing first."\n  BUSINESS IMPACT : "Companies need managers who can decide WHAT the algorithm does — not just execute tasks."\n  PERSONAL VIEW : "That's why I believe business schools that teach through real projects — like emlyon — are more relevant than ever\, not less."\n\n→ Enregistre 3 min à voix haute\n→ Objectif : citer "92M/170M" sans hésitation en anglais
-CATEGORIES:ANGLAIS,EMLYON
+UID:gabriel-oral-essca-20260429@prep
+DTSTART;TZID=Europe/Paris:20260429T080000
+DTEND;TZID=Europe/Paris:20260429T120000
+SUMMARY:🏫 ORAL ESSCA Angers — Tier 3 · 8h-12h
+DESCRIPTION:ESSCA School of Management · Angers · Tier 3 · 8h-12h\n\n3e oral en 3 jours. Tu es rodé maintenant.\n→ Ouvre avec stat WEF naturellement\n→ 3 raisons ESSCA concrètes\n→ Pose tes 2 questions au jury\n→ Phrase de clôture\n\nAprès l'oral : train retour Angers → Paris Montparnasse (~1h35)\nFeedback dans le train.
+CATEGORIES:ORAL
 END:VEVENT
 
+BEGIN:VEVENT
+UID:gabriel-j4-retour-recup-20260429@prep
+DTSTART;TZID=Europe/Paris:20260429T130000
+DTEND;TZID=Europe/Paris:20260429T143000
+SUMMARY:J4 · Train retour Angers → Paris + Feedback ESSCA
+DESCRIPTION:Dans le train retour :\n→ Feedback ESSCA à chaud sur téléphone (15 min) :\n  1. Quelles questions posées ?\n  2. Ce qui t'a surpris ?\n  3. Ce qui a bien fonctionné ?\n  4. Ce que tu referais différemment ?\n\nÀ la maison :\n→ MANGE. RÉCUPÈRE.\n→ Tu viens de faire 3 oraux en 3 jours avec 2 déplacements. C'est physiquement et mentalement intense.\n→ Après-midi libre — pas de révision ce soir.\n→ emlyon est dans 3 jours. La préparation commence demain matin.
+CATEGORIES:RÉVISION,RECUPERATION
+END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j5-matin-20260430@prep
+UID:gabriel-j5-emlyon-day1-20260430@prep
 DTSTART;TZID=Europe/Paris:20260430T090000
 DTEND;TZID=Europe/Paris:20260430T110000
-SUMMARY:J5 · emlyon — Actualité + Stats naturelles dans conversation
-DESCRIPTION:ACTION 1 — Maîtriser 1 sujet d'actualité en profondeur\n→ Choisis 1 parmi ces 3 (celui que tu connais le mieux) :\n  OPTION A : IA et automatisation des emplois\n  OPTION B : Transition énergétique — investissements verts et rentabilité\n  OPTION C : Recomposition géopolitique — fin de la mondialisation linéaire\n\n→ Pour le sujet choisi\, prépare 3 min de développement :\n  1. Fait documenté + chiffre WEF précis\n  2. Mécanisme : pourquoi est-ce que ça se passe ?\n  3. Impact sur les entreprises et les managers\n  4. Ta perspective personnelle (opinion défendable)\n\nACTION 2 — Exercice "stat naturelle"\n→ À voix haute\, dis chacune des 10 stats comme si tu parlais à quelqu'un normalement\n→ Pas "le WEF Future of Jobs 2025 indique que..." → "92 millions d'emplois vont disparaître — mais 170 millions seront créés. Ce n'est pas une destruction\, c'est une transformation."\n→ Teste-toi : ferme les flashcards → récite de mémoire → compare
+SUMMARY:J5 · emlyon Day 1 — "Pourquoi moi ?" + Maker spirit
+DESCRIPTION:emlyon est dans 2 jours. Tier 1. C'est différent des 3 oraux Tier 3 que tu viens de passer.\n\nACTION 1 — Lire le feedback des 3 oraux Tier 3 (15 min)\n→ Qu'est-ce qui a bien fonctionné ? → Garde-le\n→ Qu'est-ce qui a coinçé ? → Qu'est-ce que tu fais différemment pour emlyon ?\n\nACTION 2 — La question centrale emlyon\n→ Sur papier : "Pourquoi moi et pas un autre très bon candidat ?"\n→ Règle : jamais "je suis curieux\, j'aime le challenge"\n→ Trouve 1 chose que TU fais / penses / vois différemment des autres\n→ Formule : ce qui me caractérise → exemple concret → lien avec emlyon maker spirit\n\nACTION 3 — Recherche emlyon (30 min)\n→ em-lyon.com : maker spirit · incubateur · projets entrepreneuriaux\n→ En quoi tu es un "maker" (même petite échelle — c'est ok)\n→ 3 raisons emlyon DIFFÉRENTES des raisons Tier 3\n→ 2 questions pour le jury\n\nACTION 4 — Générer l'Audio Overview (Studio)\n→ NotebookLM → Studio → Customize Audio Overview\n→ Copie-colle le PROMPT 2\n→ Écoute les 10 premières minutes
 CATEGORIES:RÉVISION,EMLYON
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j5-video-20260430@prep
+UID:gabriel-j5-emlyon-pm-20260430@prep
 DTSTART;TZID=Europe/Paris:20260430T140000
-DTEND;TZID=Europe/Paris:20260430T160000
-SUMMARY:J5 · Video Script emlyon — Se filmer + corriger
-DESCRIPTION:ACTION 1 — Générer le Video Script emlyon (Chat)\n→ NotebookLM Chat → Copie-colle le PROMPT 10\n→ Dans le champ école → indique : emlyon\n→ Génère le script 3 min adapté emlyon\n\nACTION 2 — Se filmer (exercice essentiel avant Tier 1)\n→ Lis le script généré une fois\n→ Mets ton téléphone en mode selfie\, debout\, cadrage tête + buste\n→ Lance l'enregistrement → fais la présentation complète (3 min) sans lire le script\n→ Visionne la vidéo en silence\, note :\n  - Regard : tu regardes la caméra ou ailleurs ?\n  - Mains : elles bougent trop ou tu es figé ?\n  - Rythme : tu parles trop vite ?\n  - Tics : "euh"\, "voilà"\, "donc"...\n→ Refais 1 deuxième prise en corrigeant le point le plus visible\n\nRègle : se voir comme le jury te voit change tout.
-CATEGORIES:SIMULATION,EMLYON
+DTEND;TZID=Europe/Paris:20260430T153000
+SUMMARY:J5 · emlyon — Questions difficiles + Simulation 30 min
+DESCRIPTION:ACTION 1 — Générer FAQ Attaques (Studio)\n→ NotebookLM → Studio → Customize FAQ\n→ Copie-colle le PROMPT 5\n→ Lis le Niveau 3 uniquement : questions exclusives Tier 1 emlyon\n\nACTION 2 — Prépare tes réponses aux 3 questions difficiles emlyon\n→ Q1 : "Pourquoi toi et pas un autre très bon candidat ?"\n  → Ta réponse unique. Pas générique. Ce qui te caractérise vraiment.\n→ Q2 : "Qu'est-ce qui vous a vraiment changé cette année ?"\n  → Authentique\, pas scolaire. Une vraie histoire.\n→ Q3 : "Qu'est-ce qu'un maker pour toi ?"\n  → Définition personnelle + exemple concret\n\nACTION 3 — Simulation 30 min (Quiz Jury emlyon)\n→ NotebookLM Chat → Copie-colle le PROMPT 7\n→ Niveau de jury → TIER 1 EMLYON\n→ Réponse à voix haute à chaque question\n→ Note le feedback NotebookLM\, identifie le TOP 1 point à améliorer
+CATEGORIES:RÉVISION,EMLYON
 END:VEVENT
 
 BEGIN:VEVENT
 UID:gabriel-j5-english-20260430@prep
 DTSTART;TZID=Europe/Paris:20260430T200000
 DTEND;TZID=Europe/Paris:20260430T203000
-SUMMARY:J5 · 🇬🇧 English — Transition verte en anglais
-DESCRIPTION:Thème anglais du soir : "The green transition as a business opportunity"\n→ Ta structure (3 min) :\n  FACT : "$2 trillion invested in clean energy in 2024 globally — WEF Energy Transition 2025."\n  MECHANISM : "For the first time\, green is profitable. ESG is no longer just ethics — it's competitive advantage."\n  TENSION : "But 37% of businesses cite rising energy costs as a barrier — WEF Green Transition Report."\n  PERSONAL VIEW : "A manager of 2030 needs to navigate both the opportunity AND the constraint."\n\n→ Pratique à voix haute 2 fois → enregistre la 2e
+SUMMARY:J5 · 🇬🇧 English emlyon — Self-presentation 5 min
+DESCRIPTION:emlyon peut tester l'anglais. Commence maintenant.\n\nStructure self-presentation 5 min :\n→ (15 sec) "The WEF documents 92 million jobs displaced by 2030\, but 170 million created. Disruption hits entry-level jobs first."\n→ (30 sec) Pourquoi école de commerce : Kaufman's 5 functions + learning-by-doing\n→ (30 sec) Pourquoi emlyon : maker spirit + action from year 1 + "I don't want to study management — I want to practice it."\n→ (15 sec) Vision : "I see myself at the intersection of management and digital transformation."\n\n→ Enregistre → réécoute → refais 1 prise améliorée
 CATEGORIES:ANGLAIS,EMLYON
 END:VEVENT
 
-
 BEGIN:VEVENT
-UID:gabriel-j6-briefing-20260501@prep
+UID:gabriel-j6-emlyon-jm1-20260501@prep
 DTSTART;TZID=Europe/Paris:20260501T090000
 DTEND;TZID=Europe/Paris:20260501T100000
-SUMMARY:J6 · emlyon J-1 — Briefing Doc + révision légère
-DESCRIPTION:ACTION 1 — Générer le Briefing Doc emlyon (Studio)\n→ NotebookLM → Studio → Customize Briefing Doc\n→ Copie-colle le PROMPT 4\n→ Dans la génération\, indique que tu veux le doc pour emlyon spécifiquement\n→ Lis ce briefing doc en 10 min : pitch · 3 raisons · stats · questions jury · phrase de clôture\n→ C'est le seul document que tu liras demain matin avant l'oral\n\nACTION 2 — Relis le feedback ESCE\n→ Ouvre ta note de feedback ESCE (J2)\n→ Question : qu'est-ce qui a bien fonctionné ? → Garde-le pour demain\n→ Question : qu'est-ce qui a coinçé ? → Qu'est-ce que tu fais différemment pour emlyon ?
+SUMMARY:J6 · emlyon J-1 — Briefing Doc + Révision légère
+DESCRIPTION:ACTION 1 — Générer le Briefing Doc emlyon (Studio)\n→ NotebookLM → Studio → Customize Briefing Doc\n→ Copie-colle le PROMPT 4 → indique emlyon\n→ Lis ce briefing doc en 10 min : c'est le seul document que tu liras demain matin\n→ Mémorise : pitch · 3 raisons emlyon · stats WEF · 2 questions jury · phrase de clôture\n\nACTION 2 — Relis les 3 feedbacks (ESCE · IÉSEG · ESSCA)\n→ Qu'est-ce qui a marché dans les 3 ? → Garde-le pour emlyon\n→ Note 1 chose à faire DIFFÉREMMENT chez Tier 1
 CATEGORIES:RÉVISION,EMLYON
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j6-simu-20260501@prep
+UID:gabriel-j6-simu-english-20260501@prep
 DTSTART;TZID=Europe/Paris:20260501T200000
-DTEND;TZID=Europe/Paris:20260501T202000
-SUMMARY:J6 · Simulation express emlyon J-1 — 20 min
-DESCRIPTION:Simulation légère — ne te sature pas la veille\n\n→ Mets-toi debout\, chrono 20 min\n→ Pitch 90 sec (une seule fois\, comme si c'était l'oral)\n→ Réponds mentalement à 3 questions :\n  1. "Pourquoi emlyon ?"\n  2. "Pourquoi vous ?" (ta réponse unique)\n  3. "Qu'est-ce qui vous a vraiment changé cette année ?"\n\n→ Pose le stylo. Dors avant 22h30.\n→ Demain : emlyon 14h. Pars avec 45 min d'avance.
-CATEGORIES:SIMULATION,EMLYON
+DTEND;TZID=Europe/Paris:20260501T212000
+SUMMARY:J6 · Simulation express emlyon + Simulation anglais complète
+DESCRIPTION:ACTION 1 — Simulation express emlyon (20 min)\n→ Debout\, chrono\n→ Pitch 90 sec adapté emlyon (une seule fois)\n→ 2 questions difficiles à voix haute\n→ Dors avant 22h30. L'oral est à 14h.\n\nACTION 2 — Simulation anglais complète (40 min)\n→ ① Self-presentation 5 min en anglais (version emlyon)\n→ ② Thème : "AI\, automation and the future of work" (3 min)\n   FACT : "The WEF documents 92M jobs displaced\, 170M created by 2030."\n   MECHANISM : "Entry-level white-collar jobs are most at risk from agentic AI."\n   SCHOOL LINK : "That's why business schools that teach through real projects are more relevant than ever."\n→ ③ Vision 10 ans : "I see myself at the intersection of management and digital transformation. WEF identifies emotional intelligence\, foresight\, and authentic leadership as critical for 2030 — exactly what emlyon builds."\n\n→ Enregistre → réécoute demain dans le transport
+CATEGORIES:SIMULATION,ANGLAIS,EMLYON
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j6-english-20260501@prep
-DTSTART;TZID=Europe/Paris:20260501T203000
-DTEND;TZID=Europe/Paris:20260501T210000
-SUMMARY:J6 · 🇬🇧 English — Simulation complète oral anglais
-DESCRIPTION:Simulation complète oral anglais Tier 1 (20 min)\n\n→ Lance un chrono\n① Self-presentation 5 min en anglais (version emlyon)\n② Thème économique 10 min : choisis entre IA + emploi OU transition verte\n  → Développe 3 min → simule questions du jury → réponds 2 min\n③ Vision 10 ans :\n  "In ten years\, I see myself at the intersection of management and digital transformation. The WEF identifies emotional intelligence\, foresight\, and authentic leadership as the critical competencies for 2030. These are exactly what emlyon builds — through real projects from year one\, not through lectures."\n\n→ Enregistre → réécoute demain matin dans le transport
-CATEGORIES:ANGLAIS,EMLYON
-END:VEVENT
-
-
-BEGIN:VEVENT
-UID:gabriel-j7-matin-20260502@prep
-DTSTART;TZID=Europe/Paris:20260502T110000
+UID:gabriel-j7-matin-emlyon-20260502@prep
+DTSTART;TZID=Europe/Paris:20260502T111500
 DTEND;TZID=Europe/Paris:20260502T113000
-SUMMARY:J7 · Matin emlyon — Briefing Doc express 10 min
-DESCRIPTION:→ Relis UNIQUEMENT le Briefing Doc emlyon généré en J6\n→ 10 min max — ne lis rien d'autre\n→ Écoute ton enregistrement English du soir J6 dans le transport\n\nRappel mindset emlyon :\n→ Maker\, pas réciteur\n→ Sois toi-même amplifié — pas un candidat standard\n→ La question la plus importante : "Qu'est-ce que je veux vraiment leur dire ?"\n→ Si le jury creuse : c'est bon signe — ils s'intéressent à toi\n\nPars 45 min avant l'heure d'oral.
+SUMMARY:J7 · Matin emlyon — Briefing Doc 10 min
+DESCRIPTION:→ Relis UNIQUEMENT le Briefing Doc emlyon (10 min max — pas plus)\n→ Trajet vers Paris : écoute ton enregistrement anglais du soir J6\n\nMindset emlyon :\n→ Maker\, pas réciteur\n→ Sois toi-même amplifié — pas un candidat standard\n→ "Pourquoi toi ?" : ta réponse unique\, personnelle\n→ Si le jury creuse : c'est bon signe — ils s'intéressent à toi\n→ Pars 45 min avant l'heure d'oral
 CATEGORIES:RÉVISION,EMLYON
 END:VEVENT
 
@@ -215,112 +190,106 @@ UID:gabriel-oral-emlyon-20260502@prep
 DTSTART;TZID=Europe/Paris:20260502T140000
 DTEND;TZID=Europe/Paris:20260502T183000
 SUMMARY:🏫 ORAL emlyon Paris — Tier 1 ⭐
-DESCRIPTION:emlyon Business School · Paris · Tier 1\n14h00 → 18h30 (plage — ton passage est dans la journée)\n\nPENDANT L'ORAL :\n→ Ouvre avec ta stat WEF — naturellement\, pas récitée\n→ "Pourquoi moi ?" : ta réponse unique\, personnelle\, pas générique\n→ Si déstabilisé : reformule\, ne panique pas\n→ Pose tes 2 questions au jury en fin d'entretien\n→ Ferme avec ta phrase mémorisée
+DESCRIPTION:emlyon Business School · Paris · Tier 1 · 14h-18h30\n\n→ Ouvre avec stat WEF naturellement\n→ "Pourquoi moi ?" : ta réponse unique et personnelle\n→ Si déstabilisé : "C'est une bonne question\, laissez-moi reformuler." — puis structure\n→ Pose tes 2 questions au jury\n→ Phrase de clôture mémorisée\n\nFeedback à chaud ce soir dans les 2h.
 CATEGORIES:ORAL,TIER1
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j7-feedback-20260502@prep
+UID:gabriel-j7-feedback-emlyon-20260502@prep
 DTSTART;TZID=Europe/Paris:20260502T200000
 DTEND;TZID=Europe/Paris:20260502T201500
 SUMMARY:J7 · Feedback emlyon — écrire à chaud DANS LES 2H
-DESCRIPTION:FAIS ÇA CE SOIR — avant de dormir\n\n→ Note sur téléphone :\n  1. Liste TOUTES les questions posées (même approximativement)\n  2. Quelle question t'a surpris ou déstabilisé ?\n  3. As-tu mentionné un chiffre WEF naturellement ? Lequel ?\n  4. Le jury a-t-il souri / acquiescé ? Sur quoi ?\n  5. Qu'est-ce que tu referais différemment pour ESSEC ?\n\n→ Ce feedback ESSEC-spécifique est de l'or pour J15 (J-1 ESSEC)
+DESCRIPTION:FAIS ÇA CE SOIR — avant de dormir\n\n→ Note sur téléphone :\n  1. Liste TOUTES les questions posées\n  2. Quelle question t'a surpris ou déstabilisé ?\n  3. As-tu mentionné un chiffre WEF naturellement ?\n  4. Le jury a-t-il souri / creusé quelque chose ?\n  5. Ce que tu ferais différemment pour ESSEC (dans 9 jours)
 CATEGORIES:RÉVISION
 END:VEVENT
 
-
 BEGIN:VEVENT
-UID:gabriel-j8-debrief-20260503@prep
+UID:gabriel-j8-debrief-tier2-20260503@prep
 DTSTART;TZID=Europe/Paris:20260503T090000
-DTEND;TZID=Europe/Paris:20260503T100000
-SUMMARY:J8 · Debrief emlyon + Mindmap bilan
-DESCRIPTION:ACTION 1 — Relire le feedback emlyon à tête reposée\n→ Qu'est-ce qui change pour Tier 2 (NEOMA\, SKEMA\, KEDGE) ?\n→ Tier 2 = même fond\, ton légèrement plus classique qu'emlyon\n→ Le jury Tier 2 cherche : cohérence + projet clair + énergie — pas "Pourquoi toi ?"\n\nACTION 2 — Mettre à jour le Mindmap (Chat)\n→ NotebookLM Chat → tape :\n  "Mets à jour le mindmap de préparation pour refléter les leçons des oraux ESCE et emlyon. Quels éléments de différenciation fonctionnent le mieux pour NEOMA\, SKEMA et KEDGE ?"\n→ Lis la réponse → note les 3 ajustements à faire pour Tier 2
-CATEGORIES:RÉVISION
+DTEND;TZID=Europe/Paris:20260503T110000
+SUMMARY:J8 · Debrief 4 oraux + Lancer Tier 2
+DESCRIPTION:Tu as fait 4 oraux en 6 jours. Maintenant : NEOMA\, SKEMA\, ESSEC\, KEDGE.\n\nACTION 1 — Synthèse feedbacks (20 min)\n→ Relis les 4 feedbacks : ESCE · IÉSEG · ESSCA · emlyon\n→ 3 choses qui ont fonctionné dans ta façon de te présenter → garde-les\n→ 1 chose à améliorer pour Tier 2 (cohérence + projet clair + énergie)\n\nACTION 2 — Recherche NEOMA + SKEMA\n→ NEOMA (neoma-bs.com) : campus Reims/Paris/Rouen · 1 programme · 1 association · 3 raisons NEOMA\n→ SKEMA (skema.edu) : "Think Forward" · fort sur international + digital · 3 raisons SKEMA\n→ Règle : si tu ne trouves pas 3 raisons vraiment différentes → tu n'es pas encore prêt
+CATEGORIES:RÉVISION,NEOMA,SKEMA
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j8-recherche-tier2-20260503@prep
+UID:gabriel-j8-pm-studyguide-20260503@prep
 DTSTART;TZID=Europe/Paris:20260503T140000
 DTEND;TZID=Europe/Paris:20260503T160000
-SUMMARY:J8 · Recherche NEOMA + SKEMA — 3 raisons concrètes par école
-DESCRIPTION:ACTION — Recherche active (pas passive)\n\nNEOMA (neoma-bs.com) :\n→ Campus Reims / Paris / Rouen\n→ 1 programme spécifique à citer (ex : MSc\, Bachelor en Management)\n→ 1 association ou initiative\n→ 3 raisons concrètes NEOMA ≠ SKEMA\n\nSKEMA (skema.edu) :\n→ Fort sur international : campuses USA\, Chine\, Brésil\n→ "Think Forward" — philosophie pédagogique\n→ Fort sur digital/data → profil hybride valorisé\n→ 3 raisons concrètes SKEMA ≠ NEOMA\n\nRègle absolue : si tu ne trouves pas 3 raisons VRAIMENT différentes pour chaque école → tu n'es pas encore prêt pour l'oral de cette école.
+SUMMARY:J8 · Study Guide Tier 2 + Flashcards écoles
+DESCRIPTION:ACTION 1 — Study Guide Bloc 3 (Studio)\n→ NotebookLM → Studio → Customize Study Guide\n→ Copie-colle le PROMPT 3\n→ Fais le Bloc 3 : 5 Q&R sur différenciation par tier\n→ Réponse à voix haute AVANT de lire la réponse modèle\n\nACTION 2 — Flashcards Deck C (écoles)\n→ Ouvre les flashcards générées en J1\n→ Fais le Deck C : 5 cartes (ESSEC · emlyon · NEOMA · SKEMA · KEDGE)\n→ Pour chaque école : ① ce que le jury cherche ② 1 argument spécifique ③ 1 question à leur poser\n→ Rythme : 2 min par carte à voix haute
 CATEGORIES:RÉVISION,NEOMA,SKEMA
 END:VEVENT
 
-
 BEGIN:VEVENT
-UID:gabriel-j9-studyguide-20260504@prep
+UID:gabriel-j9-neoma-simu-20260504@prep
 DTSTART;TZID=Europe/Paris:20260504T090000
-DTEND;TZID=Europe/Paris:20260504T110000
-SUMMARY:J9 · Study Guide Tier 2 + Flashcards Deck C (écoles)
-DESCRIPTION:ACTION 1 — Study Guide Bloc 3 (Questions jury par tier)\n→ Ouvre le Study Guide généré en J3\n→ Lis et réponds à voix haute au Bloc 3 (5 Q&R sur différenciation par tier)\n→ Pour chaque question : réponse à voix haute AVANT de lire la réponse modèle\n→ Note l'écart entre ta réponse et la réponse modèle\n\nACTION 2 — Flashcards Deck C (différenciateurs par école)\n→ Ouvre les flashcards générées en J1\n→ Fais le Deck C (5 cartes : ESSEC / emlyon / NEOMA / SKEMA / KEDGE)\n→ Pour chaque école :\n  RECTO : nom de l'école\n  VERSO (à mémoriser) :\n    ① Ce que le jury cherche\n    ② 1 argument spécifique\n    ③ 1 question à leur poser\n→ Rythme : 2 min par carte à voix haute
-CATEGORIES:RÉVISION,NEOMA,SKEMA
-END:VEVENT
-
-BEGIN:VEVENT
-UID:gabriel-j9-english-20260504@prep
-DTSTART;TZID=Europe/Paris:20260504T200000
-DTEND;TZID=Europe/Paris:20260504T203000
-SUMMARY:J9 · 🇬🇧 English SKEMA — Digital transformation
-DESCRIPTION:SKEMA est très internationale — l'anglais peut être testé.\n\nThème : "Digital transformation and the future of management"\n→ Ta structure (3 min) :\n  FACT : "The WEF predicts 44% of core skills will be disrupted in 5 years."\n  MECHANISM : "The most valued profile isn't the tech expert OR the manager — it's the hybrid."\n  BUSINESS IMPACT : "Organizations that fail to bridge management and data literacy will lose competitive ground by 2030."\n  WHY SKEMA : "SKEMA's Think Forward pedagogy and its multicampus international model build exactly this hybrid profile."\n\n→ Enregistre → réécoute → note 1 amélioration
-CATEGORIES:ANGLAIS,SKEMA
-END:VEVENT
-
-
-BEGIN:VEVENT
-UID:gabriel-j10-simu-neoma-20260505@prep
-DTSTART;TZID=Europe/Paris:20260505T090000
-DTEND;TZID=Europe/Paris:20260505T103000
-SUMMARY:J10 · Simulation NEOMA complète 45 min — Quiz Jury
-DESCRIPTION:ACTION — Simulation Quiz Jury NEOMA\n→ NotebookLM Chat → Copie-colle le PROMPT 7\n→ Niveau de jury → indique : TIER 2 NEOMA\n→ Lance la simulation complète 45 min\n→ Réponse à voix haute à chaque question\n→ Après la simulation :\n  - Note le score sur 20 donné par NotebookLM\n  - Identifie le Top 3 points forts → garde-les pour l'oral réel\n  - Identifie le Top 3 à améliorer → travaille-les demain\n\nRappel NEOMA : cohérence + projet clair + énergie\nPas besoin d'être brillant — besoin d'être cohérent et sérieux.
+DTEND;TZID=Europe/Paris:20260504T103000
+SUMMARY:J9 · Simulation NEOMA complète 45 min — Quiz Jury
+DESCRIPTION:ACTION — Quiz Jury NEOMA\n→ NotebookLM Chat → Copie-colle le PROMPT 7\n→ Niveau de jury → TIER 2 NEOMA\n→ Lance la simulation complète 45 min\n→ Réponse à voix haute à chaque question\n→ Après : note le score + Top 3 points forts + Top 3 à améliorer
 CATEGORIES:SIMULATION,NEOMA
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j10-infographic-20260505@prep
-DTSTART;TZID=Europe/Paris:20260505T140000
-DTEND;TZID=Europe/Paris:20260505T151000
-SUMMARY:J10 · Document iconographique — Infographic drill × 2 visuels
-DESCRIPTION:ACTION — Exercice iconographique avec NotebookLM\n→ NotebookLM Chat → Copie-colle le PROMPT 9\n→ NotebookLM te donne un visuel à décrire → tu t'entraînes à la méthode 3 niveaux\n\nPOUR CHAQUE VISUEL (timer 8 min prep + 5 min présentation) :\n→ NIVEAU 1 (1 min) : Ce que je vois — factuel\, pas plus\n→ NIVEAU 2 (3 min) : Ce que ça signifie — mécanisme économique/social/géopolitique\n→ NIVEAU 3 (4 min) : Ce que ça m'inspire — 1 stat WEF + actualité + opinion + lien avec l'école\n\nFais 2 visuels consécutifs\n→ Après chaque visuel : lis le feedback NotebookLM\n→ Point de vigilance : est-ce que ta stat WEF est citée naturellement ou récitée ?\n\nObjectif : 5 visuels traités sur les 20 jours = tu es prêt pour l'iconographique
-CATEGORIES:RÉVISION,ICONOGRAPHIQUE
-END:VEVENT
-
-BEGIN:VEVENT
-UID:gabriel-j10-skema-20260505@prep
-DTSTART;TZID=Europe/Paris:20260505T200000
-DTEND;TZID=Europe/Paris:20260505T203000
-SUMMARY:J10 · Affiner différenciateur SKEMA
-DESCRIPTION:SKEMA est dans 4 jours. Soirée légère.\n\n→ Sur papier : rédige ta réponse à "Pourquoi SKEMA et pas NEOMA ?"\n→ La réponse doit être honnête ET spécifique\n→ Piste SKEMA : réseau international multicampus + digital + Think Forward\n→ Si tu as un intérêt pour l'international ou le data → SKEMA est ton école à valoriser le plus dans Tier 2\n\n→ Prépare 2 questions spécifiques à poser au jury SKEMA\n→ Dors à bonne heure.
-CATEGORIES:RÉVISION,SKEMA
-END:VEVENT
-
-
-BEGIN:VEVENT
-UID:gabriel-j11-kedge-20260506@prep
-DTSTART;TZID=Europe/Paris:20260506T090000
-DTEND;TZID=Europe/Paris:20260506T103000
-SUMMARY:J11 · Recherche KEDGE + 3 raisons concrètes
-DESCRIPTION:KEDGE est dans 9 jours. Le préparer maintenant = tranquille le 15 mai.\n\nACTION — Recherche KEDGE (kedge.edu) :\n→ Campus Bordeaux / Paris / Marseille / Toulon\n→ Fort sur : management responsable\, développement durable\, logistique maritime\n→ Note sur papier :\n  - 3 raisons concrètes de choisir KEDGE (pas "bonne réputation")\n  - 1 programme ou initiative spécifique\n  - 2 questions à poser au jury KEDGE\n\nLien avec WEF :\n→ KEDGE développement durable → "6/9 limites planétaires franchies — la transition verte est maintenant rentable ($2T investis)"\n→ C'est une stat parfaite à citer dans un oral KEDGE sur le management responsable\n\nAprès-midi : RÉCUPÉRATION — 3 oraux arrivent en 6 jours. Préserve ton énergie.
+UID:gabriel-j9-kedge-recherche-20260504@prep
+DTSTART;TZID=Europe/Paris:20260504T140000
+DTEND;TZID=Europe/Paris:20260504T153000
+SUMMARY:J9 · Recherche KEDGE + 3 raisons concrètes
+DESCRIPTION:KEDGE est dans 11 jours. Le préparer maintenant = tranquille le 15 mai.\n\n→ kedge.edu : management responsable · développement durable · campus Bordeaux/Paris/Marseille\n→ 3 raisons concrètes KEDGE (pas "bonne réputation")\n→ 1 programme ou initiative spécifique\n→ 2 questions à poser au jury KEDGE\n→ Stat WEF à citer pour KEDGE : "6/9 limites planétaires franchies + $2T énergie propre"\n→ Lien KEDGE : "Le management responsable n'est plus un supplément d'âme — c'est un avantage compétitif documenté."
 CATEGORIES:RÉVISION,KEDGE
 END:VEVENT
 
+BEGIN:VEVENT
+UID:gabriel-j9-english-skema-20260504@prep
+DTSTART;TZID=Europe/Paris:20260504T200000
+DTEND;TZID=Europe/Paris:20260504T203000
+SUMMARY:J9 · 🇬🇧 English SKEMA — Digital transformation
+DESCRIPTION:SKEMA est très internationale — l'anglais peut être testé.\n\nThème : "Digital transformation and the future of management" (3 min)\n→ FACT : "The WEF predicts 44% of core skills will be disrupted in 5 years."\n→ MECHANISM : "The most valued profile isn't the tech expert OR the manager — it's the hybrid."\n→ WHY SKEMA : "SKEMA's Think Forward pedagogy and multicampus model build exactly this hybrid profile."\n\n→ Enregistre → réécoute → 1 amélioration
+CATEGORIES:ANGLAIS,SKEMA
+END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j12-briefing-neoma-20260507@prep
+UID:gabriel-j10-neoma-skema-20260505@prep
+DTSTART;TZID=Europe/Paris:20260505T090000
+DTEND;TZID=Europe/Paris:20260505T110000
+SUMMARY:J10 · 3 raisons NEOMA ≠ SKEMA + Infographic drill
+DESCRIPTION:ACTION 1 — Exercice différenciation NEOMA vs SKEMA\n→ Sur papier : colonne NEOMA (3 raisons) / colonne SKEMA (3 raisons)\n→ Aucune raison ne doit être identique entre les deux colonnes\n→ Si tu n'y arrives pas → cherche davantage sur leurs sites\n\nACTION 2 — Infographic drill × 2 visuels (PROMPT 9)\n→ NotebookLM Chat → Copie-colle le PROMPT 9\n→ Fais 2 visuels consécutifs (méthode 3 niveaux)\n→ Timer : 8 min préparation + 5 min présentation par visuel\n→ Point de vigilance : la stat WEF doit être citée naturellement\, pas récitée
+CATEGORIES:RÉVISION,NEOMA,SKEMA
+END:VEVENT
+
+BEGIN:VEVENT
+UID:gabriel-j11-essec-preparation-20260506@prep
+DTSTART;TZID=Europe/Paris:20260506T090000
+DTEND;TZID=Europe/Paris:20260506T110000
+SUMMARY:J11 · Préparer ESSEC — Story personnelle + Argument fort
+DESCRIPTION:ESSEC est dans 5 jours. Commence à le préparer maintenant — c'est le plus important.\n\nACTION 1 — Générer FAQ Attaques Tier 1 ESSEC (Studio)\n→ NotebookLM → Studio → Customize FAQ\n→ Copie-colle le PROMPT 5\n→ Lis UNIQUEMENT le Niveau 3 (questions exclusives ESSEC)\n\nACTION 2 — Prépare tes 3 éléments ESSEC\n→ Sur papier :\n  ① Ton argument le plus fort — celui que tu défendrais même sous pression du jury\n  ② 1 anecdote personnelle authentique — pas scolaire\, pas abstraite. Une vraie histoire qui dit qui tu es.\n  ③ Ta vision 10 ans précise : "À l'intersection du management et de la transformation numérique" + WEF compétences 2030\n\nRègle ESSEC : ne pas être consensuel. Avoir une opinion. La défendre calmement.
+CATEGORIES:RÉVISION,ESSEC,TIER1
+END:VEVENT
+
+BEGIN:VEVENT
+UID:gabriel-j11-pm-20260506@prep
+DTSTART;TZID=Europe/Paris:20260506T140000
+DTEND;TZID=Europe/Paris:20260506T151000
+SUMMARY:J11 · Récupération + Video Script NEOMA
+DESCRIPTION:Après-midi légère — tu as 3 oraux en 4 jours qui arrivent. Préserve ton énergie.\n\nACTION — Video Script NEOMA (Chat)\n→ NotebookLM Chat → Copie-colle le PROMPT 10 → indique NEOMA\n→ Génère le script 3 min adapté NEOMA\n→ Filme-toi → visionne → note 1 correction\n→ Objectif : se voir comme le jury te voit
+CATEGORIES:SIMULATION,NEOMA
+END:VEVENT
+
+BEGIN:VEVENT
+UID:gabriel-j12-neoma-jm1-20260507@prep
 DTSTART;TZID=Europe/Paris:20260507T090000
 DTEND;TZID=Europe/Paris:20260507T100000
 SUMMARY:J12 · NEOMA J-1 — Briefing Doc + Simulation express
-DESCRIPTION:ACTION 1 — Générer le Briefing Doc NEOMA (Studio)\n→ NotebookLM → Studio → Customize Briefing Doc\n→ Copie-colle le PROMPT 4 en indiquant NEOMA\n→ Lis le Briefing Doc généré en 10 min\n→ Mémorise :\n  - Ton pitch NEOMA (adapté au jury Tier 2)\n  - Tes 3 raisons NEOMA spécifiques\n  - Tes 2 questions pour le jury\n  - La stat WEF la plus pertinente pour NEOMA\n\nACTION 2 — Simulation express 30 min\n→ Pitch 90 sec → 3 questions Tier 2 → tes questions au jury\n→ Vérifie que tu connais 1 fait précis sur NEOMA (programme\, initiative)\n\nACTION 3 — Logistique\n→ Vérifie l'adresse exacte NEOMA Paris\n→ Calcule ton temps de trajet + 20 min de marge\n→ Prépare ta tenue ce soir\n→ Dors tôt
+DESCRIPTION:ACTION 1 — Générer Briefing Doc NEOMA (Studio)\n→ NotebookLM → Studio → Customize Briefing Doc\n→ Copie-colle le PROMPT 4 → indique NEOMA\n→ Lis en 10 min : pitch NEOMA · 3 raisons · stats WEF · 2 questions jury · clôture\n\nACTION 2 — Simulation express 30 min\n→ Pitch 90 sec → 3 questions Tier 2 → tes questions au jury\n→ Vérifie que tu connais 1 fait précis sur NEOMA\n\nACTION 3 — Logistique\n→ Adresse exacte NEOMA Paris\n→ Calcule trajet + 20 min de marge\n→ Prépare ta tenue ce soir\n→ Dors tôt
 CATEGORIES:RÉVISION,NEOMA
 END:VEVENT
 
-
 BEGIN:VEVENT
 UID:gabriel-j13-matin-neoma-20260508@prep
-DTSTART;TZID=Europe/Paris:20260508T110000
-DTEND;TZID=Europe/Paris:20260508T112000
-SUMMARY:J13 · Matin NEOMA — Relecture Briefing Doc 10 min
-DESCRIPTION:→ Relis UNIQUEMENT le Briefing Doc NEOMA (10 min max)\n→ Vérifie mentalement tes 3 raisons + tes 2 questions\n→ Trajet vers NEOMA : réécoute le début de l'Audio Overview (Prompt 2) en podcast
+DTSTART;TZID=Europe/Paris:20260508T113000
+DTEND;TZID=Europe/Paris:20260508T120000
+SUMMARY:J13 · Matin NEOMA — Briefing Doc 10 min
+DESCRIPTION:→ Relis UNIQUEMENT le Briefing Doc NEOMA (10 min max)\n→ Trajet : écoute l'Audio Overview NotebookLM — partie mégatendances\n→ Rappel NEOMA : cohérence + projet clair + énergie. Pas besoin d'être brillant — être cohérent et sérieux.
 CATEGORIES:RÉVISION,NEOMA
 END:VEVENT
 
@@ -329,26 +298,25 @@ UID:gabriel-oral-neoma-20260508@prep
 DTSTART;TZID=Europe/Paris:20260508T140000
 DTEND;TZID=Europe/Paris:20260508T170000
 SUMMARY:🏫 ORAL NEOMA Paris — Tier 2
-DESCRIPTION:NEOMA Business School · Paris · Tier 2\n\nCohérence + projet clair + énergie\nPas besoin d'être brillant — être cohérent\, sérieux et engagé\n\nFeedback immédiat le soir\nJ+1 = SKEMA → rentre à la maison\, mange\, dors tôt
+DESCRIPTION:NEOMA Business School · Paris · Tier 2 · 14h\n\n→ Ouvre avec stat WEF\n→ 3 raisons NEOMA spécifiques\n→ Projet pro clair et cohérent\n→ Pose tes 2 questions au jury\n→ Phrase de clôture\n\nFeedback à chaud ce soir. J+1 = SKEMA → dors tôt.
 CATEGORIES:ORAL
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j13-feedback-skema-prep-20260508@prep
+UID:gabriel-j13-skema-prep-soir-20260508@prep
 DTSTART;TZID=Europe/Paris:20260508T200000
 DTEND;TZID=Europe/Paris:20260508T202000
 SUMMARY:J13 · Feedback NEOMA + Briefing Doc SKEMA express
-DESCRIPTION:ACTION 1 — Feedback NEOMA à chaud (15 min)\n→ Notes sur téléphone : questions posées / ce qui a coinçé / ce qui a bien fonctionné\n\nACTION 2 — Briefing Doc SKEMA express\n→ NotebookLM Chat → tape :\n  "Génère une fiche de révision express pour l'oral SKEMA demain : pitch adapté maker+international\, 3 raisons spécifiques SKEMA\, 2 questions au jury\, 2 stats WEF pertinentes pour SKEMA\, phrase de clôture."\n→ Lis cette fiche ce soir → c'est tout ce que tu liras demain matin\n→ Dors avant 22h30
+DESCRIPTION:ACTION 1 — Feedback NEOMA à chaud (15 min)\n→ Notes téléphone : questions / surprises / ce qui a fonctionné\n\nACTION 2 — Briefing Doc SKEMA express\n→ NotebookLM Chat → tape :\n"Génère une fiche express pour l'oral SKEMA demain : pitch adapté international+digital\, 3 raisons spécifiques SKEMA\, 2 questions au jury\, 2 stats WEF pertinentes\, phrase de clôture. Format court — lecture 10 min max."\n→ Lis cette fiche → c'est tout ce que tu liras demain matin\n→ Dors avant 22h30
 CATEGORIES:RÉVISION,SKEMA
 END:VEVENT
 
-
 BEGIN:VEVENT
 UID:gabriel-j14-matin-skema-20260509@prep
-DTSTART;TZID=Europe/Paris:20260509T110000
-DTEND;TZID=Europe/Paris:20260509T112000
-SUMMARY:J14 · Matin SKEMA — Briefing Doc 10 min + Audio trajet
-DESCRIPTION:→ Relis la fiche SKEMA express générée hier soir (10 min max)\n→ Trajet : écoute l'Audio Overview (Prompt 2) — partie sur les mégatendances\n\nRappel différence SKEMA vs NEOMA hier :\n→ SKEMA = international + digital + Think Forward\n→ Ajuste 1-2 références spécifiques SKEMA dans ton pitch\n→ Même structure de réponse\, références différentes
+DTSTART;TZID=Europe/Paris:20260509T113000
+DTEND;TZID=Europe/Paris:20260509T120000
+SUMMARY:J14 · Matin SKEMA — Briefing express 10 min
+DESCRIPTION:→ Relis la fiche SKEMA générée hier soir (10 min max)\n→ Trajet : Audio Overview NotebookLM\n\nRappel différence SKEMA vs NEOMA :\n→ SKEMA = international multicampus + digital/data + Think Forward\n→ Ajuste 1-2 références SKEMA dans ton pitch\n→ Même structure\, références différentes
 CATEGORIES:RÉVISION,SKEMA
 END:VEVENT
 
@@ -357,63 +325,52 @@ UID:gabriel-oral-skema-20260509@prep
 DTSTART;TZID=Europe/Paris:20260509T140000
 DTEND;TZID=Europe/Paris:20260509T170000
 SUMMARY:🏫 ORAL SKEMA Paris — Tier 2
-DESCRIPTION:SKEMA Business School · Paris · Tier 2\n\nDouble oral en 2 jours → c'est normal d'être fatigué\nGère ton énergie : sois calme\, pas surjoué\nSKEMA = international + digital → mets ça en avant si tu as un intérêt là-dedans\n\nFeedback immédiat le soir
+DESCRIPTION:SKEMA Business School · Paris · Tier 2 · 14h\n\n2e oral en 2 jours — gère ton énergie\, sois calme\nSKEMA = international + digital → mets-le en avant\n→ Pose tes 2 questions au jury\n\nFeedback ce soir. Demain = préparation intensive ESSEC J-1.
 CATEGORIES:ORAL
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j14-feedback-20260509@prep
+UID:gabriel-j14-feedback-essec-prep-20260509@prep
 DTSTART;TZID=Europe/Paris:20260509T200000
 DTEND;TZID=Europe/Paris:20260509T201500
-SUMMARY:J14 · Feedback SKEMA + Préparer mentalement ESSEC
-DESCRIPTION:ACTION 1 — Feedback SKEMA à chaud (15 min)\n→ Notes téléphone : questions / surprises / ce qui a fonctionné\n\nACTION 2 — Note 1 chose à améliorer pour ESSEC\n→ ESSEC est dans 2 jours\n→ Sur papier : 1 phrase sur ce que tu vas faire DIFFÉREMMENT pour ESSEC\n→ ESSEC = opinion défendue + pas consensuel\n\nDors. Demain = journée ESSEC intensive J-1.
+SUMMARY:J14 · Feedback SKEMA + Note ESSEC
+DESCRIPTION:ACTION 1 — Feedback SKEMA à chaud (15 min)\n→ Notes téléphone : questions / surprises / ce qui a fonctionné\n\nACTION 2 — Prépare mentalement ESSEC\n→ Sur papier : 1 phrase sur ce que tu vas faire DIFFÉREMMENT pour ESSEC\n→ ESSEC = opinion défendue + pas consensuel + authenticité\n→ Demain = journée ESSEC intensive J-1. Dors bien.
 CATEGORIES:RÉVISION,ESSEC
 END:VEVENT
 
-
 BEGIN:VEVENT
-UID:gabriel-j15-essec-intensive-20260510@prep
+UID:gabriel-j15-essec-matin-intensive-20260510@prep
 DTSTART;TZID=Europe/Paris:20260510T090000
 DTEND;TZID=Europe/Paris:20260510T120000
-SUMMARY:J15 · ESSEC J-1 — Préparation intensive (3h)
-DESCRIPTION:C'est l'oral le plus important. Traite cette journée comme telle.\n\nACTION 1 — Générer le Briefing Doc ESSEC (Studio)\n→ NotebookLM → Studio → Customize Briefing Doc\n→ Copie-colle le PROMPT 4 en indiquant ESSEC\n→ Lis ce Briefing Doc → c'est ton document de référence pour demain\n\nACTION 2 — FAQ Attaques Tier 1 (Studio)\n→ NotebookLM → Studio → Customize FAQ\n→ Copie-colle le PROMPT 5\n→ Lis UNIQUEMENT le Niveau 3 (questions exclusives ESSEC) :\n  - "Convaincez-moi en 2 min que vous méritez une place ESSEC"\n  - "Quel leader contemporain vous inspire et pourquoi ?"\n  - "Qu'est-ce qui vous a vraiment changé cette année ?"\n\nACTION 3 — Prépare tes 3 éléments ESSEC\n→ Sur papier :\n  ① Ton argument le plus fort (celui que tu défendrais sous pression)\n  ② 1 anecdote personnelle authentique (pas scolaire\, pas abstraite)\n  ③ Ta vision 10 ans précise : WEF compétences 2030 + ton trajectory\n\nRègle ESSEC : ne pas être consensuel. Avoir une opinion. La défendre calmement.
+SUMMARY:J15 · ESSEC J-1 — Préparation intensive matin (3h)
+DESCRIPTION:C'est l'oral le plus important. Traite cette journée comme telle.\n\nACTION 1 — Briefing Doc ESSEC (Studio)\n→ NotebookLM → Studio → Customize Briefing Doc\n→ Copie-colle le PROMPT 4 → indique ESSEC\n→ Lis ce Briefing Doc → c'est ton document de référence pour demain\n\nACTION 2 — FAQ Attaques Tier 1 ESSEC (Studio)\n→ NotebookLM → Studio → Customize FAQ\n→ Copie-colle le PROMPT 5\n→ Lis le Niveau 3 uniquement (questions exclusives ESSEC) :\n  - "Convaincez-moi en 2 min que vous méritez une place ESSEC"\n  - "Quel leader contemporain vous inspire et pourquoi ?"\n  - "Qu'est-ce qui vous a vraiment changé cette année ?"\n  - "Qu'est-ce qui vous différencie d'un candidat avec les mêmes notes ?"\n\nACTION 3 — Tes 3 éléments ESSEC (révise ce que tu as préparé en J11)\n→ ① Ton argument le plus fort\n→ ② Ton anecdote personnelle authentique\n→ ③ Ta vision 10 ans précise\n\nRègle ESSEC : ne pas être consensuel. Avoir une opinion. La défendre calmement.
 CATEGORIES:RÉVISION,ESSEC,TIER1
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j15-simu-essec-20260510@prep
+UID:gabriel-j15-essec-pm-simu-20260510@prep
 DTSTART;TZID=Europe/Paris:20260510T140000
 DTEND;TZID=Europe/Paris:20260510T160000
-SUMMARY:J15 · Simulation jury ESSEC — Questions déstabilisantes
-DESCRIPTION:ACTION — Quiz Jury ESSEC niveau maximum\n→ NotebookLM Chat → Copie-colle le PROMPT 7\n→ Niveau de jury → indique : TIER 1 ESSEC\n→ Lance la simulation complète\n→ Réponse à voix haute\, debout\, comme si c'était l'oral réel\n\nQuestions ESSEC à anticiper :\n→ "Convaincez-moi en 2 minutes que vous méritez une place ici"\n→ "Qu'est-ce qui vous différencie d'un candidat avec les mêmes notes ?"\n→ "Quel est votre plus grand échec ?"\n→ "Que changeriez-vous à votre parcours ?"\n\nAprès la simulation :\n→ Lis le score et feedback NotebookLM\n→ Note le TOP 1 point à améliorer\n→ Refais CETTE réponse uniquement\, 2 fois\n\nObjectif : tenir une position sous pression sans s'énerver.
-CATEGORIES:SIMULATION,ESSEC,TIER1
+SUMMARY:J15 · Simulation jury ESSEC + English Tier 1
+DESCRIPTION:ACTION 1 — Quiz Jury ESSEC niveau maximum\n→ NotebookLM Chat → Copie-colle le PROMPT 7\n→ Niveau de jury → TIER 1 ESSEC\n→ Simulation complète debout\, comme si c'était l'oral réel\n→ Après : note le TOP 1 point à améliorer → refais cette réponse 2 fois\n\nACTION 2 — Simulation anglais ESSEC (30 min)\n→ ESSEC teste l'anglais en profondeur\n→ ① Self-presentation 5 min\n→ ② Thème : "Leadership in the age of AI and deglobalization"\n   "Only 39% of people trust institutions globally — WEF. Top-down Red World leadership no longer works. Authentic Blue World leadership is the new premium."\n→ ③ "What makes you different from other candidates ?" → réponse en anglais\, ancrage WEF
+CATEGORIES:SIMULATION,ANGLAIS,ESSEC,TIER1
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j15-english-essec-20260510@prep
-DTSTART;TZID=Europe/Paris:20260510T163000
-DTEND;TZID=Europe/Paris:20260510T173000
-SUMMARY:J15 · 🇬🇧 English ESSEC — Simulation complète oral anglais
-DESCRIPTION:ESSEC teste l'anglais en profondeur. Ne pas improviser demain.\n\nACTION — Video Script ESSEC en anglais (Chat)\n→ NotebookLM Chat → Copie-colle le PROMPT 10 → indique ESSEC\n→ Génère le script 3 min ESSEC\n\nSimulation anglais complète (20 min) :\n① Self-presentation 5 min : ouvre avec "The WEF documents 92 million jobs displaced..."\n② Thème : "Leadership in the age of AI and deglobalization"\n  FACT : "Only 39% of people trust institutions globally — WEF."\n  SHIFT : "The Red World — top-down\, command & control — no longer works. Blue World leadership — collaborative\, authentic — is the new premium."\n  SCHOOL LINK : "That's what ESSEC builds. Not managers who execute — leaders who decide."\n③ Question : "What makes you different from other candidates ?" → réponse en anglais\, ancrage WEF\n\n→ Se filmer → visionner → 1 correction avant demain
-CATEGORIES:ANGLAIS,ESSEC,TIER1
-END:VEVENT
-
-BEGIN:VEVENT
-UID:gabriel-j15-synthese-essec-20260510@prep
+UID:gabriel-j15-essec-soir-20260510@prep
 DTSTART;TZID=Europe/Paris:20260510T200000
 DTEND;TZID=Europe/Paris:20260510T203000
 SUMMARY:J15 · Synthèse feedbacks + Logistique ESSEC Cergy
-DESCRIPTION:ACTION 1 — Synthèse feedbacks (10 min)\n→ Relis les 4 feedbacks : ESCE / emlyon / NEOMA / SKEMA\n→ 1 question : qu'est-ce qui MARCHE VRAIMENT dans ta façon de te présenter ?\n→ Garde ces 2-3 éléments → ils sont ton socle pour demain\n\nACTION 2 — Logistique ESSEC Cergy (5 min)\n→ ESSEC est à Cergy-Pontoise : RER A depuis Paris + navette ou voiture\n→ Calcule le trajet complet → prévoir 1h minimum\n→ Pars 1h30 avant l'heure d'oral si tu prends les transports\n→ Prépare ta tenue ce soir\n\nACTION 3 — Briefe-toi pour demain (5 min)\n→ Relis le Briefing Doc ESSEC une dernière fois\n→ Ferme tout. Dors avant 22h.
-CATEGORIES:RÉVISION,ESSEC,TIER1
+DESCRIPTION:ACTION 1 — Synthèse des 6 feedbacks précédents (10 min)\n→ Relis : ESCE · IÉSEG · ESSCA · emlyon · NEOMA · SKEMA\n→ Qu'est-ce qui marche vraiment dans ta façon de te présenter ?\n→ Ces 2-3 éléments sont ton socle pour demain\n\nACTION 2 — Logistique ESSEC Cergy (critique)\n→ ESSEC = Cergy-Pontoise : RER A depuis Paris + navette\n→ Temps de trajet complet : 1h à 1h15 selon départ\n→ Pars 1h30 avant l'heure d'oral minimum\n→ Prépare ta tenue ce soir\n\nACTION 3 — Relis le Briefing Doc ESSEC une dernière fois (10 min)\n→ Ferme tout. Dors avant 22h.
+CATEGORIES:RÉVISION,LOGISTIQUE,ESSEC,TIER1
 END:VEVENT
-
 
 BEGIN:VEVENT
 UID:gabriel-j16-matin-essec-20260511@prep
 DTSTART;TZID=Europe/Paris:20260511T110000
 DTEND;TZID=Europe/Paris:20260511T112000
 SUMMARY:J16 · Matin ESSEC — Briefing Doc 10 min UNIQUEMENT
-DESCRIPTION:→ Relis UNIQUEMENT le Briefing Doc ESSEC (10 min max)\n→ Trajet vers Cergy : écoute l'Audio Overview (Prompt 2) — partie sur les questions déstabilisantes\n\nMindset ESSEC :\n→ Sois toi-même — pas le candidat que tu penses qu'ils veulent\n→ Avoir une opinion et la défendre calmement = ce qui marque un jury ESSEC\n→ Si le jury creuse → c'est excellent signe → développe avec un exemple réel\n→ Ne sois pas consensuel.
+DESCRIPTION:→ Relis UNIQUEMENT le Briefing Doc ESSEC (10 min max)\n→ Trajet RER A vers Cergy : écoute l'Audio Overview — partie questions déstabilisantes\n\nMindset ESSEC :\n→ Sois toi-même — pas le candidat que tu penses qu'ils veulent\n→ Avoir une opinion et la défendre calmement = ce qui marque un jury ESSEC\n→ Si le jury creuse → excellent signe → développe avec un exemple réel\n→ Ne sois pas consensuel
 CATEGORIES:RÉVISION,ESSEC,TIER1
 END:VEVENT
 
@@ -422,7 +379,7 @@ UID:gabriel-oral-essec-20260511@prep
 DTSTART;TZID=Europe/Paris:20260511T140000
 DTEND;TZID=Europe/Paris:20260511T183000
 SUMMARY:🏫 ORAL ESSEC Cergy — Tier 1 ⭐ PRIORITÉ ABSOLUE
-DESCRIPTION:ESSEC Business School · Cergy-Pontoise · Tier 1\n14h00 → 18h30 (plage de passage)\n\nC'est l'oral le plus important des 6. Donne tout.\n\nPENDANT L'ORAL :\n→ Ouvre avec la stat WEF naturellement\n→ Ton argument le plus fort → tiens-le sous pression\n→ Ton anecdote personnelle → authentique\, pas scolaire\n→ Pose tes 2 questions au jury\n→ Ferme avec ta vision 10 ans + phrase mémorisée\n\nFeedback immédiat le soir — même épuisé.
+DESCRIPTION:ESSEC Business School · Cergy-Pontoise · Tier 1 · 14h-18h30\n\nC'est l'oral le plus important des 8. Donne tout.\n\n→ Ouvre avec la stat WEF naturellement\n→ Ton argument le plus fort → tiens-le sous pression\n→ Ton anecdote authentique → personnelle\, pas scolaire\n→ Pose tes 2 questions au jury\n→ Phrase de clôture + vision 10 ans\n\nFeedback immédiat ce soir — même épuisé.
 CATEGORIES:ORAL,TIER1
 END:VEVENT
 
@@ -431,56 +388,43 @@ UID:gabriel-j16-feedback-essec-20260511@prep
 DTSTART;TZID=Europe/Paris:20260511T210000
 DTEND;TZID=Europe/Paris:20260511T211500
 SUMMARY:J16 · Feedback ESSEC — écrire à chaud même si épuisé
-DESCRIPTION:Même si tu es épuisé → fais ça ce soir\n\n→ Notes téléphone :\n  1. Quelles questions exactement ?\n  2. Le jury a creusé quoi ? Sur quoi ?\n  3. Tu as tenu ta position sous pression ?\n  4. Qu'est-ce qui a vraiment marqué le jury (impression) ?\n  5. Ce que tu ferais différemment pour KEDGE (différent\, plus accessible)\n\nDors. Tu mérites du repos.
+DESCRIPTION:Dans le RER retour ou à la maison — avant de dormir :\n\n→ Notes téléphone :\n  1. Quelles questions exactement ?\n  2. Le jury a creusé quoi ?\n  3. Tu as tenu ta position sous pression ?\n  4. Impression générale du jury ?\n  5. Ce que tu ferais différemment pour KEDGE\n\nDors. Tu mérites du repos.
 CATEGORIES:RÉVISION
 END:VEVENT
 
-
 BEGIN:VEVENT
 UID:gabriel-j17-recovery-20260512@prep
-DTSTART;TZID=Europe/Paris:20260512T140000
-DTEND;TZID=Europe/Paris:20260512T153000
-SUMMARY:J17 · Récupération · Adapter ESSEC → KEDGE
-DESCRIPTION:Matin : récupération totale. Tu as passé 5 oraux en 15 jours.\n\nACTION (après-midi uniquement — 1h30)\n→ Relis le feedback ESSEC à tête reposée\n→ NotebookLM Chat → tape :\n  "Sur la base des feedbacks de mes oraux ESCE\, emlyon\, NEOMA\, SKEMA et ESSEC\, aide-moi à adapter mon positionnement pour KEDGE. KEDGE est Tier 2\, fort sur le management responsable et le développement durable. Ton légèrement plus accessible qu'ESSEC."\n→ Lis la réponse → note les 3 ajustements pour KEDGE\n\nKEDGE est dans 3 jours. Tu es rodé. Profite de cette expérience accumulée.
+DTSTART;TZID=Europe/Paris:20260512T100000
+DTEND;TZID=Europe/Paris:20260512T113000
+SUMMARY:J17 · Récupération + Adapter ESSEC → KEDGE
+DESCRIPTION:Matin : récupération totale. Tu as passé 7 oraux en 15 jours dont 2 avec déplacements.\n\nACTION (après-midi — 1h30 max)\n→ NotebookLM Chat → tape :\n"Sur la base de mes 7 oraux (ESCE\, IÉSEG\, ESSCA\, emlyon\, NEOMA\, SKEMA\, ESSEC)\, aide-moi à adapter mon positionnement pour KEDGE. KEDGE est Tier 2\, fort sur management responsable et développement durable. Ton légèrement plus accessible qu'ESSEC."\n→ Note les 3 ajustements pour KEDGE\n\nKEDGE est dans 3 jours. Tu es très rodé. Profite de cette expérience.
 CATEGORIES:RÉVISION,KEDGE
 END:VEVENT
-
 
 BEGIN:VEVENT
 UID:gabriel-j18-kedge-prep-20260513@prep
 DTSTART;TZID=Europe/Paris:20260513T090000
 DTEND;TZID=Europe/Paris:20260513T110000
-SUMMARY:J18 · KEDGE — Recherche finale + Quiz Jury
-DESCRIPTION:ACTION 1 — Finalise ta recherche KEDGE\n→ Relis tes notes KEDGE de J11\n→ Vérifie que tu connais :\n  - 3 raisons concrètes KEDGE\n  - 1 programme ou initiative spécifique\n  - 2 questions à poser au jury\n→ La stat WEF à citer pour KEDGE : "6/9 limites planétaires franchies" + "$2T énergie propre"\n→ Lien KEDGE : "Le management responsable n'est plus un supplément d'âme — c'est un avantage compétitif documenté."\n\nACTION 2 — Quiz Jury KEDGE (Chat)\n→ NotebookLM Chat → Copie-colle le PROMPT 7\n→ Niveau de jury → indique : TIER 2 KEDGE\n→ Simulation 30 min → feedback → note le TOP 1 point à améliorer
+SUMMARY:J18 · KEDGE — Finalisation + Quiz Jury
+DESCRIPTION:ACTION 1 — Finalise ta préparation KEDGE\n→ Relis tes notes KEDGE de J9\n→ Vérifie : 3 raisons concrètes · 1 initiative spécifique · 2 questions jury\n→ Stat KEDGE : "6/9 limites planétaires franchies + $2T énergie propre = la transition verte est maintenant rentable"\n→ Lien : "Le management responsable n'est plus un supplément d'âme — c'est un avantage compétitif documenté."\n\nACTION 2 — Quiz Jury KEDGE (Chat)\n→ NotebookLM Chat → Copie-colle le PROMPT 7 → TIER 2 KEDGE\n→ Simulation 30 min → feedback → TOP 1 point à améliorer
 CATEGORIES:RÉVISION,KEDGE
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gabriel-j18-simu-kedge-20260513@prep
-DTSTART;TZID=Europe/Paris:20260513T140000
-DTEND;TZID=Europe/Paris:20260513T151000
-SUMMARY:J18 · Simulation 30 min KEDGE à voix haute
-DESCRIPTION:Simulation légère — tu es rodé\, pas besoin de surcharger.\n\n→ Debout\, chrono 30 min\n→ Pitch 90 sec adapté KEDGE\n→ 3 questions Tier 2\n→ Tes 2 questions au jury\n→ Phrase de clôture mémorisée\n\nNote : "Je veux créer de la valeur durable dans des organisations qui prennent au sérieux leur impact sur le monde. KEDGE est l'école qui construit ce profil\, avec le management responsable comme fil directeur."\n\nAprès la simulation : est-ce que tu t'es senti naturel ? Pas récité ? → C'est l'objectif.
-CATEGORIES:SIMULATION,KEDGE
-END:VEVENT
-
-
-BEGIN:VEVENT
-UID:gabriel-j19-briefing-kedge-20260514@prep
+UID:gabriel-j19-kedge-jm1-20260514@prep
 DTSTART;TZID=Europe/Paris:20260514T090000
 DTEND;TZID=Europe/Paris:20260514T100000
 SUMMARY:J19 · KEDGE J-1 — Briefing Doc + Simulation express
-DESCRIPTION:ACTION 1 — Générer le Briefing Doc KEDGE (Studio)\n→ NotebookLM → Studio → Customize Briefing Doc\n→ Copie-colle le PROMPT 4 → indique KEDGE\n→ Lis le Briefing Doc en 10 min\n→ Mémorise : pitch KEDGE + 3 raisons + 2 questions jury + phrase de clôture\n\nACTION 2 — Simulation express 20 min\n→ Pitch → 2 questions → tes questions au jury\n→ Tu en as passé 5 — tu sais comment ça se passe\n\nACTION 3 — Logistique\n→ Vérifie adresse exacte KEDGE Paris\n→ Calcule trajet + marge\n→ Prépare tenue\n→ Dors tôt
+DESCRIPTION:ACTION 1 — Briefing Doc KEDGE (Studio)\n→ NotebookLM → Studio → Customize Briefing Doc\n→ Copie-colle le PROMPT 4 → indique KEDGE\n→ Lis en 10 min : pitch KEDGE · 3 raisons · stats · 2 questions · clôture\n\nACTION 2 — Simulation express 20 min\n→ Pitch → 2 questions → tes questions au jury\n→ Tu en as passé 7 — tu sais exactement comment ça se passe\n\nACTION 3 — Logistique\n→ Adresse exacte KEDGE Paris\n→ Trajet + marge · Tenue · Dors tôt
 CATEGORIES:RÉVISION,KEDGE
 END:VEVENT
 
-
 BEGIN:VEVENT
 UID:gabriel-j20-matin-kedge-20260515@prep
-DTSTART;TZID=Europe/Paris:20260515T110000
-DTEND;TZID=Europe/Paris:20260515T112000
+DTSTART;TZID=Europe/Paris:20260515T113000
+DTEND;TZID=Europe/Paris:20260515T120000
 SUMMARY:J20 · Matin KEDGE — Briefing Doc 10 min
-DESCRIPTION:→ Relis le Briefing Doc KEDGE (10 min max)\n→ Trajet : Audio Overview si tu veux — ou silence\n\nMindset KEDGE :\n→ C'est ton 6e oral. Tu es rodé. Profite-en.\n→ Ton expérience accumulée vaut de l'or\n→ Tu sais ce qui marche dans ta façon de te présenter\n→ Utilise-le.
+DESCRIPTION:→ Relis le Briefing Doc KEDGE (10 min max)\n→ Trajet : Audio Overview si tu veux — ou silence\n\nMindset KEDGE :\n→ C'est ton 8e oral. Tu es rodé. Profite-en.\n→ Tu sais ce qui marche dans ta façon de te présenter.\n→ Utilise-le.
 CATEGORIES:RÉVISION,KEDGE
 END:VEVENT
 
@@ -489,7 +433,7 @@ UID:gabriel-oral-kedge-20260515@prep
 DTSTART;TZID=Europe/Paris:20260515T140000
 DTEND;TZID=Europe/Paris:20260515T170000
 SUMMARY:🏫 ORAL KEDGE Paris — Tier 2 ✓ DERNIER
-DESCRIPTION:KEDGE Business School · Paris · Tier 2\n\nC'est le 6e et dernier oral.\nTu en as passé 5 — tu sais exactement ce que tu fais.\n\n→ Ouvre avec ta stat WEF\n→ 3 raisons KEDGE concrètes\n→ Lien management responsable + WEF 6/9 limites\n→ Pose tes 2 questions au jury\n→ Ferme avec ta phrase mémorisée\n\nBonne chance Gabriel. Tu as préparé ça sérieusement.
+DESCRIPTION:KEDGE Business School · Paris · Tier 2 · 14h\n\nC'est le 8e et dernier oral.\n→ Ouvre avec stat WEF\n→ 3 raisons KEDGE : management responsable + développement durable\n→ Pose tes 2 questions au jury\n→ Phrase de clôture mémorisée\n\nBonne chance Gabriel. 8 oraux en 20 jours — c'est sérieux.
 CATEGORIES:ORAL
 END:VEVENT
 
@@ -497,8 +441,8 @@ BEGIN:VEVENT
 UID:gabriel-j20-bilan-20260515@prep
 DTSTART;TZID=Europe/Paris:20260515T200000
 DTEND;TZID=Europe/Paris:20260515T201500
-SUMMARY:J20 · Bilan final — 6 oraux terminés
-DESCRIPTION:NotebookLM Chat → tape :\n"J'ai passé 6 oraux : ESCE\, emlyon\, NEOMA\, SKEMA\, ESSEC\, KEDGE. Voici mes feedbacks [colle tes notes de feedback]. Fais-moi un bilan : quels frameworks ont le mieux fonctionné ? Qu'est-ce que j'aurais dû faire différemment ? Qu'est-ce que je retiens pour la suite ?"\n\nCe bilan est utile pour :\n→ Si tu as des résultats et veux comprendre pourquoi\n→ Pour n'importe quelle préparation d'entretien future\n→ Pour mesurer ce que la préparation t'a vraiment apporté\n\nTu as terminé. Bravo.
+SUMMARY:J20 · Bilan final — 8 oraux terminés
+DESCRIPTION:NotebookLM Chat → tape :\n"J'ai passé 8 oraux : ESCE\, IÉSEG Lille\, ESSCA Angers\, emlyon\, NEOMA\, SKEMA\, ESSEC\, KEDGE. Voici mes feedbacks [colle tes notes de feedback]. Fais-moi un bilan : quels frameworks ont le mieux fonctionné ? Qu'est-ce que j'aurais dû faire différemment ? Qu'est-ce que je retiens ?"\n\nBravo. C'est terminé.
 CATEGORIES:RÉVISION
 END:VEVENT
 
