@@ -19,6 +19,7 @@
 | 9 | Infographic | 💬 Chat | J2, J5, J12 | Brief visuel |
 | 10 | Video Script | 💬 Chat | J5, J11, J16 | Script 3 min |
 | 11 | Timeline | 💬 Chat | J1 | Chronologie 21J |
+| 12 | English Mock Interview Audio | ▶ Studio | J-3 à J-1 SKEMA + ESSEC · boucle quotidienne | 18 min listen & repeat |
 
 ---
 
@@ -617,6 +618,95 @@ Générer la timeline complète du J1 au J21 avec :
 
 ---
 
-*NOTEBOOKLM_PROMPTS.md v5.0 · 6 oraux · 21 jours · 11 prompts premium*
-*▶ Studio : Prompts 1-5 · 💬 Chat : Prompts 6-11*
+## PROMPT 12 — English Mock Interview Audio ▶ Studio
+> NotebookLM → Studio → Customize Audio Overview
+> Moment idéal : trajets · veilles SKEMA (9 mai) · veille ESSEC (10 mai) · répétition possible en boucle
+
+```
+Create an English-language audio coaching session for a French student preparing business school oral exams.
+
+FORMAT — "Listen & Repeat" Mock Interview
+Two voices:
+- INTERVIEWER: native English-speaking jury member from a top business school
+- COACH: English accent coach who plays the model candidate AND highlights key phrases to repeat
+
+Structure the audio in 3 parts — total target duration: 18 minutes.
+
+---
+
+PART 1 — SELF-PRESENTATION (4 min)
+Interviewer asks: "Could you introduce yourself in English?"
+Coach delivers a model 90-second answer, then says:
+"Pause. Repeat these 3 phrases after me — slowly:"
+① "The World Economic Forum documents 92 million jobs displaced by 2030 — but 170 million new ones created."
+② "I don't want to study management. I want to practice it from day one."
+③ "I'm here because disruption hits entry-level jobs first — and I want to be on the right side of that shift."
+After each phrase: pause 4 seconds for the listener to repeat.
+
+Then interviewer asks: "Why this business school specifically?"
+Coach gives a 45-second model answer (school-agnostic, adaptable), then extracts 2 key phrases to repeat:
+① "What draws me to this program is [the maker spirit / the international multicampus / the responsible management focus] — not just its reputation."
+② "I chose to apply here because I want to build something, not just learn about it."
+Pause 4 seconds after each phrase.
+
+---
+
+PART 2 — CORE QUESTIONS (8 min)
+Run through 6 questions. For each: interviewer asks → coach gives model answer (45-60 sec) → coach extracts 1 KEY PHRASE to repeat (pause 4 sec).
+
+Q1: "What is your professional project in 5 to 10 years?"
+KEY PHRASE: "I see myself at the intersection of management and digital transformation — where the WEF identifies the highest demand for new skills by 2030."
+
+Q2: "What makes you different from other strong candidates?"
+KEY PHRASE: "I don't have a different résumé. I have a different way of seeing problems — and I can show you that, not just tell you."
+
+Q3: "What is your greatest weakness?"
+KEY PHRASE: "My weakness is impatience — I move fast and sometimes outpace the people around me. I'm actively working on it by [example]. It's a work in progress, not a blind spot."
+
+Q4: "Tell me about a challenge you overcame."
+KEY PHRASE: "The lesson wasn't that I succeeded. It was that I stayed when it was uncomfortable — and that's when I actually learned something."
+
+Q5: "What do you think about artificial intelligence and the future of work?"
+KEY PHRASE: "AI doesn't replace ambition. It replaces repetition. The question is whether you're building skills that machines can't automate — and business school is exactly where I want to answer that question."
+
+Q6 (SKEMA specific): "Please comment on this image." [Coach simulates an image description]
+Coach models the structure: describe → interpret → connect to business → personal angle
+KEY PHRASE: "The first thing I notice is [X]. What this suggests to me, from a business perspective, is [Y]. And personally, this connects to [Z]."
+Pause 4 seconds.
+
+---
+
+PART 3 — ADVANCED PHRASES BANK (6 min)
+Coach presents 10 high-impact English phrases for French candidates. For each:
+- Say the phrase naturally at normal speed
+- Explain why it works (10 seconds)
+- Repeat it slowly for the listener to echo
+- Pause 4 seconds
+
+PHRASES TO INCLUDE:
+① "I'd like to take a moment to structure my answer." [when you need thinking time — sounds composed, not lost]
+② "That's a fair challenge — let me push back slightly." [when defending a position under jury pressure]
+③ "The data actually supports a different conclusion here." [to cite WEF stats with confidence]
+④ "What I find compelling about this school specifically is..." [personalised answer opener]
+⑤ "I've been reflecting on this question, and my honest answer is..." [for weakness / failure questions]
+⑥ "Rather than tell you, let me give you a concrete example." [to avoid abstract answers]
+⑦ "This connects directly to why I'm sitting in front of you today." [to link any answer back to motivation]
+⑧ "I hold that view — and I'm happy to defend it." [ESSEC: signal you won't be destabilised]
+⑨ "In 10 years, I want to be the kind of manager who..." [open a vision answer with personality]
+⑩ "Thank you — that question made me think." [elegant response to a difficult or unexpected question]
+
+End with coach's closing: "Listen to this session daily for 3 days before each English oral. Don't memorise the answers — memorise the structure and the key phrases. Confidence in English comes from having a toolkit, not a script."
+
+---
+
+LANGUAGE: 100% English throughout — no French.
+TONE: Warm but demanding. The coach is encouraging AND rigorous.
+PACING: Slightly slower than natural speech — French learner friendly.
+KEY CONSTRAINT: Every "repeat after me" moment must be followed by exactly 4 seconds of silence.
+```
+
+---
+
+*NOTEBOOKLM_PROMPTS.md v5.0 · 8 oraux · 21 jours · 12 prompts premium*
+*▶ Studio : Prompts 1-5 + 12 · 💬 Chat : Prompts 6-11*
 *Sources : TGM INSEAD · Personal MBA (Kaufman) · WEF Strategic Library 2024-2025*
